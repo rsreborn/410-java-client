@@ -102,7 +102,7 @@ public class Class11_Sub10_Sub4_Sub1 extends Class11_Sub10_Sub4
 	    anInt2484++;
 	    if (arg3 != true)
 		method261(21);
-	    int i = arg0.method899((byte) -18, arg2);
+	    int i = arg0.hashFileName((byte) -18, arg2);
 	    int i_2_ = arg0.method891(false, arg1, i);
 	    return Class64.method995(i, arg0, i_2_, (byte) 76);
 	} catch (RuntimeException runtimeexception) {

@@ -100,19 +100,19 @@ public abstract class Class55 {
                 Class60.aByteArrayArray1259 = new byte[keyCount][];
                 Class11_Sub10_Sub4_Sub3.anIntArray2589 = new int[keyCount];
                 boolean bool = false;
-                if (((chunkX / 8 ^ 0xffffffff) == -49 || (chunkX / 8 ^ 0xffffffff) == -50) && chunkY / 8 == 48) bool = true;
-                if (chunkX / 8 == 48 && (chunkY / 8 ^ 0xffffffff) == -149) bool = true;
+                if (chunkX / 8 == 48 || chunkX / 8 == 49 && chunkY / 8 == 48) bool = true;
+                if (chunkX / 8 == 48 && chunkY / 8 == 148) bool = true;
                 Class11_Sub10_Sub11.aByteArrayArray2257 = new byte[keyCount][];
                 Canvas_Sub1.anIntArray64 = new int[keyCount];
                 Class11_Sub10_Sub4_Sub1.anIntArray2490 = new int[keyCount];
                 keyCount = 0;
-                for (int x = (-6 + chunkX) / 8; x <= (chunkX + 6) / 8; x++) {
-                    for (int y = (-6 + chunkY) / 8; y <= (6 + chunkY) / 8; y++) {
-                        int i_10_ = y + (x << 8);
-                        if (!bool || (y != 49 && (y ^ 0xffffffff) != -150 && (y ^ 0xffffffff) != -148 && x != 50 && ((x ^ 0xffffffff) != -50 || (y ^ 0xffffffff) != -48))) {
-                            Class11_Sub10_Sub4_Sub3.anIntArray2589[keyCount] = i_10_;
-                            Class11_Sub10_Sub4_Sub1.anIntArray2490[keyCount] = (Class13.aClass55_Sub1_270.method899((byte) -18, (Class40.method744(Class11_Sub12.method494(arg1, -50), (new Class31[]{Class59.aClass31_1235, Class11_Sub11.method493(x, (byte) -124), Class51.aClass31_1015, (Class11_Sub11.method493(y, (byte) -125))})))));
-                            Canvas_Sub1.anIntArray64[keyCount] = (Class13.aClass55_Sub1_270.method899((byte) -18, (Class40.method744(0, (new Class31[]{Canvas_Sub1.aClass31_62, Class11_Sub11.method493(x, (byte) -127), Class51.aClass31_1015, (Class11_Sub11.method493(y, (byte) -127))})))));
+                for (int x = (chunkX - 6) / 8; x <= (chunkX + 6) / 8; x++) {
+                    for (int y = (chunkY -6) / 8; y <= (chunkY + 6) / 8; y++) {
+                        int hash = y + (x << 8);
+                        if (!bool || (y != 49 && y != 149 && y != 147 && x != 50 && (x != 49 || y != 47))) {
+                            Class11_Sub10_Sub4_Sub3.anIntArray2589[keyCount] = hash;
+                            Class11_Sub10_Sub4_Sub1.anIntArray2490[keyCount] = (Class13.mapsArchive.hashFileName((byte) -18, (Class40.method744(Class11_Sub12.method494(arg1, -50), (new Class31[]{Class59.aClass31_1235, Class11_Sub11.method493(x, (byte) -124), Class51.aClass31_1015, (Class11_Sub11.method493(y, (byte) -125))})))));
+                            Canvas_Sub1.anIntArray64[keyCount] = (Class13.mapsArchive.hashFileName((byte) -18, (Class40.method744(0, (new Class31[]{Canvas_Sub1.aClass31_62, Class11_Sub11.method493(x, (byte) -127), Class51.aClass31_1015, (Class11_Sub11.method493(y, (byte) -127))})))));
                             keyCount++;
                         }
                     }
@@ -166,8 +166,8 @@ public abstract class Class55 {
                                     Class11_Sub10_Sub4_Sub3.anIntArray2589[i_15_] = i_28_;
                                     int i_30_ = (0xffc4 & i_28_) >> -1025223800;
                                     int i_31_ = 0xff & i_28_;
-                                    Class11_Sub10_Sub4_Sub1.anIntArray2490[i_15_] = (Class13.aClass55_Sub1_270.method899((byte) -18, (Class40.method744(0, (new Class31[]{Class59.aClass31_1235, (Class11_Sub11.method493(i_30_, (byte) -126)), Class51.aClass31_1015, (Class11_Sub11.method493(i_31_, (byte) -125))})))));
-                                    Canvas_Sub1.anIntArray64[i_15_] = (Class13.aClass55_Sub1_270.method899((byte) -18, (Class40.method744(0, (new Class31[]{Canvas_Sub1.aClass31_62, (Class11_Sub11.method493(i_30_, (byte) -128)), Class51.aClass31_1015, (Class11_Sub11.method493(i_31_, (byte) -124))})))));
+                                    Class11_Sub10_Sub4_Sub1.anIntArray2490[i_15_] = (Class13.mapsArchive.hashFileName((byte) -18, (Class40.method744(0, (new Class31[]{Class59.aClass31_1235, (Class11_Sub11.method493(i_30_, (byte) -126)), Class51.aClass31_1015, (Class11_Sub11.method493(i_31_, (byte) -125))})))));
+                                    Canvas_Sub1.anIntArray64[i_15_] = (Class13.mapsArchive.hashFileName((byte) -18, (Class40.method744(0, (new Class31[]{Canvas_Sub1.aClass31_62, (Class11_Sub11.method493(i_30_, (byte) -128)), Class51.aClass31_1015, (Class11_Sub11.method493(i_31_, (byte) -124))})))));
                                     i_15_++;
                                 }
                             }
@@ -508,7 +508,7 @@ public abstract class Class55 {
         try {
             if (arg1 != true) return null;
             anInt1131++;
-            int i = arg0.method899((byte) -18, arg3);
+            int i = arg0.hashFileName((byte) -18, arg3);
             int i_67_ = arg0.method891(false, arg2, i);
             return Class48.method790(0, i, arg0, i_67_);
         } catch (RuntimeException runtimeexception) {
@@ -544,7 +544,7 @@ public abstract class Class55 {
         }
     }
 
-    public int method899(byte arg0, Class31 arg1) {
+    public int hashFileName(byte arg0, Class31 arg1) {
         try {
             anInt1127++;
             if (arg0 != -18) method886(-16, 107);

@@ -244,7 +244,7 @@ public abstract class Class15 {
                     NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub10_Sub1.aClass55_Sub1_1939.checksum);
                     NotActuallyBuffer.loginBuffer.writeIntBE(Class8.aClass55_Sub1_166.checksum);
                     NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub8.aClass55_Sub1_1623.checksum);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class13.aClass55_Sub1_270.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class13.mapsArchive.checksum);
                     NotActuallyBuffer.loginBuffer.writeIntBE(Class47.aClass55_Sub1_876.checksum);
                     NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub10_Sub12.aClass55_Sub1_2270.checksum);
                     NotActuallyBuffer.loginBuffer.writeIntBE(Class43.aClass55_Sub1_780.checksum);

@@ -116,7 +116,7 @@ public class Class55_Sub1 extends Class55
 	try {
 	    if (arg2 != -58)
 		aClass31_1859 = null;
-	    int i = arg0.method899((byte) -18, arg1);
+	    int i = arg0.hashFileName((byte) -18, arg1);
 	    int i_0_ = arg0.method891(false, arg3, i);
 	    anInt1855++;
 	    return Class34.method681(i_0_, arg0, i, 93);

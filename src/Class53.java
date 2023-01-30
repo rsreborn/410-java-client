@@ -301,7 +301,7 @@ public class Class53
 	try {
 	    anInt1056++;
 	    if (Class11_Sub12.method496(true)) {
-		int i = arg2.method899((byte) -18, arg0);
+		int i = arg2.hashFileName((byte) -18, arg0);
 		int i_2_ = arg2.method891(false, arg1, i);
 		if (arg7 == 2)
 		    method861(i, arg6, arg3, arg4, -1, arg5, i_2_, arg2);

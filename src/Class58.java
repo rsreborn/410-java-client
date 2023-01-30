@@ -64,7 +64,7 @@ public class Class58 implements MouseListener, MouseMotionListener
 	(Class31 arg0, Class31 arg1, int arg2, Class55 arg3) {
 	try {
 	    anInt1203++;
-	    int i = arg3.method899((byte) -18, arg0);
+	    int i = arg3.hashFileName((byte) -18, arg0);
 	    int i_0_ = arg3.method891(false, arg1, i);
 	    if (arg2 > -47)
 		return null;
@@ -298,7 +298,7 @@ public class Class58 implements MouseListener, MouseMotionListener
 		    = Class31.method642(false, 3, (byte) 99, true, true);
 		Class11_Sub8.aClass55_Sub1_1623
 		    = Class31.method642(false, 4, (byte) 99, true, true);
-		Class13.aClass55_Sub1_270
+		Class13.mapsArchive
 		    = Class31.method642(true, 5, (byte) 99, true, true);
 		Class47.aClass55_Sub1_876
 		    = Class31.method642(true, 6, (byte) 99, false, true);
@@ -325,7 +325,7 @@ public class Class58 implements MouseListener, MouseMotionListener
 		i += Class8.aClass55_Sub1_166.method908((byte) 62) * 5 / 100;
 		i += (Class11_Sub8.aClass55_Sub1_1623.method908((byte) 96) * 5
 		      / 100);
-		i += 5 * Class13.aClass55_Sub1_270.method908((byte) 127) / 100;
+		i += 5 * Class13.mapsArchive.method908((byte) 127) / 100;
 		i += 5 * Class47.aClass55_Sub1_876.method908((byte) 68) / 100;
 		i += 45 * Class11_Sub10_Sub12.aClass55_Sub1_2270
 			      .method908((byte) 41) / 100;

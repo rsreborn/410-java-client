@@ -24,7 +24,7 @@ public class Class13
     public static int[] anIntArray267;
     public static int[] anIntArray268;
     public static boolean aBoolean269;
-    public static Class55_Sub1 aClass55_Sub1_270;
+    public static Class55_Sub1 mapsArchive;
     public static int anInt271;
     
     public static void method508(byte arg0, boolean arg1) {
@@ -158,7 +158,7 @@ public class Class13
 	    anInt262++;
 	    if (arg0 != 0)
 		return null;
-	    int i = arg1.method899((byte) -18, arg2);
+	    int i = arg1.hashFileName((byte) -18, arg2);
 	    int i_4_ = arg1.method891(false, arg3, i);
 	    return Class55.method898(arg1, i_4_, 0, i);
 	} catch (RuntimeException runtimeexception) {
@@ -308,7 +308,7 @@ public class Class13
 		method510(-75, null, null, null);
 	    aClass14_265 = null;
 	    aClass31_258 = null;
-	    aClass55_Sub1_270 = null;
+	    mapsArchive = null;
 	    aClass31_256 = null;
 	    anIntArray260 = null;
 	    anIntArray266 = null;

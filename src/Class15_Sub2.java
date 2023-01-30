@@ -121,7 +121,7 @@ public class Class15_Sub2 extends Class15
 	    Class11_Sub10_Sub6.aClass55_Sub1_2135.method876(0);
 	    Class8.aClass55_Sub1_166.method876(0);
 	    Class11_Sub8.aClass55_Sub1_1623.method876(arg0 + -33554431);
-	    Class13.aClass55_Sub1_270.method876(0);
+	    Class13.mapsArchive.method876(0);
 	    Class47.aClass55_Sub1_876.method876(arg0 ^ 0x1ffffff);
 	    Class11_Sub10_Sub12.aClass55_Sub1_2270.method876(0);
 	    Class43.aClass55_Sub1_780.method876(0);

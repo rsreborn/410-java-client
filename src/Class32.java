@@ -126,7 +126,7 @@ public class Class32
 		if (Class11_Sub10_Sub4_Sub1.anIntArray2490[i] != -1
 		    && Class60.aByteArrayArray1259[i] == null) {
 		    Class60.aByteArrayArray1259[i]
-			= (Class13.aClass55_Sub1_270.method887
+			= (Class13.mapsArchive.method887
 			   ((byte) -127, 0,
 			    Class11_Sub10_Sub4_Sub1.anIntArray2490[i]));
 		    if (Class60.aByteArrayArray1259[i] == null) {
@@ -137,7 +137,7 @@ public class Class32
 		if ((Canvas_Sub1.anIntArray64[i] ^ 0xffffffff) != 0
 		    && Class11_Sub10_Sub11.aByteArrayArray2257[i] == null) {
 		    Class11_Sub10_Sub11.aByteArrayArray2257[i]
-			= (Class13.aClass55_Sub1_270.method901
+			= (Class13.mapsArchive.method901
 			   (0, Canvas_Sub1.anIntArray64[i],
 			    Class11_Sub10_Sub4_Sub5.xteaKeys[i],
 			    123));
@@ -413,7 +413,7 @@ public class Class32
 				    || i_44_ > i_41_ || i_45_ < i_42_
 				    || (i_43_ ^ 0xffffffff) > (i_45_
 							       ^ 0xffffffff)) {
-				    Class13.aClass55_Sub1_270.method882
+				    Class13.mapsArchive.method882
 					(true,
 					 (Class40.method744
 					  (0, (new Class31[]
@@ -423,7 +423,7 @@ public class Class32
 						 Class51.aClass31_1015,
 						 (Class11_Sub11.method493
 						  (i_45_, (byte) -126)) }))));
-				    Class13.aClass55_Sub1_270.method882
+				    Class13.mapsArchive.method882
 					(true,
 					 (Class40.method744
 					  (0, (new Class31[]
