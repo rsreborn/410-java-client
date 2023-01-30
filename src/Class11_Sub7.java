@@ -78,7 +78,7 @@ public class Class11_Sub7 extends Class11
 	    if (arg1 <= 106)
 		anInt1600 = -43;
 	    int i = arg2.position;
-	    arg2.method155(arg0.anInt1403, (byte) -47);
+	    arg2.method155(arg0.anInt1403);
 	    arg2.position
 		+= Class11_Sub4.aClass33_1503.method668(arg0.aByteArray1366,
 							arg0.anInt1403,
@@ -127,8 +127,8 @@ public class Class11_Sub7 extends Class11
 			   Class52.aClass34_1020.method671((byte) -102));
 		    Buffer buffer = new Buffer(4);
 		    buffer.writeByte(1);
-		    buffer.method148((byte) -48,
-					   (int) class11_sub10_sub16.aLong231);
+		    buffer.method148(
+					(int) class11_sub10_sub16.aLong231);
 		    Class11.aClass14_222.method521(buffer.payload,
 						   4, 0, true);
 		    Class37.aClass34_696.method682(126, class11_sub10_sub16,
@@ -145,8 +145,8 @@ public class Class11_Sub7 extends Class11
 			   Class33.aClass32_607.method658(-1));
 		    Buffer buffer = new Buffer(4);
 		    buffer.writeByte(0);
-		    buffer.method148((byte) -48,
-					   (int) class11_sub10_sub16.aLong231);
+		    buffer.method148(
+					(int) class11_sub10_sub16.aLong231);
 		    Class11.aClass14_222.method521(buffer.payload,
 						   4, 0, true);
 		    class11_sub10_sub16.method227(55);
@@ -203,7 +203,7 @@ public class Class11_Sub7 extends Class11
 			    int i_5_ = Class11_Sub4.aBuffer_1476
 					   .method168(255);
 			    int i_6_ = Class11_Sub4.aBuffer_1476
-					   .method164(127);
+					   .method164();
 			    int i_7_ = Class11_Sub4.aBuffer_1476
 					   .method168(255);
 			    int i_8_ = Class11_Sub4.aBuffer_1476

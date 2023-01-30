@@ -87,13 +87,13 @@ public class Class11_Sub10_Sub12 extends Class11_Sub10
 		for (int i_2_ = 0; (i ^ 0xffffffff) < (i_2_ ^ 0xffffffff);
 		     i_2_++)
 		    anIntArray2296[i_2_]
-			= arg2.method164(Class11_Sub12.method494(arg0, -77));
+			= arg2.method164();
 		anIntArray2280 = new int[i];
 		for (int i_3_ = 0; (i ^ 0xffffffff) < (i_3_ ^ 0xffffffff);
 		     i_3_++)
-		    anIntArray2280[i_3_] = arg2.method164(127);
+		    anIntArray2280[i_3_] = arg2.method164();
 		for (int i_4_ = 0; i_4_ < i; i_4_++)
-		    anIntArray2280[i_4_] = ((arg2.method164(127) << 259320784)
+		    anIntArray2280[i_4_] = ((arg2.method164() << 259320784)
 					    - -anIntArray2280[i_4_]);
 	    } else if ((arg1 ^ 0xffffffff) != -3) {
 		if (arg1 == 3) {
@@ -106,9 +106,9 @@ public class Class11_Sub10_Sub12 extends Class11_Sub10
 		} else if ((arg1 ^ 0xffffffff) != -5) {
 		    if (arg1 != 5) {
 			if ((arg1 ^ 0xffffffff) == -7)
-			    anInt2287 = arg2.method164(127);
+			    anInt2287 = arg2.method164();
 			else if ((arg1 ^ 0xffffffff) == -8)
-			    anInt2281 = arg2.method164(127);
+			    anInt2281 = arg2.method164();
 			else if ((arg1 ^ 0xffffffff) != -9) {
 			    if (arg1 != 9) {
 				if (arg1 != 10) {
@@ -119,14 +119,12 @@ public class Class11_Sub10_Sub12 extends Class11_Sub10
 					    for (int i_6_ = 0; i > i_6_;
 						 i_6_++)
 						anIntArray2295[i_6_]
-						    = arg2.method164(127);
+						    = arg2.method164();
 					    for (int i_7_ = 0; i > i_7_;
 						 i_7_++)
 						anIntArray2295[i_7_]
 						    = (((arg2.method164
-							 (Class11_Sub12
-							      .method494
-							  (arg0, -77)))
+							 ())
 							<< 1036739600)
 						       - -(anIntArray2295
 							   [i_7_]));
@@ -144,7 +142,7 @@ public class Class11_Sub10_Sub12 extends Class11_Sub10
 		} else
 		    aBoolean2284 = true;
 	    } else
-		anInt2288 = arg2.method164(127);
+		anInt2288 = arg2.method164();
 	    anInt2271++;
 	} catch (RuntimeException runtimeexception) {
 	    throw Class58.method939(runtimeexception,

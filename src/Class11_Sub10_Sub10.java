@@ -60,12 +60,12 @@ public class Class11_Sub10_Sub10 extends Class11_Sub10
     public void method372(byte arg0, int arg1, Buffer arg2, int arg3) {
 	try {
 	    if (arg1 == 1)
-		anInt2219 = arg2.method178(2);
+		anInt2219 = arg2.method178();
 	    else if ((arg1 ^ 0xffffffff) != -3) {
 		if (arg1 == 5)
 		    aBoolean2240 = false;
 		else if (arg1 == 7)
-		    anInt2241 = arg2.method178(2);
+		    anInt2241 = arg2.method178();
 	    } else
 		anInt2221 = arg2.method168(255);
 	    if (arg0 <= 105)

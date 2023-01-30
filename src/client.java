@@ -313,7 +313,7 @@ public class client extends Applet_Sub1 {
             Class37.method702(false);
             Canvas_Sub1.method40(1);
             Class46.method781(-3);
-            Buffer.method149(arg0 + 874571332);
+            Buffer.method149();
             Class14.method523(true);
             Class55_Sub1.method915((byte) 73);
             Class3.method50((byte) -73);

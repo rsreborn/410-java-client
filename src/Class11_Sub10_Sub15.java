@@ -517,11 +517,11 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 		if ((arg0 ^ 0xffffffff) == -4)
 		    aClass31_2388 = arg1.method181((byte) 127);
 		else if ((arg0 ^ 0xffffffff) == -5)
-		    anInt2370 = arg1.method164(127);
+		    anInt2370 = arg1.method164();
 		else if (arg0 == 5)
-		    anInt2403 = arg1.method164(127);
+		    anInt2403 = arg1.method164();
 		else if ((arg0 ^ 0xffffffff) == -7)
-		    anInt2358 = arg1.method164(127);
+		    anInt2358 = arg1.method164();
 		else if ((arg0 ^ 0xffffffff) != -8) {
 		    if ((arg0 ^ 0xffffffff) != -9) {
 			if ((arg0 ^ 0xffffffff) != -11) {
@@ -531,9 +531,9 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 					aBoolean2369 = true;
 				    else if (arg0 != 23) {
 					if ((arg0 ^ 0xffffffff) == -25)
-					    anInt2381 = arg1.method164(127);
+					    anInt2381 = arg1.method164();
 					else if (arg0 == 25) {
-					    anInt2365 = arg1.method164(127);
+					    anInt2365 = arg1.method164();
 					    anInt2418 = arg1.method168(255);
 					} else if ((arg0 ^ 0xffffffff)
 						   != -27) {
@@ -553,7 +553,7 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 							== -79)
 							anInt2372
 							    = (arg1.method164
-							       (127));
+							       ());
 						    else if ((arg0
 							      ^ 0xffffffff)
 							     != -80) {
@@ -561,7 +561,7 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 							    == -91)
 							    anInt2395
 								= (arg1.method164
-								   (127));
+								   ());
 							else if (arg0 != 91) {
 							    if (arg0 != 92) {
 								if ((arg0
@@ -572,20 +572,20 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 									if ((arg0
 									     ^ 0xffffffff)
 									    == -98)
-									    anInt2412 = arg1.method164(127);
+									    anInt2412 = arg1.method164();
 									else if ((arg0 ^ 0xffffffff) != -99) {
 									    if (arg0 >= 100 && arg0 < 110) {
 										if (anIntArray2414 == null) {
 										    anIntArray2414 = new int[10];
 										    anIntArray2378 = new int[10];
 										}
-										anIntArray2414[arg0 + -100] = arg1.method164(127);
-										anIntArray2378[arg0 - 100] = arg1.method164(127);
+										anIntArray2414[arg0 + -100] = arg1.method164();
+										anIntArray2378[arg0 - 100] = arg1.method164();
 									    } else if ((arg0 ^ 0xffffffff) != -111) {
 										if (arg0 == 111)
-										    anInt2416 = arg1.method164(127);
+										    anInt2416 = arg1.method164();
 										else if (arg0 == 112)
-										    anInt2360 = arg1.method164(127);
+										    anInt2360 = arg1.method164();
 										else if ((arg0 ^ 0xffffffff) != -114) {
 										    if ((arg0 ^ 0xffffffff) == -115)
 											anInt2391 = 5 * arg1.method156(26669);
@@ -594,28 +594,28 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 										} else
 										    anInt2393 = arg1.method156(26669);
 									    } else
-										anInt2413 = arg1.method164(127);
+										anInt2413 = arg1.method164();
 									} else
-									    anInt2380 = arg1.method164(127);
+									    anInt2380 = arg1.method164();
 								    } else
 									anInt2386
-									    = arg1.method164(127);
+									    = arg1.method164();
 								} else
 								    anInt2398
 									= (arg1.method164
-									   (127));
+									   ());
 							    } else
 								anInt2390
 								    = (arg1.method164
-								       (127));
+								       ());
 							} else
 							    anInt2422
 								= (arg1.method164
-								   (127));
+								   ());
 						    } else
 							anInt2368
 							    = (arg1.method164
-							       (127));
+							       ());
 						} else {
 						    int i
 							= arg1.method168(255);
@@ -627,10 +627,10 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 							 i > i_16_; i_16_++) {
 							anIntArray2407[i_16_]
 							    = (arg1.method164
-							       (127));
+							       ());
 							anIntArray2421[i_16_]
 							    = (arg1.method164
-							       (127));
+							       ());
 						    }
 						}
 					    } else {
@@ -647,9 +647,9 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 							= null;
 					    }
 					} else
-					    anInt2420 = arg1.method164(127);
+					    anInt2420 = arg1.method164();
 				    } else {
-					anInt2363 = arg1.method164(127);
+					anInt2363 = arg1.method164();
 					anInt2419 = arg1.method168(255);
 				    }
 				} else
@@ -657,21 +657,21 @@ public class Class11_Sub10_Sub15 extends Class11_Sub10
 			    } else
 				aBoolean2405 = true;
 			} else
-			    arg1.method164(127);
+			    arg1.method164();
 		    } else {
-			anInt2417 = arg1.method164(127);
+			anInt2417 = arg1.method164();
 			if (anInt2417 > 32767)
 			    anInt2417 -= 65536;
 		    }
 		} else {
-		    anInt2397 = arg1.method164(127);
+		    anInt2397 = arg1.method164();
 		    if ((anInt2397 ^ 0xffffffff) < -32768)
 			anInt2397 -= 65536;
 		}
 	    } else
 		aClass31_2406 = arg1.method181((byte) 127);
 	} else
-	    anInt2359 = arg1.method164(127);
+	    anInt2359 = arg1.method164();
 	if (arg2 != false)
 	    anInt2420 = 30;
     }

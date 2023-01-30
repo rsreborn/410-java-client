@@ -71,13 +71,13 @@ public class Class11_Sub12 extends Class11
 		if ((i_1_ & 0x20) != 0) {
 		    class11_sub10_sub4_sub2_sub2.anInt2568
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method164(127);
+			      .method164();
 		    if (class11_sub10_sub4_sub2_sub2.anInt2568 == 65535)
 			class11_sub10_sub4_sub2_sub2.anInt2568 = -1;
 		}
 		if ((i_1_ & 0x40 ^ 0xffffffff) != -1) {
 		    int i_2_ = Class11_Sub10_Sub4_Sub2
-				   .inBuffer.method190(-17254);
+				   .inBuffer.method190();
 		    int i_3_ = Class11_Sub10_Sub4_Sub2
 				   .inBuffer.method166(false);
 		    class11_sub10_sub4_sub2_sub2
@@ -86,10 +86,10 @@ public class Class11_Sub12 extends Class11
 			= Class61.anInt1283 + 300;
 		    class11_sub10_sub4_sub2_sub2.anInt2538
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method175(74);
+			      .readUByteA();
 		    class11_sub10_sub4_sub2_sub2.anInt2512
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method190(-17254);
+			      .method190();
 		}
 		if ((i_1_ & 0x8 ^ 0xffffffff) != -1) {
 		    int i_4_ = Class11_Sub10_Sub4_Sub2
@@ -127,7 +127,7 @@ public class Class11_Sub12 extends Class11
 		}
 		if ((i_1_ & 0x1) != 0) {
 		    int i_7_ = Class11_Sub10_Sub4_Sub2
-				   .inBuffer.method190(-17254);
+				   .inBuffer.method190();
 		    int i_8_ = Class11_Sub10_Sub4_Sub2
 				   .inBuffer.method166(false);
 		    class11_sub10_sub4_sub2_sub2
@@ -139,7 +139,7 @@ public class Class11_Sub12 extends Class11
 			      .method168(255);
 		    class11_sub10_sub4_sub2_sub2.anInt2512
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method190(-17254);
+			      .method190();
 		}
 		if ((i_1_ & 0x80) != 0) {
 		    class11_sub10_sub4_sub2_sub2.anInt2543
@@ -169,7 +169,7 @@ public class Class11_Sub12 extends Class11
 		    class11_sub10_sub4_sub2_sub2.aClass11_Sub10_Sub14_2828
 			= Class13.method512(89, Class11_Sub10_Sub4_Sub2
 						    .inBuffer
-						    .method164(127));
+						    .method164());
 		    class11_sub10_sub4_sub2_sub2.anInt2525
 			= (class11_sub10_sub4_sub2_sub2
 			   .aClass11_Sub10_Sub14_2828.anInt2320);
@@ -195,10 +195,10 @@ public class Class11_Sub12 extends Class11
 		if ((0x10 & i_1_ ^ 0xffffffff) != -1) {
 		    class11_sub10_sub4_sub2_sub2.anInt2513
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method164(127);
+			      .method164();
 		    class11_sub10_sub4_sub2_sub2.anInt2532
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method165(127);
+			      .method165();
 		}
 	    }
 	} catch (RuntimeException runtimeexception) {

@@ -726,7 +726,7 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		}
 		if (i == 53) {
 		    Class40.outBuffer.method196(1, 193);
-		    Class40.outBuffer.method146(-1472, i_4_);
+		    Class40.outBuffer.method146(i_4_);
 		    Class59.anInt1234++;
 		    Class40.outBuffer.writeShortLE(i_3_);
 		    Class40.outBuffer.method171(i_2_, -3420);
@@ -1059,14 +1059,14 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			Class40.outBuffer
 			    .writeShortBE(i_4_ - -Class10.anInt214);
 			Class40.outBuffer
-			    .method146(-1472, Class60.anInt1256);
+			    .method146(Class60.anInt1256);
 			Class40.outBuffer.method167
 			    (i_3_ - -Class11_Sub10_Sub6.anInt2133);
 		    }
 		    if ((i ^ 0xffffffff) == -28) {
 			Class37.anInt689++;
 			Class40.outBuffer.method196(1, 228);
-			Class40.outBuffer.method146(-1472, i_4_);
+			Class40.outBuffer.method146(i_4_);
 			Class40.outBuffer.method167(i_3_);
 			Class40.outBuffer.writeShortBE(i_2_
 			);
@@ -1116,9 +1116,9 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			Class40.outBuffer.method171(i_2_, -3420);
 			Class40.outBuffer
 			    .method167(Class10.anInt212);
-			Class40.outBuffer.method146(-1472, i_4_);
+			Class40.outBuffer.method146(i_4_);
 			Class40.outBuffer
-			    .method146(-1472, Class60.anInt1256);
+			    .method146(Class60.anInt1256);
 			Class20.anInt386 = i_4_;
 			Class7.anInt1425 = 2;
 			if (i_4_ >> -956193200 == Buffer.anInt1564)
@@ -1319,7 +1319,7 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			    Class40.outBuffer
 				.method167(Class55.anInt1098);
 			    Class40.outBuffer
-				.method146(-1472, Class60.anInt1256);
+				.method146(Class60.anInt1256);
 			    Class40.outBuffer
 				.writeShortBE(Class10.anInt212);
 			    Class40.outBuffer.writeShortLE(i_2_);

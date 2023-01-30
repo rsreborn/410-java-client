@@ -135,7 +135,7 @@ public class Class11_Sub5_Sub1 extends Buffer {
                         int i = Class40.outBuffer.position;
                         Class40.outBuffer.method140(-24628, Class11_Sub10_Sub4_Sub2.aLong2529);
                         Class11_Sub7.method213(Class25.aClass31_463, 111, Class40.outBuffer);
-                        Class40.outBuffer.method191(-128, -i + Class40.outBuffer.position);
+                        Class40.outBuffer.method191(-i + Class40.outBuffer.position);
                         if ((Class59.anInt1236 ^ 0xffffffff) == -3) {
                             Class31.anInt1386++;
                             Class59.anInt1236 = 1;
@@ -281,7 +281,7 @@ public class Class11_Sub5_Sub1 extends Buffer {
                                 Class40.outBuffer.writeByte(i);
                                 Class40.outBuffer.writeByte(i_2_);
                                 Class11_Sub7.method213(Class25.aClass31_476, 113, Class40.outBuffer);
-                                Class40.outBuffer.method191(arg0 ^ ~0x7e, -i_3_ + (Class40.outBuffer.position));
+                                Class40.outBuffer.method191(-i_3_ + (Class40.outBuffer.position));
                                 if (Class11_Sub10_Sub10.anInt2222 == 2) {
                                     Class11_Sub10_Sub10.anInt2222 = 3;
                                     Class20.aBoolean392 = true;

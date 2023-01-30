@@ -158,7 +158,7 @@ public class Class11_Sub10_Sub8 extends Class11_Sub10
 	    if (arg2 != -60)
 		method365(39, 79);
 	    if (arg1 == 1)
-		anInt2179 = arg3.method178(2);
+		anInt2179 = arg3.method178();
 	    anInt2184++;
 	} catch (RuntimeException runtimeexception) {
 	    throw Class58.method939(runtimeexception,

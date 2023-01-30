@@ -29,8 +29,8 @@ public class Class16
 	anIntArray320 = new int[anInt319];
 	anIntArray323 = new int[anInt319];
 	for (int i = 0; i < anInt319; i++) {
-	    anIntArray320[i] = arg0.method164(127);
-	    anIntArray323[i] = arg0.method164(127);
+	    anIntArray320[i] = arg0.method164();
+	    anIntArray323[i] = arg0.method164();
 	}
     }
     

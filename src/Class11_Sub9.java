@@ -88,14 +88,14 @@ public class Class11_Sub9 extends Class11
     }
     
     public Class11_Sub9(Buffer arg0) {
-	anInt1646 = arg0.method164(127);
+	anInt1646 = arg0.method164();
 	aBoolean1643 = arg0.method168(255) == 1;
 	int i = arg0.method168(255);
 	if (i < 1 || i > 4)
 	    throw new RuntimeException();
 	anIntArray1649 = new int[i];
 	for (int i_12_ = 0; i_12_ < i; i_12_++)
-	    anIntArray1649[i_12_] = arg0.method164(127);
+	    anIntArray1649[i_12_] = arg0.method164();
 	if (i > 1) {
 	    anIntArray1650 = new int[i - 1];
 	    for (int i_13_ = 0; i_13_ < i - 1; i_13_++)

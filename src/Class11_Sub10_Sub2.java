@@ -493,7 +493,7 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 			anIntArray2004 = new int[i];
 			anIntArray1996 = new int[i];
 			for (int i_18_ = 0; i > i_18_; i_18_++) {
-			    anIntArray2004[i_18_] = arg2.method164(127);
+			    anIntArray2004[i_18_] = arg2.method164();
 			    anIntArray1996[i_18_] = arg2.method168(255);
 			}
 		    } else
@@ -511,7 +511,7 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 			    anIntArray1996 = null;
 			    for (int i_19_ = 0; i_19_ < i; i_19_++)
 				anIntArray2004[i_19_]
-				    = arg2.method164(arg0 + 30297);
+				    = arg2.method164();
 			} else
 			    arg2.position += 2 * i;
 		    }
@@ -563,22 +563,18 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 							    anIntArray2002
 								[i_20_]
 								= (arg2.method164
-								   (Class11_Sub12
-									.method494
-								    (arg0,
-								     -30119)));
+								   ());
 							    anIntArray1956
 								[i_20_]
 								= (arg2.method164
-								   (arg0
-								    + 30297));
+								   ());
 							}
 						    } else if ((arg1
 								^ 0xffffffff)
 							       == -61)
 							anInt1965
 							    = (arg2.method164
-							       (127));
+							       ());
 						    else if (arg1 == 62)
 							aBoolean1968 = true;
 						    else if ((arg1
@@ -587,23 +583,21 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 							if (arg1 == 65)
 							    anInt1977
 								= (arg2.method164
-								   (127));
+								   ());
 							else if (arg1 == 66)
 							    anInt2003
 								= (arg2.method164
-								   (127));
+								   ());
 							else if ((arg1
 								  ^ 0xffffffff)
 								 == -68)
 							    anInt1994
 								= (arg2.method164
-								   (arg0
-								    ^ ~0x75a6));
+								   ());
 							else if (arg1 == 68)
 							    anInt1973
 								= (arg2.method164
-								   (arg0
-								    + 30297));
+								   ());
 							else if ((arg1
 								  ^ 0xffffffff)
 								 == -70)
@@ -630,16 +624,16 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 									     ^ 0xffffffff)
 									    != -76) {
 									    if (arg1 == 77) {
-										anInt1962 = arg2.method164(127);
+										anInt1962 = arg2.method164();
 										if (anInt1962 == 65535)
 										    anInt1962 = -1;
-										anInt1983 = arg2.method164(127);
+										anInt1983 = arg2.method164();
 										if ((anInt1983 ^ 0xffffffff) == -65536)
 										    anInt1983 = -1;
 										int i = arg2.method168(arg0 + 30425);
 										anIntArray1980 = new int[1 + i];
 										for (int i_21_ = 0; i >= i_21_; i_21_++) {
-										    anIntArray1980[i_21_] = arg2.method164(127);
+										    anIntArray1980[i_21_] = arg2.method164();
 										    if ((anIntArray1980[i_21_] ^ 0xffffffff) == -65536)
 											anIntArray1980[i_21_] = -1;
 										}
@@ -674,7 +668,7 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 					} else
 					    anInt1993 = arg2.method168(255);
 				    } else {
-					anInt1987 = arg2.method164(127);
+					anInt1987 = arg2.method164();
 					if ((anInt1987 ^ 0xffffffff) == -65536)
 					    anInt1987 = -1;
 				    }

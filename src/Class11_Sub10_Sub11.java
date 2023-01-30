@@ -819,29 +819,29 @@ public class Class11_Sub10_Sub11 extends Class11_Sub10
 	try {
 	    if (arg1 > 35) {
 		if (arg0 == 1)
-		    anInt2260 = arg2.method164(127);
+		    anInt2260 = arg2.method164();
 		else if ((arg0 ^ 0xffffffff) != -3) {
 		    if ((arg0 ^ 0xffffffff) == -5)
-			anInt2243 = arg2.method164(127);
+			anInt2243 = arg2.method164();
 		    else if ((arg0 ^ 0xffffffff) != -6) {
 			if ((arg0 ^ 0xffffffff) == -7)
-			    anInt2244 = arg2.method164(127);
+			    anInt2244 = arg2.method164();
 			else if (arg0 == 7)
 			    anInt2256 = arg2.method168(255);
 			else if ((arg0 ^ 0xffffffff) != -9) {
 			    if (arg0 >= 40 && (arg0 ^ 0xffffffff) > -51)
 				anIntArray2247[arg0 + -40]
-				    = arg2.method164(127);
+				    = arg2.method164();
 			    else if ((arg0 ^ 0xffffffff) <= -51
 				     && (arg0 ^ 0xffffffff) > -61)
 				anIntArray2255[-50 + arg0]
-				    = arg2.method164(127);
+				    = arg2.method164();
 			} else
 			    anInt2248 = arg2.method168(255);
 		    } else
-			anInt2251 = arg2.method164(127);
+			anInt2251 = arg2.method164();
 		} else
-		    anInt2262 = arg2.method164(127);
+		    anInt2262 = arg2.method164();
 		anInt2254++;
 	    }
 	} catch (RuntimeException runtimeexception) {

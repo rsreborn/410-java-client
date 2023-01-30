@@ -144,33 +144,33 @@ public class Class11_Sub10_Sub4_Sub5 extends Class11_Sub10_Sub4
 	    anInt2689++;
 	    Buffer buffer = new Buffer(arg1);
 	    buffer.position = arg1.length + -2;
-	    Class10.anInt216 = buffer.method164(127);
+	    Class10.anInt216 = buffer.method164();
 	    Class51.aByteArrayArray1013 = new byte[Class10.anInt216][];
 	    Class28.anIntArray523 = new int[Class10.anInt216];
 	    Class11_Sub4.anIntArray1505 = new int[Class10.anInt216];
 	    Class6.anIntArray153 = new int[Class10.anInt216];
 	    Class44.anIntArray814 = new int[Class10.anInt216];
 	    buffer.position = -(Class10.anInt216 * 8) + arg1.length - 7;
-	    Class11_Sub10_Sub3.anInt2023 = buffer.method164(127);
-	    Class59.anInt1233 = buffer.method164(127);
+	    Class11_Sub10_Sub3.anInt2023 = buffer.method164();
+	    Class59.anInt1233 = buffer.method164();
 	    int i = 1 + (0xff & buffer.method168(arg0 ^ 0xff));
 	    for (int i_6_ = 0; Class10.anInt216 > i_6_; i_6_++)
-		Class44.anIntArray814[i_6_] = buffer.method164(127);
+		Class44.anIntArray814[i_6_] = buffer.method164();
 	    for (int i_7_ = 0;
 		 (i_7_ ^ 0xffffffff) > (Class10.anInt216 ^ 0xffffffff); i_7_++)
 		Class11_Sub4.anIntArray1505[i_7_]
-		    = buffer.method164(127);
+		    = buffer.method164();
 	    for (int i_8_ = 0;
 		 (i_8_ ^ 0xffffffff) > (Class10.anInt216 ^ 0xffffffff); i_8_++)
-		Class28.anIntArray523[i_8_] = buffer.method164(127);
+		Class28.anIntArray523[i_8_] = buffer.method164();
 	    for (int i_9_ = arg0;
 		 (i_9_ ^ 0xffffffff) > (Class10.anInt216 ^ 0xffffffff); i_9_++)
-		Class6.anIntArray153[i_9_] = buffer.method164(127);
+		Class6.anIntArray153[i_9_] = buffer.method164();
 	    buffer.position
 		= -((i + -1) * 3) + (arg1.length - 7) - 8 * Class10.anInt216;
 	    Class39_Sub1.anIntArray1833 = new int[i];
 	    for (int i_10_ = 1; i > i_10_; i_10_++) {
-		Class39_Sub1.anIntArray1833[i_10_] = buffer.method178(2);
+		Class39_Sub1.anIntArray1833[i_10_] = buffer.method178();
 		if (Class39_Sub1.anIntArray1833[i_10_] == 0)
 		    Class39_Sub1.anIntArray1833[i_10_] = 1;
 	    }

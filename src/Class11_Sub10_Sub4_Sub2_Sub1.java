@@ -154,7 +154,7 @@ public class Class11_Sub10_Sub4_Sub2_Sub1 extends Class11_Sub10_Sub4_Sub2
 		    int i_3_ = arg0.method168(255);
 		    is[i_1_] = i_3_ + (i_2_ << 1745789352);
 		    if (i_1_ == 0 && is[0] == 65535) {
-			i_0_ = arg0.method164(127);
+			i_0_ = arg0.method164();
 			break;
 		    }
 		    if (is[i_1_] >= 512) {
@@ -174,25 +174,25 @@ public class Class11_Sub10_Sub4_Sub2_Sub1 extends Class11_Sub10_Sub4_Sub2
 		    i_7_ = 0;
 		is_5_[i_6_] = i_7_;
 	    }
-	    anInt2525 = arg0.method164(arg1 ^ ~0x2880);
+	    anInt2525 = arg0.method164();
 	    if ((anInt2525 ^ 0xffffffff) == -65536)
 		anInt2525 = -1;
-	    anInt2507 = arg0.method164(127);
+	    anInt2507 = arg0.method164();
 	    if (anInt2507 == 65535)
 		anInt2507 = -1;
-	    anInt2499 = arg0.method164(127);
+	    anInt2499 = arg0.method164();
 	    if ((anInt2499 ^ 0xffffffff) == -65536)
 		anInt2499 = -1;
-	    anInt2545 = arg0.method164(127);
+	    anInt2545 = arg0.method164();
 	    if ((anInt2545 ^ 0xffffffff) == -65536)
 		anInt2545 = -1;
-	    anInt2546 = arg0.method164(127);
+	    anInt2546 = arg0.method164();
 	    if (anInt2546 == 65535)
 		anInt2546 = -1;
-	    anInt2566 = arg0.method164(127);
+	    anInt2566 = arg0.method164();
 	    if (anInt2566 == 65535)
 		anInt2566 = -1;
-	    anInt2504 = arg0.method164(127);
+	    anInt2504 = arg0.method164();
 	    if (anInt2504 == 65535)
 		anInt2504 = -1;
 	    if (arg1 == -10496) {
@@ -200,7 +200,7 @@ public class Class11_Sub10_Sub4_Sub2_Sub1 extends Class11_Sub10_Sub4_Sub2
 		    = Class15_Sub2.method553
 			  (arg0.method177(121), (byte) -42).method621(true);
 		anInt2793 = arg0.method168(255);
-		anInt2787 = arg0.method164(127);
+		anInt2787 = arg0.method164();
 		if (aClass24_2810 == null)
 		    aClass24_2810 = new Class24();
 		aClass24_2810.method587((i ^ 0xffffffff) == -2, is_5_, i_0_,

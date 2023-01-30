@@ -849,7 +849,7 @@ public class Class8
 		buffer.writeIntBE(i_12_);
 		buffer.writeIntBE(i_10_);
 		buffer.position = -2 + is_14_.length;
-		int i_15_ = buffer.method164(127);
+		int i_15_ = buffer.method164();
 		buffer.position = -2 + is_14_.length;
 		Object object = null;
 		buffer.writeShortBE(-1 + i_15_);

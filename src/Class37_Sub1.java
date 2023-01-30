@@ -152,8 +152,8 @@ public class Class37_Sub1 extends Class37
 					       > -9) {
 					Class40.outBuffer
 					    .method148
-					    ((byte) -48,
-					     (i_4_
+					    (
+								(i_4_
 					      + ((Class11_Sub10_Sub5.anInt2118
 						  << 628049107)
 						 + 8388608)));
@@ -170,8 +170,8 @@ public class Class37_Sub1 extends Class37
 				}
 			    }
 			    Class40.outBuffer.method191
-				(-128,
-				 (Class40.outBuffer.position
+				(
+						(Class40.outBuffer.position
 				  + -i_0_));
 			    if (i
 				< Class11_Sub10_Sub3.aClass46_2020.anInt860) {

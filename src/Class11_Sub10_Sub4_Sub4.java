@@ -1508,18 +1508,18 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	Buffer buffer_243_ = new Buffer(arg0);
 	Buffer buffer_244_ = new Buffer(arg0);
 	buffer.position = arg0.length - 18;
-	int i = buffer.method164(127);
-	int i_245_ = buffer.method164(127);
+	int i = buffer.method164();
+	int i_245_ = buffer.method164();
 	int i_246_ = buffer.method168(255);
 	int i_247_ = buffer.method168(255);
 	int i_248_ = buffer.method168(255);
 	int i_249_ = buffer.method168(255);
 	int i_250_ = buffer.method168(255);
 	int i_251_ = buffer.method168(255);
-	int i_252_ = buffer.method164(127);
-	int i_253_ = buffer.method164(127);
-	int i_254_ = buffer.method164(127);
-	int i_255_ = buffer.method164(127);
+	int i_252_ = buffer.method164();
+	int i_253_ = buffer.method164();
+	int i_254_ = buffer.method164();
+	int i_255_ = buffer.method164();
 	int i_256_ = 0;
 	int i_257_ = i_256_;
 	i_256_ += i;
@@ -1621,7 +1621,7 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	buffer_243_.position = i_263_;
 	buffer_244_.position = i_260_;
 	for (int i_278_ = 0; i_278_ < i_245_; i_278_++) {
-	    anIntArray2607[i_278_] = buffer.method164(127);
+	    anIntArray2607[i_278_] = buffer.method164();
 	    if (anIntArray2613 != null)
 		anIntArray2613[i_278_] = buffer_241_.method168(255);
 	    if (anIntArray2611 != null)
@@ -1679,9 +1679,9 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	}
 	buffer.position = i_266_;
 	for (int i_286_ = 0; i_286_ < i_246_; i_286_++) {
-	    anIntArray2617[i_286_] = buffer.method164(127);
-	    anIntArray2612[i_286_] = buffer.method164(127);
-	    anIntArray2592[i_286_] = buffer.method164(127);
+	    anIntArray2617[i_286_] = buffer.method164();
+	    anIntArray2612[i_286_] = buffer.method164();
+	    anIntArray2592[i_286_] = buffer.method164();
 	}
     }
     

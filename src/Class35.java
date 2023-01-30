@@ -84,8 +84,8 @@ public class Class35
 		aClass19Array650[i].method568(arg0);
 	    }
 	}
-	anInt652 = arg0.method164(127);
-	anInt651 = arg0.method164(127);
+	anInt652 = arg0.method164();
+	anInt651 = arg0.method164();
     }
     
     public Class35() {

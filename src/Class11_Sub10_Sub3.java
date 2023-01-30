@@ -29,7 +29,7 @@ public class Class11_Sub10_Sub3 extends Class11_Sub10
 	    try {
 		Buffer buffer = new Buffer(4);
 		buffer.writeByte(arg0 ? 2 : 3);
-		buffer.method148((byte) -48, 0);
+		buffer.method148(0);
 		Class11.aClass14_222.method521(buffer.payload, 4,
 					       0, true);
 	    } catch (java.io.IOException ioexception) {
@@ -61,7 +61,7 @@ public class Class11_Sub10_Sub3 extends Class11_Sub10
     public void method250(Buffer arg0, int arg1, int arg2) {
 	anInt2017++;
 	if (arg1 == (arg2 ^ 0xffffffff))
-	    anInt2015 = arg0.method164(127);
+	    anInt2015 = arg0.method164();
     }
     
     public static void method251(int arg0) {

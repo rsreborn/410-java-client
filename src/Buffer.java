@@ -78,233 +78,134 @@ public class Buffer extends Class11 {
     public static boolean aBoolean1575;
 
     public void method140(int arg0, long arg1) {
-        try {
-            payload[position++] = (byte) (int) (arg1 >> 1392748216);
-            payload[position++] = (byte) (int) (arg1 >> -1083171920);
-            payload[position++] = (byte) (int) (arg1 >> 242709096);
-            anInt1570++;
-            payload[position++] = (byte) (int) (arg1 >> -1934651104);
-            payload[position++] = (byte) (int) (arg1 >> -204805992);
-            payload[position++] = (byte) (int) (arg1 >> -1586231408);
-            payload[position++] = (byte) (int) (arg1 >> 1668897928);
-            if (arg0 == -24628)
-                payload[position++] = (byte) (int) arg1;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.MA(" + arg0 + ',' + arg1 + ')');
-        }
+        payload[position++] = (byte) (int) (arg1 >> 56);
+        payload[position++] = (byte) (int) (arg1 >> 48);
+        payload[position++] = (byte) (int) (arg1 >> 40);
+        anInt1570++;
+        payload[position++] = (byte) (int) (arg1 >> 32);
+        payload[position++] = (byte) (int) (arg1 >> 24);
+        payload[position++] = (byte) (int) (arg1 >> 16);
+        payload[position++] = (byte) (int) (arg1 >> 8);
+        payload[position++] = (byte) (int) arg1;
     }
 
     public int method141(int arg0) {
-        try {
-            position += 2;
-            int i = -36 % ((arg0 - 15) / 44);
-            anInt1537++;
-            return ((0xff00 & payload[-2 + position] << -235204472)
-                    + (payload[position + -1] + -128 & 0xff));
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.N(" + arg0 + ')');
-        }
+        position += 2;
+        anInt1537++;
+        return ((0xff00 & payload[-2 + position] << 8)
+                + (payload[position + -1] + -128 & 0xff));
     }
 
     public void method142(byte[] arg0, int arg1, byte arg2, int arg3) {
-        try {
-            if (arg2 <= 37)
-                aClass31_1557 = null;
-            anInt1548++;
-            for (int i = arg1; arg3 + arg1 > i; i++)
-                payload[position++] = arg0[i];
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    ("eb.DA("
-                            + (arg0 != null ? "{...}" : "null") + ','
-                            + arg1 + ',' + arg2 + ',' + arg3 + ')'));
-        }
+        if (arg2 <= 37)
+            aClass31_1557 = null;
+        anInt1548++;
+        for (int i = arg1; arg3 + arg1 > i; i++)
+            payload[position++] = arg0[i];
     }
 
     public void method143(Class31 arg0, byte arg1) {
-        try {
-            anInt1555++;
-            if (arg1 == -63) {
-                position += arg0.method645(payload, 0, 63,
-                        arg0.method623(20), position);
-                payload[position++] = (byte) 0;
-            }
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.O(" + (arg0 != null ? "{...}"
-                            : "null") + ',' + arg1 + ')');
+        anInt1555++;
+        if (arg1 == -63) {
+            position += arg0.method645(payload, 0, 63, arg0.method623(20), position);
+            payload[position++] = (byte) 0;
         }
     }
 
     public void method144(int arg0, int arg1, int[] arg2, int arg3) {
-        try {
-            anInt1515++;
-            int i = position;
-            position = arg3;
-            int i_0_ = (arg0 - arg3) / arg1;
-            for (int i_1_ = 0; i_0_ > i_1_; i_1_++) {
-                int i_2_ = method188((byte) 105);
-                int i_3_ = method188((byte) 105);
-                int i_4_ = -957401312;
-                int i_5_ = -1640531527;
-                int i_6_ = 32;
-                while ((~i_6_--) < -1) {
-                    i_3_ -= (i_2_ + (i_2_ << 4 ^ i_2_ >>> 5)
-                            ^ arg2[(0x1cca & i_4_) >>> 1779944779] + i_4_);
-                    i_4_ -= i_5_;
-                    i_2_ -= i_4_ - -arg2[0x3 & i_4_] ^ ((i_3_ << 4
-                            ^ i_3_ >>> 5)
-                            + i_3_);
-                }
-                position -= 8;
-                writeIntBE(i_2_);
-                writeIntBE(i_3_);
+        anInt1515++;
+        int i = position;
+        position = arg3;
+        int i_0_ = (arg0 - arg3) / arg1;
+        for (int i_1_ = 0; i_0_ > i_1_; i_1_++) {
+            int i_2_ = method188((byte) 105);
+            int i_3_ = method188((byte) 105);
+            int i_4_ = -957401312;
+            int i_5_ = -1640531527;
+            int i_6_ = 32;
+            while ((~i_6_--) < -1) {
+                i_3_ -= (i_2_ + (i_2_ << 4 ^ i_2_ >>> 5)
+                        ^ arg2[(0x1cca & i_4_) >>> 1779944779] + i_4_);
+                i_4_ -= i_5_;
+                i_2_ -= i_4_ - -arg2[0x3 & i_4_] ^ ((i_3_ << 4
+                        ^ i_3_ >>> 5)
+                        + i_3_);
             }
-            position = i;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    ("eb.NA(" + arg0 + ',' + arg1 + ','
-                            + (arg2 != null ? "{...}" : "null") + ','
-                            + arg3 + ')'));
+            position -= 8;
+            writeIntBE(i_2_);
+            writeIntBE(i_3_);
         }
+        position = i;
     }
 
-    public void encrypt(BigInteger key, byte arg1, BigInteger modulus) {
-        try {
-            anInt1513++;
-            int i = position;
-            byte[] is = new byte[i];
-            position = 0;
-            method169(0, i, is, -86);
-            if (arg1 == -45) {
-                BigInteger biginteger = new BigInteger(is);
-                BigInteger biginteger_7_ = biginteger.modPow(key, modulus);
-                byte[] is_8_ = biginteger_7_.toByteArray();
-                position = 0;
-                writeByte(is_8_.length);
-                method142(is_8_, 0, (byte) 95, is_8_.length);
-            }
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    ("eb.W("
-                            + (key != null ? "{...}" : "null") + ','
-                            + arg1 + ','
-                            + (modulus != null ? "{...}" : "null")
-                            + ')'));
-        }
+    public void encrypt(BigInteger key, BigInteger modulus) {
+        anInt1513++;
+        int i = position;
+        byte[] is = new byte[i];
+        position = 0;
+        method169(0, i, is, -86);
+        BigInteger biginteger = new BigInteger(is);
+        BigInteger biginteger_7_ = biginteger.modPow(key, modulus);
+        byte[] is_8_ = biginteger_7_.toByteArray();
+        position = 0;
+        writeByte(is_8_.length);
+        method142(is_8_, 0, (byte) 95, is_8_.length);
     }
 
-    public void method146(int arg0, int arg1) {
-        try {
-            if (arg0 != -1472)
-                method176(false, 40);
-            anInt1540++;
-            payload[position++] = (byte) (arg1 >> -1875985584);
-            payload[position++] = (byte) (arg1 >> -391244424);
-            payload[position++] = (byte) arg1;
-            payload[position++] = (byte) (arg1 >> 1625379912);
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.U(" + arg0 + ',' + arg1 + ')');
-        }
+    public void method146(int arg1) {
+        anInt1540++;
+        payload[position++] = (byte) (arg1 >> 16);
+        payload[position++] = (byte) (arg1 >> 24);
+        payload[position++] = (byte) arg1;
+        payload[position++] = (byte) (arg1 >> 8);
     }
 
     public int method147(int arg0, int arg1) {
-        try {
-            anInt1572++;
-            if (arg0 != 3166)
-                aBoolean1558 = true;
-            int i = Class6.method75(arg1, payload, position, false);
-            writeIntBE(i);
-            return i;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.GB(" + arg0 + ',' + arg1 + ')');
-        }
+        anInt1572++;
+        int i = Class6.method75(arg1, payload, position, false);
+        writeIntBE(i);
+        return i;
     }
 
-    public void method148(byte arg0, int arg1) {
-        try {
-            anInt1568++;
-            if (arg0 != -48)
-                method140(-16, -28L);
-            payload[position++] = (byte) (arg1 >> 16);
-            payload[position++] = (byte) (arg1 >> 8);
-            payload[position++] = (byte) arg1;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.FB(" + arg0 + ',' + arg1 + ')');
-        }
+    public void method148(int value) {
+        anInt1568++;
+        payload[position++] = (byte) (value >> 16);
+        payload[position++] = (byte) (value >> 8);
+        payload[position++] = (byte) value;
     }
 
-    public static void method149(int arg0) {
-        try {
-            aClass40_1531 = null;
-            if (arg0 != 874566632)
-                method186(-73, null, true);
-            aClass31_1557 = null;
-            aClass31_1559 = null;
-            aClass31_1562 = null;
-            aClass31_1563 = null;
-            aClass31_1574 = null;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.PA(" + arg0 + ')');
-        }
+    public static void method149() {
+        aClass40_1531 = null;
+        aClass31_1557 = null;
+        aClass31_1559 = null;
+        aClass31_1562 = null;
+        aClass31_1563 = null;
+        aClass31_1574 = null;
     }
 
-    public byte method150(boolean arg0) {
-        try {
-            anInt1529++;
-            if (arg0 != false)
-                aClass40_1531 = null;
-            return (byte) (-payload[position++] + 128);
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.GA(" + arg0 + ')');
-        }
+    public byte method150() {
+        anInt1529++;
+        return (byte) (-payload[position++] + 128);
     }
 
     public byte method151(int arg0) {
-        try {
-            if (arg0 != -9216)
-                method142(null, -49, (byte) 68, 114);
-            anInt1553++;
-            return (byte) -payload[position++];
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.IB(" + arg0 + ')');
-        }
+        anInt1553++;
+        return (byte) -payload[position++];
     }
 
     public void method152(byte[] arg0, int arg1, int arg2, int arg3) {
-        try {
-            if (arg1 <= 84)
-                method153(-111);
-            for (int i = arg2 + (arg3 - 1); i >= arg2; i--)
-                arg0[i] = payload[position++];
-            anInt1526++;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    ("eb.AA("
-                            + (arg0 != null ? "{...}" : "null") + ','
-                            + arg1 + ',' + arg2 + ',' + arg3 + ')'));
-        }
+        for (int i = arg2 + (arg3 - 1); i >= arg2; i--)
+            arg0[i] = payload[position++];
+        anInt1526++;
     }
 
     public int method153(int arg0) {
-        try {
-            anInt1567++;
-            position += 2;
-            int i
-                    = ((0xff & -128 + payload[position + -1])
-                    + (0xff00 & payload[-2 + position] << 8));
-            if (arg0 != -10377)
-                return 42;
-            if ((~i) < -32768)
-                i -= 65536;
-            return i;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.KA(" + arg0 + ')');
-        }
+        anInt1567++;
+        position += 2;
+        int i = ((0xff & -128 + payload[position + -1]) + (0xff00 & payload[-2 + position] << 8));
+        if ((~i) < -32768)
+            i -= 65536;
+        return i;
     }
 
     public void writeShortBE(int value) {
@@ -313,62 +214,36 @@ public class Buffer extends Class11 {
         anInt1549++;
     }
 
-    public void method155(int arg0, byte arg1) {
-        try {
-            if (arg1 == -47) {
-                anInt1556++;
-                if (arg0 >= 0 && arg0 < 128)
-                    writeByte(arg0);
-                else if ((~arg0) <= -1
-                        && (~arg0) > -32769)
-                    writeShortBE(arg0 + 32768);
-                else
-                    throw new IllegalArgumentException();
-            }
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.EA(" + arg0 + ',' + arg1 + ')');
-        }
+    public void method155(int arg0) {
+        anInt1556++;
+        if (arg0 >= 0 && arg0 < 128)
+            writeByte(arg0);
+        else if ((~arg0) <= -1
+                && (~arg0) > -32769)
+            writeShortBE(arg0 + 32768);
+        else
+            throw new IllegalArgumentException();
     }
 
     public byte method156(int arg0) {
-        try {
-            anInt1520++;
-            if (arg0 != 26669)
-                method162(6, -39);
-            return payload[position++];
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.QA(" + arg0 + ')');
-        }
+        anInt1520++;
+        return payload[position++];
     }
 
     public void method157(int arg0, int arg1) {
-        try {
-            payload[position++] = (byte) arg1;
-            if (arg0 != 12470)
-                method189(-29);
-            payload[position++] = (byte) (arg1 >> 632496040);
-            anInt1516++;
-            payload[position++] = (byte) (arg1 >> -1555111152);
-            payload[position++] = (byte) (arg1 >> -1690073768);
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.VA(" + arg0 + ',' + arg1 + ')');
-        }
+        payload[position++] = (byte) arg1;
+        payload[position++] = (byte) (arg1 >> 8);
+        anInt1516++;
+        payload[position++] = (byte) (arg1 >> 16);
+        payload[position++] = (byte) (arg1 >> 24);
     }
 
     public int method158(boolean arg0) {
-        try {
-            if (arg0 != true)
-                return -29;
-            int i = payload[position] & 0xff;
-            anInt1510++;
-            if ((i ^ 0xffffffff) > -129)
-                return method168(255);
-            return method164(127) - 32768;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.BB(" + arg0 + ')');
-        }
+        int i = payload[position] & 0xff;
+        anInt1510++;
+        if ((i ^ 0xffffffff) > -129)
+            return method168(255);
+        return method164() - 32768;
     }
 
     public int method159(byte arg0) {
@@ -378,7 +253,7 @@ public class Buffer extends Class11 {
                 anInt1564 = -18;
             int i = 0xff & payload[position];
             if ((i ^ 0xffffffff) <= -129)
-                return method164(127) + -49152;
+                return method164() + -49152;
             return method168(255) + -64;
         } catch (RuntimeException runtimeexception) {
             throw Class58.method939(runtimeexception, "eb.QB(" + arg0 + ')');
@@ -498,30 +373,16 @@ public class Buffer extends Class11 {
         payload[position++] = (byte) value;
     }
 
-    public int method164(int arg0) {
-        try {
-            if (arg0 <= 126)
-                payload = null;
-            anInt1523++;
-            position += 2;
-            return ((payload[-1 + position] & 0xff)
-                    + (0xff00 & payload[position - 2] << 8));
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.LB(" + arg0 + ')');
-        }
+    public int method164() {
+        anInt1523++;
+        position += 2;
+        return ((payload[position - 1] & 0xff) + (0xff00 & payload[position - 2] << 8));
     }
 
-    public int method165(int arg0) {
-        try {
-            position += 2;
-            anInt1517++;
-            if (arg0 < 85)
-                return -116;
-            return ((0xff00 & payload[position + -1] << 8)
-                    - -(0xff & payload[position + -2]));
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.SA(" + arg0 + ')');
-        }
+    public int method165() {
+        position += 2;
+        anInt1517++;
+        return ((0xff00 & payload[position - 1] << 8) - -(0xff & payload[position - 2]));
     }
 
     public int method166(boolean arg0) {
@@ -715,91 +576,47 @@ public class Buffer extends Class11 {
     }
 
     public Buffer(int arg0) {
-        try {
-            payload = Class17.method564(arg0, -30001);
-            position = 0;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.<init>(" + arg0 + ')');
-        }
+        payload = Class17.method564(arg0, -30001);
+        position = 0;
     }
 
     public int method174(int arg0) {
-        try {
-            anInt1522++;
-            if (arg0 < 25)
-                return 59;
-            position += 2;
-            return ((payload[-2 + position] - 128 & 0xff)
-                    + (0xff00 & payload[-1 + position] << 532443464));
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.T(" + arg0 + ')');
-        }
+        anInt1522++;
+        position += 2;
+        return ((payload[-2 + position] - 128 & 0xff) + (0xff00 & payload[-1 + position] << 8));
     }
 
-    public int method175(int arg0) {
-        try {
-            int i = 118 / ((arg0 - -68) / 36);
-            anInt1511++;
-            return 0xff & 128 - payload[position++];
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.OA(" + arg0 + ')');
-        }
+    public int readUByteA() {
+        anInt1511++;
+        return 0xff & 128 - payload[position++];
     }
 
     public void method176(boolean arg0, int arg1) {
-        try {
-            if (arg0 == false) {
-                payload[position++] = (byte) (-arg1 + 128);
-                anInt1541++;
-            }
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.S(" + arg0 + ',' + arg1 + ')');
-        }
+        payload[position++] = (byte) (-arg1 + 128);
+        anInt1541++;
     }
 
     public long method177(int arg0) {
-        try {
-            int i = 24 % ((88 - arg0) / 32);
-            anInt1534++;
-            long l = 0xffffffffL & (long) method188((byte) 105);
-            long l_19_ = (long) method188((byte) 105) & 0xffffffffL;
-            return l_19_ + (l << 32);
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.P(" + arg0 + ')');
-        }
+        anInt1534++;
+        long l = 0xffffffffL & (long) method188((byte) 105);
+        long l_19_ = (long) method188((byte) 105) & 0xffffffffL;
+        return l_19_ + (l << 32);
     }
 
-    public int method178(int arg0) {
-        try {
-            anInt1519++;
-            position += 3;
-            if (arg0 != 2)
-                anInt1565 = 119;
-            return ((0xff00 & payload[position - 2] << 8)
-                    + (0xff0000
-                    & payload[position + -3] << 16)
-                    + (0xff & payload[-1 + position]));
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.UA(" + arg0 + ')');
-        }
+    public int method178() {
+        anInt1519++;
+        position += 3;
+        return ((0xff00 & payload[position - 2] << 8) + (0xff0000 & payload[position + -3] << 16) + (0xff & payload[-1 + position]));
     }
 
     public int method179(boolean arg0) {
-        try {
-            position += 2;
-            if (arg0 != false)
-                return 110;
-            anInt1512++;
-            int i = ((payload[-1 + position] << 874566632 & 0xff00)
-                    - -(payload[-2 + position] & 0xff));
-            if ((i ^ 0xffffffff) < -32768)
-                i -= 65536;
-            return i;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.V(" + arg0 + ')');
-        }
+        position += 2;
+        anInt1512++;
+        int i = ((payload[-1 + position] << 874566632 & 0xff00)
+                - -(payload[-2 + position] & 0xff));
+        if ((i ^ 0xffffffff) < -32768)
+            i -= 65536;
+        return i;
     }
 
     public void writeShortLE(int value) {
@@ -809,76 +626,45 @@ public class Buffer extends Class11 {
     }
 
     public Class31 method181(byte arg0) {
-        try {
-            if (arg0 < 126)
-                method168(-98);
-            anInt1507++;
-            int i = position;
-            while ((payload[position++] ^ 0xffffffff) != -1) {
-                /* empty */
-            }
-            return Class11_Sub12.method500(-i + (position + -1),
-					payload, 0, i);
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.TA(" + arg0 + ')');
+        anInt1507++;
+        int i = position;
+        while ((payload[position++] ^ 0xffffffff) != -1) {
+            /* empty */
         }
+        return Class11_Sub12.method500(-i + (position + -1), payload, 0, i);
     }
 
     public Buffer(byte[] arg0) {
-        try {
-            position = 0;
-            payload = arg0;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.<init>(" + (arg0 != null ? "{...}"
-                            : "null") + ')');
-        }
+        position = 0;
+        payload = arg0;
     }
 
     public void method182(int arg0, int arg1) {
-        try {
-            if (arg0 < -35) {
-                anInt1545++;
-                payload[position++] = (byte) (arg1 >> 2091803688);
-                payload[position++] = (byte) arg1;
-                payload[position++] = (byte) (arg1 >> -1523438120);
-                payload[position++] = (byte) (arg1 >> -1051487504);
-            }
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.OB(" + arg0 + ',' + arg1 + ')');
-        }
+            anInt1545++;
+            payload[position++] = (byte) (arg1 >> 8);
+            payload[position++] = (byte) arg1;
+            payload[position++] = (byte) (arg1 >> 24);
+            payload[position++] = (byte) (arg1 >> 16);
     }
 
     public int method183(boolean arg0) {
-        try {
-            anInt1524++;
-            if (arg0 != true)
-                return 13;
-            position += 2;
-            int i = (((payload[-1 + position] & 0xff) << 8)
-                    + (0xff & payload[-2 + position] - 128));
-            if ((~i) < -32768)
-                i -= 65536;
-            return i;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.WA(" + arg0 + ')');
-        }
+        anInt1524++;
+        position += 2;
+        int i = (((payload[-1 + position] & 0xff) << 8) + (0xff & payload[-2 + position] - 128));
+        if ((~i) < -32768)
+            i -= 65536;
+        return i;
     }
 
     public int method184(int arg0) {
-        try {
-            int i = payload[position++];
-            anInt1532++;
-            int i_20_ = 0;
-            if (arg0 <= 5)
-                method149(-117);
-            for (/**/; (i ^ 0xffffffff) > -1; i = payload[position++])
-                i_20_ = (i_20_ | 0x7f & i) << 1795287175;
-            return i_20_ | i;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.DB(" + arg0 + ')');
-        }
+        int i = payload[position++];
+        anInt1532++;
+        int i_20_ = 0;
+        if (arg0 <= 5)
+            method149();
+        for (/**/; (i ^ 0xffffffff) > -1; i = payload[position++])
+            i_20_ = (i_20_ | 0x7f & i) << 1795287175;
+        return i_20_ | i;
     }
 
     public void writeIntBE(int value) {
@@ -890,17 +676,8 @@ public class Buffer extends Class11 {
     }
 
     public static int method186(int arg0, byte[] arg1, boolean arg2) {
-        try {
-            if (arg2 != true)
-                return 41;
-            anInt1560++;
-            return Class6.method75(0, arg1, arg0, false);
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    ("eb.CB(" + arg0 + ','
-                            + (arg1 != null ? "{...}" : "null") + ','
-                            + arg2 + ')'));
-        }
+        anInt1560++;
+        return Class6.method75(0, arg1, arg0, false);
     }
 
     public static void method187(int arg0, int arg1, int arg2, int arg3,
@@ -953,75 +730,40 @@ public class Buffer extends Class11 {
     }
 
     public int method188(byte arg0) {
-        try {
-            position += 4;
-            anInt1551++;
-            if (arg0 != 105)
-                method144(121, -49, null, 121);
-            return ((payload[-1 + position] & 0xff)
-                    + ((payload[-2 + position] << 1064256648 & 0xff00)
-                    + ((0xff & payload[-4 + position])
-                    << -2119396072)
-                    - -((0xff & payload[position - 3])
-                    << -968018704)));
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.R(" + arg0 + ')');
-        }
+        position += 4;
+        anInt1551++;
+        return ((payload[-1 + position] & 0xff)
+                + ((payload[-2 + position] << 1064256648 & 0xff00)
+                + ((0xff & payload[-4 + position]) << 24)
+                - -((0xff & payload[position - 3]) << 16)));
     }
 
     public int method189(int arg0) {
-        try {
-            position += arg0;
-            anInt1544++;
-            return ((0xff & payload[position - 4])
-                    + (0xff00 & payload[-3 + position] << 1994524872)
-                    + (~0xffffff
-                    & payload[-1 + position] << 1623895736)
-                    + ((payload[position + -2] & 0xff) << -563201104));
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.PB(" + arg0 + ')');
-        }
+        position += arg0;
+        anInt1544++;
+        return ((0xff & payload[position - 4])
+                + (0xff00 & payload[-3 + position] << 8)
+                + (~0xffffff & payload[-1 + position] << 24)
+                + ((payload[position + -2] & 0xff) << 16));
     }
 
-    public int method190(int arg0) {
-        try {
-            if (arg0 != -17254)
-                return 2;
-            anInt1514++;
-            return -payload[position++] & 0xff;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.SB(" + arg0 + ')');
-        }
+    public int method190() {
+        anInt1514++;
+        return -payload[position++] & 0xff;
     }
 
-    public void method191(int arg0, int arg1) {
-        try {
-            if (arg0 != -128)
-                anInt1566 = 104;
-            payload[-1 + (position - arg1)] = (byte) arg1;
-            anInt1527++;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    "eb.AB(" + arg0 + ',' + arg1 + ')');
-        }
+    public void method191(int arg1) {
+        payload[-1 + (position - arg1)] = (byte) arg1;
+        anInt1527++;
     }
 
     public int method192(int arg0) {
-        try {
-            position += 4;
-            if (arg0 < 72)
-                anInt1573 = 21;
-            anInt1509++;
-            return ((payload[-3 + position] & 0xff)
-                    + (payload[position - 2] << -1152158728
-                    & ~0xffffff)
-                    + ((payload[-1 + position] << -1151890736
-                    & 0xff0000)
-                    + (0xff00
-                    & payload[-4 + position] << 1784329288)));
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.IA(" + arg0 + ')');
-        }
+        position += 4;
+        anInt1509++;
+        return ((payload[-3 + position] & 0xff)
+                + (payload[position - 2] << 24 & ~0xffffff)
+                + ((payload[-1 + position] << 16 & 0xff0000)
+                + (0xff00 & payload[-4 + position] << 8)));
     }
 
     static {

@@ -96,8 +96,8 @@ public class Class19
 	}
 	anInt377 = arg0.method158(true);
 	anInt368 = arg0.method158(true);
-	anInt376 = arg0.method164(127);
-	anInt361 = arg0.method164(127);
+	anInt376 = arg0.method164();
+	anInt361 = arg0.method164();
 	aClass27_365 = new Class27();
 	aClass16_370 = new Class16();
 	aClass27_365.method604(arg0, aClass16_370);

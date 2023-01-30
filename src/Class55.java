@@ -86,17 +86,17 @@ public abstract class Class55 {
             Class17.aBoolean338 = arg0;
             if (arg1 != -50) method894(108, null);
             if (!Class17.aBoolean338) {
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165(117);
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
                 int i_1_ = ((Class11_Sub10_Sub14.anInt2348 - (Class11_Sub10_Sub4_Sub2.inBuffer.position)) / 16);
                 Class11_Sub10_Sub4_Sub5.anIntArrayArray2678 = new int[i_1_][4];
                 for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
                     for (int i_3_ = 0; i_3_ < 4; i_3_++)
                         Class11_Sub10_Sub4_Sub5.anIntArrayArray2678[i_2_][i_3_] = Class11_Sub10_Sub4_Sub2.inBuffer.method188((byte) 105);
                 }
-                int i_4_ = Class11_Sub10_Sub4_Sub2.inBuffer.method165(87);
-                int i_5_ = Class11_Sub10_Sub4_Sub2.inBuffer.method165(123);
-                int i_6_ = Class11_Sub10_Sub4_Sub2.inBuffer.method175(-107);
-                int i_7_ = Class11_Sub10_Sub4_Sub2.inBuffer.method164(arg1 + 177);
+                int i_4_ = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
+                int i_5_ = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
+                int i_6_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
+                int i_7_ = Class11_Sub10_Sub4_Sub2.inBuffer.method164();
                 Class60.aByteArrayArray1259 = new byte[i_1_][];
                 Class11_Sub10_Sub4_Sub3.anIntArray2589 = new int[i_1_];
                 boolean bool = false;
@@ -138,7 +138,7 @@ public abstract class Class55 {
                     for (int i_17_ = 0; i_17_ < 4; i_17_++)
                         Class11_Sub10_Sub4_Sub5.anIntArrayArray2678[i_16_][i_17_] = Class11_Sub10_Sub4_Sub2.inBuffer.method192(93);
                 }
-                int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer.method175(-109);
+                int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer.method174(33);
                 int i_20_ = Class11_Sub10_Sub4_Sub2.inBuffer.method141(-84);
                 int i_21_ = Class11_Sub10_Sub4_Sub2.inBuffer.method174(28);
@@ -279,10 +279,10 @@ public abstract class Class55 {
             int i_32_ = -1;
             int i_33_ = 0;
             int i_34_ = buffer.method168(255);
-            anInt1104 = buffer.method164(127);
+            anInt1104 = buffer.method164();
             anIntArray1105 = new int[anInt1104];
             for (int i_35_ = 0; anInt1104 > i_35_; i_35_++) {
-                anIntArray1105[i_35_] = i_33_ += buffer.method164(127);
+                anIntArray1105[i_35_] = i_33_ += buffer.method164();
                 if (i_32_ < anIntArray1105[i_35_]) i_32_ = anIntArray1105[i_35_];
             }
             anIntArray1088 = new int[1 + i_32_];
@@ -302,7 +302,7 @@ public abstract class Class55 {
             for (int i_38_ = 0; (i_38_ ^ 0xffffffff) > (anInt1104 ^ 0xffffffff); i_38_++)
                 anIntArray1088[anIntArray1105[i_38_]] = buffer.method188((byte) 105);
             for (int i_39_ = 0; anInt1104 > i_39_; i_39_++)
-                anIntArray1124[anIntArray1105[i_39_]] = buffer.method164(127);
+                anIntArray1124[anIntArray1105[i_39_]] = buffer.method164();
             for (int i_40_ = 0; i_40_ < anInt1104; i_40_++) {
                 i_33_ = 0;
                 int i_41_ = anIntArray1105[i_40_];
@@ -310,7 +310,7 @@ public abstract class Class55 {
                 int i_43_ = anIntArray1124[i_41_];
                 anIntArrayArray1099[i_41_] = new int[i_43_];
                 for (int i_44_ = 0; i_43_ > i_44_; i_44_++) {
-                    int i_45_ = (anIntArrayArray1099[i_41_][i_44_] = i_33_ += (buffer.method164(Class11_Sub12.method494(arg1, 127))));
+                    int i_45_ = (anIntArrayArray1099[i_41_][i_44_] = i_33_ += (buffer.method164()));
                     if (i_45_ > i_42_) i_42_ = i_45_;
                 }
                 aByteArrayArrayArray1118[i_41_] = new byte[i_42_ + 1][];

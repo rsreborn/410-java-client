@@ -129,7 +129,7 @@ public class Class11_Sub10_Sub1 extends Class11_Sub10
     
     public void method232(int arg0, Buffer arg1, int arg2) {
 	if (arg2 == 1) {
-	    anInt1934 = arg1.method164(127);
+	    anInt1934 = arg1.method164();
 	    anInt1930 = arg1.method168(255);
 	    anInt1927 = arg1.method168(255);
 	}

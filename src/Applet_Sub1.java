@@ -641,7 +641,7 @@ public abstract class Applet_Sub1 extends Applet
 		    }
 		}
 		arg0.method147(3166, i);
-		arg0.method191(-128, -i + arg0.position);
+		arg0.method191(-i + arg0.position);
 		class11_sub4.method107(0);
 	    }
 	} catch (RuntimeException runtimeexception) {

@@ -90,7 +90,7 @@ public class Class56
 		return 1;
 	    }
 	    if (i == 81) {
-		int i_6_ = aBuffer_1145.method178(2);
+		int i_6_ = aBuffer_1145.method178();
 		i_5_ -= 3;
 		int i_7_ = anIntArray1150[arg0];
 		aLong1152 += (long) i_7_ * (long) (anInt1148 - i_6_);
@@ -155,8 +155,8 @@ public class Class56
     public void method929(byte[] arg0) {
 	aBuffer_1145.payload = arg0;
 	aBuffer_1145.position = 10;
-	int i = aBuffer_1145.method164(127);
-	anInt1147 = aBuffer_1145.method164(127);
+	int i = aBuffer_1145.method164();
+	anInt1147 = aBuffer_1145.method164();
 	anInt1148 = 500000;
 	anIntArray1149 = new int[i];
 	int i_11_ = 0;

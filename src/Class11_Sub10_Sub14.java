@@ -269,7 +269,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 		int i = arg0.method168(255);
 		anIntArray2338 = new int[i];
 		for (int i_2_ = 0; i_2_ < i; i_2_++)
-		    anIntArray2338[i_2_] = arg0.method164(127);
+		    anIntArray2338[i_2_] = arg0.method164();
 	    } else if ((arg2 ^ 0xffffffff) != -3) {
 		if (arg2 != 3) {
 		    if (arg2 == 12)
@@ -277,10 +277,10 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 		    else if (arg2 != 13) {
 			if ((arg2 ^ 0xffffffff) != -15) {
 			    if (arg2 == 17) {
-				anInt2334 = arg0.method164(127);
-				anInt2316 = arg0.method164(127);
-				anInt2325 = arg0.method164(127);
-				anInt2312 = arg0.method164(127);
+				anInt2334 = arg0.method164();
+				anInt2316 = arg0.method164();
+				anInt2325 = arg0.method164();
+				anInt2312 = arg0.method164();
 			    } else if (arg2 >= 30
 				       && (arg2 ^ 0xffffffff) > -36) {
 				aClass31Array2321[-30 + arg2]
@@ -293,8 +293,8 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 				anIntArray2339 = new int[i];
 				anIntArray2315 = new int[i];
 				for (int i_3_ = 0; i > i_3_; i_3_++) {
-				    anIntArray2339[i_3_] = arg0.method164(127);
-				    anIntArray2315[i_3_] = arg0.method164(127);
+				    anIntArray2339[i_3_] = arg0.method164();
+				    anIntArray2315[i_3_] = arg0.method164();
 				}
 			    } else if ((arg2 ^ 0xffffffff) != -61) {
 				if ((arg2 ^ 0xffffffff) == -94)
@@ -312,7 +312,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 								== -104)
 								anInt2323
 								    = (arg0.method164
-								       (127));
+								       ());
 							    else if ((arg2
 								      ^ 0xffffffff)
 								     != -107) {
@@ -324,7 +324,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 							    } else {
 								anInt2318
 								    = (arg0.method164
-								       (127));
+								       ());
 								if ((anInt2318
 								     ^ 0xffffffff)
 								    == -65536)
@@ -332,7 +332,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 									= -1;
 								anInt2322
 								    = (arg0.method164
-								       (127));
+								       ());
 								if ((anInt2322
 								     ^ 0xffffffff)
 								    == -65536)
@@ -354,7 +354,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 								    anIntArray2317
 									[i_4_]
 									= (arg0.method164
-									   (127));
+									   ());
 								    if (((anIntArray2317
 									  [i_4_])
 									 ^ 0xffffffff)
@@ -367,7 +367,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 							} else
 							    anInt2328
 								= (arg0.method164
-								   (127));
+								   ());
 						    } else
 							anInt2310
 							    = (arg0.method156
@@ -378,23 +378,23 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 					    } else
 						aBoolean2331 = true;
 					} else
-					    anInt2314 = arg0.method164(127);
+					    anInt2314 = arg0.method164();
 				    } else
-					anInt2345 = arg0.method164(127);
+					anInt2345 = arg0.method164();
 				} else
-				    anInt2319 = arg0.method164(127);
+				    anInt2319 = arg0.method164();
 			    } else {
 				int i = arg0.method168(255);
 				anIntArray2344 = new int[i];
 				for (int i_5_ = 0;
 				     (i_5_ ^ 0xffffffff) > (i ^ 0xffffffff);
 				     i_5_++)
-				    anIntArray2344[i_5_] = arg0.method164(127);
+				    anIntArray2344[i_5_] = arg0.method164();
 			    }
 			} else
-			    anInt2334 = arg0.method164(127);
+			    anInt2334 = arg0.method164();
 		    } else
-			anInt2320 = arg0.method164(127);
+			anInt2320 = arg0.method164();
 		} else
 		    aClass31_2335 = arg0.method181((byte) 127);
 	    } else

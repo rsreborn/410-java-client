@@ -238,11 +238,11 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
 
     public static void parsePlayerSyncMasks(int arg0, Class11_Sub10_Sub4_Sub2_Sub1 arg1, int arg2, int arg3) {
         if ((0x80 & arg2) != 0) {
-            arg1.anInt2568 = Class11_Sub10_Sub4_Sub2.inBuffer.method165(117);
+            arg1.anInt2568 = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
             if ((arg1.anInt2568 ^ 0xffffffff) == -65536) arg1.anInt2568 = -1;
         }
         if ((arg2 & 0x40) != 0) {
-            int i = Class11_Sub10_Sub4_Sub2.inBuffer.method175(-121);
+            int i = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
             byte[] is = new byte[i];
             Buffer buffer = new Buffer(is);
             Class11_Sub10_Sub4_Sub2.inBuffer.method152(is, 118, 0, i);
@@ -265,8 +265,8 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 arg1.anInt2502 = 0;
             }
             if ((0x8 & arg2) != 0) {
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165(116);
-                int i_16_ = Class11_Sub10_Sub4_Sub2.inBuffer.method175(arg3 + 31538);
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
+                int i_16_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 if (i == 65535) i = -1;
                 if (i == arg1.anInt2549 && i != -1) {
                     int i_17_ = NotActuallyBuffer.method600(i, 4867).anInt2278;
@@ -287,11 +287,11 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 }
             }
             if ((0x100 & arg2 ^ 0xffffffff) != -1) {
-                arg1.anInt2559 = Class11_Sub10_Sub4_Sub2.inBuffer.method175(6);
+                arg1.anInt2559 = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 arg1.anInt2564 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
-                arg1.anInt2553 = Class11_Sub10_Sub4_Sub2.inBuffer.method175(arg3 ^ 0x7b32);
-                arg1.anInt2519 = Class11_Sub10_Sub4_Sub2.inBuffer.method175(-115);
-                arg1.anInt2509 = Class11_Sub10_Sub4_Sub2.inBuffer.method165(87) + Class61.anInt1283;
+                arg1.anInt2553 = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
+                arg1.anInt2519 = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
+                arg1.anInt2509 = Class11_Sub10_Sub4_Sub2.inBuffer.method165() + Class61.anInt1283;
                 arg1.anInt2537 = Class11_Sub10_Sub4_Sub2.inBuffer.method141(arg3 + 31632) - -Class61.anInt1283;
                 arg1.anInt2556 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
                 arg1.method269(-2);
@@ -307,9 +307,9 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 arg1.anInt2498 = 0;
             }
             if ((0x1 & arg2) != 0) {
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165(arg3 ^ ~0x7b14);
-                int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer.method175(-122);
-                int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer.method175(20);
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
+                int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
+                int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 int i_20_ = (Class11_Sub10_Sub4_Sub2.inBuffer.position);
                 if (arg1.aClass31_2800 != null && arg1.aClass24_2810 != null) {
                     boolean bool = false;
@@ -347,10 +347,10 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 arg1.method266(i, 87, Class61.anInt1283, i_22_);
                 arg1.anInt2557 = 300 + Class61.anInt1283;
                 arg1.anInt2538 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
-                arg1.anInt2512 = Class11_Sub10_Sub4_Sub2.inBuffer.method175(arg3 ^ ~0x7b17);
+                arg1.anInt2512 = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
             }
             if ((0x20 & arg2) != 0) {
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method190(-17254);
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method190();
                 int i_23_ = Class11_Sub10_Sub4_Sub2.inBuffer.method168(255);
                 arg1.method266(i, 92, Class61.anInt1283, i_23_);
                 arg1.anInt2557 = 300 + Class61.anInt1283;
@@ -358,7 +358,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 arg1.anInt2512 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
             }
             if ((arg2 & 0x2) != 0) {
-                arg1.anInt2513 = Class11_Sub10_Sub4_Sub2.inBuffer.method165(127);
+                arg1.anInt2513 = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
                 arg1.anInt2532 = Class11_Sub10_Sub4_Sub2.inBuffer.method141(-33);
             }
         }
