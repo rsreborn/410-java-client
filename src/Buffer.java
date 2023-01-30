@@ -589,7 +589,7 @@ public class Buffer extends Class11 {
         anInt1541++;
     }
 
-    public long method177(int arg0) {
+    public long readLong() {
         anInt1534++;
         long l = 0xffffffffL & (long) readUIntBE();
         long l_19_ = (long) readUIntBE() & 0xffffffffL;
@@ -605,7 +605,7 @@ public class Buffer extends Class11 {
     public int method179(boolean arg0) {
         position += 2;
         anInt1512++;
-        int i = ((payload[-1 + position] << 874566632 & 0xff00)
+        int i = ((payload[-1 + position] << 8 & 0xff00)
                 - -(payload[-2 + position] & 0xff));
         if ((i ^ 0xffffffff) < -32768)
             i -= 65536;

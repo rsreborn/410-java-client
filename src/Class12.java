@@ -466,7 +466,7 @@ public class Class12
 		}
 		if ((Class48.anInt906 ^ 0xffffffff) == -104) {
 		    long l = Class11_Sub10_Sub4_Sub2
-				 .inBuffer.method177(123);
+				 .inBuffer.readLong();
 		    long l_21_
 			= (long) Class11_Sub10_Sub4_Sub2
 				     .inBuffer.readUShortBE();
@@ -865,7 +865,7 @@ public class Class12
 		}
 		if ((Class48.anInt906 ^ 0xffffffff) == -156) {
 		    long l = Class11_Sub10_Sub4_Sub2
-				 .inBuffer.method177(122);
+				 .inBuffer.readLong();
 		    int i_45_ = Class11_Sub10_Sub4_Sub2
 				    .inBuffer.readUShortBE();
 		    Class31 class31 = Class15_Sub2.method553(l, (byte) 112)
@@ -1143,7 +1143,7 @@ public class Class12
 		    for (int i_69_ = 0; i_69_ < Class55.anInt1143; i_69_++)
 			Class46.aLongArray845[i_69_]
 			    = Class11_Sub10_Sub4_Sub2
-				  .inBuffer.method177(121);
+				  .inBuffer.readLong();
 		    Class48.anInt906 = -1;
 		    return true;
 		}
@@ -1471,7 +1471,7 @@ public class Class12
 		}
 		if (Class48.anInt906 == 71) {
 		    long l = Class11_Sub10_Sub4_Sub2
-				 .inBuffer.method177(30);
+				 .inBuffer.readLong();
 		    Class31 class31
 			= Class34.method679
 			      (-75,

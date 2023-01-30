@@ -89,7 +89,7 @@ public class Class54 {
                 if ((Class11_Sub10_Sub7.aClass11_Sub10_Sub4_Sub2_Sub1Array2160[i]) == null) {
                     Class11_Sub10_Sub7.aClass11_Sub10_Sub4_Sub2_Sub1Array2160[i] = new Class11_Sub10_Sub4_Sub2_Sub1();
                     if (Class22.aBufferArray401[i] != null)
-                        Class11_Sub10_Sub7.aClass11_Sub10_Sub4_Sub2_Sub1Array2160[i].method277(Class22.aBufferArray401[i], -10496);
+                        Class11_Sub10_Sub7.aClass11_Sub10_Sub4_Sub2_Sub1Array2160[i].syncAppearance(Class22.aBufferArray401[i], -10496);
                 }
                 Class32.anIntArray597[Class48.anInt885++] = i;
                 Class11_Sub10_Sub4_Sub2_Sub1 class11_sub10_sub4_sub2_sub1 = (Class11_Sub10_Sub7.aClass11_Sub10_Sub4_Sub2_Sub1Array2160[i]);

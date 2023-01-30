@@ -210,7 +210,7 @@ public abstract class Class15 {
                     }
                     if (Class11_Sub10_Sub4_Sub2.inBuffer.position == 8) {
                         Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
-                        Class54.aLong1084 = Class11_Sub10_Sub4_Sub2.inBuffer.method177(-122);
+                        Class54.aLong1084 = Class11_Sub10_Sub4_Sub2.inBuffer.readLong();
                         Class8.loginState = 5;
                     }
                 }

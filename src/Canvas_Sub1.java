@@ -247,7 +247,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
             Buffer buffer = new Buffer(is);
             Class11_Sub10_Sub4_Sub2.inBuffer.method152(is, 118, 0, i);
             Class22.aBufferArray401[arg0] = buffer;
-            arg1.method277(buffer, -10496);
+            arg1.syncAppearance(buffer, -10496);
         }
         anInt40++;
         if (arg3 == -31566) {
