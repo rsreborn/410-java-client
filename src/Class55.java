@@ -100,6 +100,8 @@ public abstract class Class55 {
                 int plane = Class11_Sub10_Sub4_Sub2.inBuffer.readUByte(); // was UByteA
                 int chunkX = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortBE();
 
+                System.out.println("X: " + chunkX + " Y: " + chunkY + " i " + i + " i_5_ " + i_5_);
+
                 Class60.aByteArrayArray1259 = new byte[keyCount][];
                 Class11_Sub10_Sub4_Sub3.anIntArray2589 = new int[keyCount];
 
