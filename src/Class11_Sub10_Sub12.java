@@ -82,67 +82,67 @@ public class Class11_Sub10_Sub12 extends Class11_Sub10
 	    if (arg0 != -52)
 		method387(null, 47, null, -110, true);
 	    if (arg1 == 1) {
-		int i = arg2.method168(255);
+		int i = arg2.readUByte();
 		anIntArray2296 = new int[i];
 		for (int i_2_ = 0; (i ^ 0xffffffff) < (i_2_ ^ 0xffffffff);
 		     i_2_++)
 		    anIntArray2296[i_2_]
-			= arg2.method164();
+			= arg2.readUShortBE();
 		anIntArray2280 = new int[i];
 		for (int i_3_ = 0; (i ^ 0xffffffff) < (i_3_ ^ 0xffffffff);
 		     i_3_++)
-		    anIntArray2280[i_3_] = arg2.method164();
+		    anIntArray2280[i_3_] = arg2.readUShortBE();
 		for (int i_4_ = 0; i_4_ < i; i_4_++)
-		    anIntArray2280[i_4_] = ((arg2.method164() << 259320784)
+		    anIntArray2280[i_4_] = ((arg2.readUShortBE() << 259320784)
 					    - -anIntArray2280[i_4_]);
 	    } else if ((arg1 ^ 0xffffffff) != -3) {
 		if (arg1 == 3) {
-		    int i = arg2.method168(255);
+		    int i = arg2.readUByte();
 		    anIntArray2285 = new int[i - -1];
 		    for (int i_5_ = 0; (i ^ 0xffffffff) < (i_5_ ^ 0xffffffff);
 			 i_5_++)
-			anIntArray2285[i_5_] = arg2.method168(arg0 + 307);
+			anIntArray2285[i_5_] = arg2.readUByte();
 		    anIntArray2285[i] = 9999999;
 		} else if ((arg1 ^ 0xffffffff) != -5) {
 		    if (arg1 != 5) {
 			if ((arg1 ^ 0xffffffff) == -7)
-			    anInt2287 = arg2.method164();
+			    anInt2287 = arg2.readUShortBE();
 			else if ((arg1 ^ 0xffffffff) == -8)
-			    anInt2281 = arg2.method164();
+			    anInt2281 = arg2.readUShortBE();
 			else if ((arg1 ^ 0xffffffff) != -9) {
 			    if (arg1 != 9) {
 				if (arg1 != 10) {
 				    if ((arg1 ^ 0xffffffff) != -12) {
 					if (arg1 == 12) {
-					    int i = arg2.method168(255);
+					    int i = arg2.readUByte();
 					    anIntArray2295 = new int[i];
 					    for (int i_6_ = 0; i > i_6_;
 						 i_6_++)
 						anIntArray2295[i_6_]
-						    = arg2.method164();
+						    = arg2.readUShortBE();
 					    for (int i_7_ = 0; i > i_7_;
 						 i_7_++)
 						anIntArray2295[i_7_]
-						    = (((arg2.method164
+						    = (((arg2.readUShortBE
 							 ())
 							<< 1036739600)
 						       - -(anIntArray2295
 							   [i_7_]));
 					}
 				    } else
-					anInt2278 = arg2.method168(255);
+					anInt2278 = arg2.readUByte();
 				} else
-				    anInt2283 = arg2.method168(255);
+				    anInt2283 = arg2.readUByte();
 			    } else
-				anInt2279 = arg2.method168(255);
+				anInt2279 = arg2.readUByte();
 			} else
-			    anInt2276 = arg2.method168(255);
+			    anInt2276 = arg2.readUByte();
 		    } else
-			anInt2274 = arg2.method168(arg0 + 307);
+			anInt2274 = arg2.readUByte();
 		} else
 		    aBoolean2284 = true;
 	    } else
-		anInt2288 = arg2.method164();
+		anInt2288 = arg2.readUShortBE();
 	    anInt2271++;
 	} catch (RuntimeException runtimeexception) {
 	    throw Class58.method939(runtimeexception,
@@ -351,7 +351,7 @@ public class Class11_Sub10_Sub12 extends Class11_Sub10
     
     public void method391(int arg0, Buffer arg1) {
 	for (;;) {
-	    int i = arg1.method168(255);
+	    int i = arg1.readUByte();
 	    if ((i ^ 0xffffffff) == -1)
 		break;
 	    method385((byte) -52, i, arg1);

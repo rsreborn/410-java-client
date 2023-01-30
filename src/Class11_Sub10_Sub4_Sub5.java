@@ -24,7 +24,7 @@ public class Class11_Sub10_Sub4_Sub5 extends Class11_Sub10_Sub4
 	= Class64.method992(" with @lre@", 255);
     public static int anInt2676;
     public int anInt2677;
-    public static int[][] anIntArrayArray2678;
+    public static int[][] xteaKeys;
     public static int anInt2679;
     public static Class31 aClass31_2680;
     public static int anInt2681;
@@ -90,7 +90,7 @@ public class Class11_Sub10_Sub4_Sub5 extends Class11_Sub10_Sub4
 	    aClass31_2665 = null;
 	    aClass31_2680 = null;
 	    aByteArray2674 = null;
-	    anIntArrayArray2678 = null;
+	    xteaKeys = null;
 	    aClass31_2666 = null;
 	    if (arg0 != true)
 		method327((byte) -87);
@@ -144,28 +144,28 @@ public class Class11_Sub10_Sub4_Sub5 extends Class11_Sub10_Sub4
 	    anInt2689++;
 	    Buffer buffer = new Buffer(arg1);
 	    buffer.position = arg1.length + -2;
-	    Class10.anInt216 = buffer.method164();
+	    Class10.anInt216 = buffer.readUShortBE();
 	    Class51.aByteArrayArray1013 = new byte[Class10.anInt216][];
 	    Class28.anIntArray523 = new int[Class10.anInt216];
 	    Class11_Sub4.anIntArray1505 = new int[Class10.anInt216];
 	    Class6.anIntArray153 = new int[Class10.anInt216];
 	    Class44.anIntArray814 = new int[Class10.anInt216];
 	    buffer.position = -(Class10.anInt216 * 8) + arg1.length - 7;
-	    Class11_Sub10_Sub3.anInt2023 = buffer.method164();
-	    Class59.anInt1233 = buffer.method164();
-	    int i = 1 + (0xff & buffer.method168(arg0 ^ 0xff));
+	    Class11_Sub10_Sub3.anInt2023 = buffer.readUShortBE();
+	    Class59.anInt1233 = buffer.readUShortBE();
+	    int i = 1 + (0xff & buffer.readUByte());
 	    for (int i_6_ = 0; Class10.anInt216 > i_6_; i_6_++)
-		Class44.anIntArray814[i_6_] = buffer.method164();
+		Class44.anIntArray814[i_6_] = buffer.readUShortBE();
 	    for (int i_7_ = 0;
 		 (i_7_ ^ 0xffffffff) > (Class10.anInt216 ^ 0xffffffff); i_7_++)
 		Class11_Sub4.anIntArray1505[i_7_]
-		    = buffer.method164();
+		    = buffer.readUShortBE();
 	    for (int i_8_ = 0;
 		 (i_8_ ^ 0xffffffff) > (Class10.anInt216 ^ 0xffffffff); i_8_++)
-		Class28.anIntArray523[i_8_] = buffer.method164();
+		Class28.anIntArray523[i_8_] = buffer.readUShortBE();
 	    for (int i_9_ = arg0;
 		 (i_9_ ^ 0xffffffff) > (Class10.anInt216 ^ 0xffffffff); i_9_++)
-		Class6.anIntArray153[i_9_] = buffer.method164();
+		Class6.anIntArray153[i_9_] = buffer.readUShortBE();
 	    buffer.position
 		= -((i + -1) * 3) + (arg1.length - 7) - 8 * Class10.anInt216;
 	    Class39_Sub1.anIntArray1833 = new int[i];
@@ -181,7 +181,7 @@ public class Class11_Sub10_Sub4_Sub5 extends Class11_Sub10_Sub4
 		int i_14_ = i_12_ * i_13_;
 		byte[] is = new byte[i_14_];
 		Class51.aByteArrayArray1013[i_11_] = is;
-		int i_15_ = buffer.method168(arg0 + 255);
+		int i_15_ = buffer.readUByte();
 		if ((i_15_ ^ 0xffffffff) == -1) {
 		    for (int i_16_ = 0; i_14_ > i_16_; i_16_++)
 			is[i_16_] = buffer.method156(26669);

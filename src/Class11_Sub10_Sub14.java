@@ -216,7 +216,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
     
     public void method464(boolean arg0, Buffer arg1) {
 	for (;;) {
-	    int i = arg1.method168(255);
+	    int i = arg1.readUByte();
 	    if (i == 0)
 		break;
 	    method466(arg1, (byte) 87, i);
@@ -266,21 +266,21 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
     public void method466(Buffer arg0, byte arg1, int arg2) {
 	try {
 	    if (arg2 == 1) {
-		int i = arg0.method168(255);
+		int i = arg0.readUByte();
 		anIntArray2338 = new int[i];
 		for (int i_2_ = 0; i_2_ < i; i_2_++)
-		    anIntArray2338[i_2_] = arg0.method164();
+		    anIntArray2338[i_2_] = arg0.readUShortBE();
 	    } else if ((arg2 ^ 0xffffffff) != -3) {
 		if (arg2 != 3) {
 		    if (arg2 == 12)
-			anInt2308 = arg0.method168(255);
+			anInt2308 = arg0.readUByte();
 		    else if (arg2 != 13) {
 			if ((arg2 ^ 0xffffffff) != -15) {
 			    if (arg2 == 17) {
-				anInt2334 = arg0.method164();
-				anInt2316 = arg0.method164();
-				anInt2325 = arg0.method164();
-				anInt2312 = arg0.method164();
+				anInt2334 = arg0.readUShortBE();
+				anInt2316 = arg0.readUShortBE();
+				anInt2325 = arg0.readUShortBE();
+				anInt2312 = arg0.readUShortBE();
 			    } else if (arg2 >= 30
 				       && (arg2 ^ 0xffffffff) > -36) {
 				aClass31Array2321[-30 + arg2]
@@ -289,12 +289,12 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 				    (Class15_Sub2.aClass31_1776, true))
 				    aClass31Array2321[arg2 - 30] = null;
 			    } else if ((arg2 ^ 0xffffffff) == -41) {
-				int i = arg0.method168(255);
+				int i = arg0.readUByte();
 				anIntArray2339 = new int[i];
 				anIntArray2315 = new int[i];
 				for (int i_3_ = 0; i > i_3_; i_3_++) {
-				    anIntArray2339[i_3_] = arg0.method164();
-				    anIntArray2315[i_3_] = arg0.method164();
+				    anIntArray2339[i_3_] = arg0.readUShortBE();
+				    anIntArray2315[i_3_] = arg0.readUShortBE();
 				}
 			    } else if ((arg2 ^ 0xffffffff) != -61) {
 				if ((arg2 ^ 0xffffffff) == -94)
@@ -311,7 +311,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 								 ^ 0xffffffff)
 								== -104)
 								anInt2323
-								    = (arg0.method164
+								    = (arg0.readUShortBE
 								       ());
 							    else if ((arg2
 								      ^ 0xffffffff)
@@ -323,7 +323,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 									= false;
 							    } else {
 								anInt2318
-								    = (arg0.method164
+								    = (arg0.readUShortBE
 								       ());
 								if ((anInt2318
 								     ^ 0xffffffff)
@@ -331,7 +331,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 								    anInt2318
 									= -1;
 								anInt2322
-								    = (arg0.method164
+								    = (arg0.readUShortBE
 								       ());
 								if ((anInt2322
 								     ^ 0xffffffff)
@@ -339,8 +339,8 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 								    anInt2322
 									= -1;
 								int i
-								    = (arg0.method168
-								       (255));
+								    = (arg0.readUByte
+								       ());
 								anIntArray2317
 								    = (new int
 								       [1 + i]);
@@ -353,7 +353,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 								     i_4_++) {
 								    anIntArray2317
 									[i_4_]
-									= (arg0.method164
+									= (arg0.readUShortBE
 									   ());
 								    if (((anIntArray2317
 									  [i_4_])
@@ -366,7 +366,7 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 							    }
 							} else
 							    anInt2328
-								= (arg0.method164
+								= (arg0.readUShortBE
 								   ());
 						    } else
 							anInt2310
@@ -378,23 +378,23 @@ public class Class11_Sub10_Sub14 extends Class11_Sub10
 					    } else
 						aBoolean2331 = true;
 					} else
-					    anInt2314 = arg0.method164();
+					    anInt2314 = arg0.readUShortBE();
 				    } else
-					anInt2345 = arg0.method164();
+					anInt2345 = arg0.readUShortBE();
 				} else
-				    anInt2319 = arg0.method164();
+				    anInt2319 = arg0.readUShortBE();
 			    } else {
-				int i = arg0.method168(255);
+				int i = arg0.readUByte();
 				anIntArray2344 = new int[i];
 				for (int i_5_ = 0;
 				     (i_5_ ^ 0xffffffff) > (i ^ 0xffffffff);
 				     i_5_++)
-				    anIntArray2344[i_5_] = arg0.method164();
+				    anIntArray2344[i_5_] = arg0.readUShortBE();
 			    }
 			} else
-			    anInt2334 = arg0.method164();
+			    anInt2334 = arg0.readUShortBE();
 		    } else
-			anInt2320 = arg0.method164();
+			anInt2320 = arg0.readUShortBE();
 		} else
 		    aClass31_2335 = arg0.method181((byte) 127);
 	    } else

@@ -86,38 +86,38 @@ public abstract class Class55 {
             Class17.aBoolean338 = arg0;
             if (arg1 != -50) method894(108, null);
             if (!Class17.aBoolean338) {
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
-                int i_1_ = ((Class11_Sub10_Sub14.anInt2348 - (Class11_Sub10_Sub4_Sub2.inBuffer.position)) / 16);
-                Class11_Sub10_Sub4_Sub5.anIntArrayArray2678 = new int[i_1_][4];
-                for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
+                int keyCount = ((Class11_Sub10_Sub14.anInt2348 - (Class11_Sub10_Sub4_Sub2.inBuffer.position)) / 16);
+                Class11_Sub10_Sub4_Sub5.xteaKeys = new int[keyCount][4];
+                for (int i_2_ = 0; i_2_ < keyCount; i_2_++) {
                     for (int i_3_ = 0; i_3_ < 4; i_3_++)
-                        Class11_Sub10_Sub4_Sub5.anIntArrayArray2678[i_2_][i_3_] = Class11_Sub10_Sub4_Sub2.inBuffer.method188((byte) 105);
+                        Class11_Sub10_Sub4_Sub5.xteaKeys[i_2_][i_3_] = Class11_Sub10_Sub4_Sub2.inBuffer.readUIntBE();
                 }
-                int i_4_ = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
-                int i_5_ = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
-                int i_6_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
-                int i_7_ = Class11_Sub10_Sub4_Sub2.inBuffer.method164();
-                Class60.aByteArrayArray1259 = new byte[i_1_][];
-                Class11_Sub10_Sub4_Sub3.anIntArray2589 = new int[i_1_];
+                int chunkY = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
+                int i_5_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
+                int plane = Class11_Sub10_Sub4_Sub2.inBuffer.readUByte(); // was UByteA
+                int chunkX = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortBE();
+                Class60.aByteArrayArray1259 = new byte[keyCount][];
+                Class11_Sub10_Sub4_Sub3.anIntArray2589 = new int[keyCount];
                 boolean bool = false;
-                if (((i_7_ / 8 ^ 0xffffffff) == -49 || (i_7_ / 8 ^ 0xffffffff) == -50) && i_4_ / 8 == 48) bool = true;
-                if (i_7_ / 8 == 48 && (i_4_ / 8 ^ 0xffffffff) == -149) bool = true;
-                Class11_Sub10_Sub11.aByteArrayArray2257 = new byte[i_1_][];
-                Canvas_Sub1.anIntArray64 = new int[i_1_];
-                Class11_Sub10_Sub4_Sub1.anIntArray2490 = new int[i_1_];
-                i_1_ = 0;
-                for (int i_8_ = (-6 + i_7_) / 8; i_8_ <= (i_7_ + 6) / 8; i_8_++) {
-                    for (int i_9_ = (-6 + i_4_) / 8; i_9_ <= (6 + i_4_) / 8; i_9_++) {
+                if (((chunkX / 8 ^ 0xffffffff) == -49 || (chunkX / 8 ^ 0xffffffff) == -50) && chunkY / 8 == 48) bool = true;
+                if (chunkX / 8 == 48 && (chunkY / 8 ^ 0xffffffff) == -149) bool = true;
+                Class11_Sub10_Sub11.aByteArrayArray2257 = new byte[keyCount][];
+                Canvas_Sub1.anIntArray64 = new int[keyCount];
+                Class11_Sub10_Sub4_Sub1.anIntArray2490 = new int[keyCount];
+                keyCount = 0;
+                for (int i_8_ = (-6 + chunkX) / 8; i_8_ <= (chunkX + 6) / 8; i_8_++) {
+                    for (int i_9_ = (-6 + chunkY) / 8; i_9_ <= (6 + chunkY) / 8; i_9_++) {
                         int i_10_ = i_9_ + (i_8_ << -1377476536);
                         if (!bool || (i_9_ != 49 && (i_9_ ^ 0xffffffff) != -150 && (i_9_ ^ 0xffffffff) != -148 && i_8_ != 50 && ((i_8_ ^ 0xffffffff) != -50 || (i_9_ ^ 0xffffffff) != -48))) {
-                            Class11_Sub10_Sub4_Sub3.anIntArray2589[i_1_] = i_10_;
-                            Class11_Sub10_Sub4_Sub1.anIntArray2490[i_1_] = (Class13.aClass55_Sub1_270.method899((byte) -18, (Class40.method744(Class11_Sub12.method494(arg1, -50), (new Class31[]{Class59.aClass31_1235, Class11_Sub11.method493(i_8_, (byte) -124), Class51.aClass31_1015, (Class11_Sub11.method493(i_9_, (byte) -125))})))));
-                            Canvas_Sub1.anIntArray64[i_1_] = (Class13.aClass55_Sub1_270.method899((byte) -18, (Class40.method744(0, (new Class31[]{Canvas_Sub1.aClass31_62, Class11_Sub11.method493(i_8_, (byte) -127), Class51.aClass31_1015, (Class11_Sub11.method493(i_9_, (byte) -127))})))));
-                            i_1_++;
+                            Class11_Sub10_Sub4_Sub3.anIntArray2589[keyCount] = i_10_;
+                            Class11_Sub10_Sub4_Sub1.anIntArray2490[keyCount] = (Class13.aClass55_Sub1_270.method899((byte) -18, (Class40.method744(Class11_Sub12.method494(arg1, -50), (new Class31[]{Class59.aClass31_1235, Class11_Sub11.method493(i_8_, (byte) -124), Class51.aClass31_1015, (Class11_Sub11.method493(i_9_, (byte) -125))})))));
+                            Canvas_Sub1.anIntArray64[keyCount] = (Class13.aClass55_Sub1_270.method899((byte) -18, (Class40.method744(0, (new Class31[]{Canvas_Sub1.aClass31_62, Class11_Sub11.method493(i_8_, (byte) -127), Class51.aClass31_1015, (Class11_Sub11.method493(i_9_, (byte) -127))})))));
+                            keyCount++;
                         }
                     }
                 }
-                Class43.method753(i_7_, i_6_, (byte) 109, i, i_5_, i_4_);
+                Class43.method753(chunkX, plane, (byte) 109, i, i_5_, chunkY);
             } else {
                 int i = Class11_Sub10_Sub4_Sub2.inBuffer.method141(-112);
                 Class11_Sub10_Sub4_Sub2.inBuffer.method197(false);
@@ -133,10 +133,10 @@ public abstract class Class55 {
                 }
                 Class11_Sub10_Sub4_Sub2.inBuffer.method199((byte) 43);
                 int i_15_ = ((-(Class11_Sub10_Sub4_Sub2.inBuffer.position) + Class11_Sub10_Sub14.anInt2348) / 16);
-                Class11_Sub10_Sub4_Sub5.anIntArrayArray2678 = new int[i_15_][4];
+                Class11_Sub10_Sub4_Sub5.xteaKeys = new int[i_15_][4];
                 for (int i_16_ = 0; (i_16_ ^ 0xffffffff) > (i_15_ ^ 0xffffffff); i_16_++) {
                     for (int i_17_ = 0; i_17_ < 4; i_17_++)
-                        Class11_Sub10_Sub4_Sub5.anIntArrayArray2678[i_16_][i_17_] = Class11_Sub10_Sub4_Sub2.inBuffer.method192(93);
+                        Class11_Sub10_Sub4_Sub5.xteaKeys[i_16_][i_17_] = Class11_Sub10_Sub4_Sub2.inBuffer.method192(93);
                 }
                 int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer.method174(33);
@@ -274,15 +274,15 @@ public abstract class Class55 {
         checksum = Buffer.method186(arg0.length, arg0, true);
         anInt1115++;
         Buffer buffer = new Buffer(Class46.method782((byte) 103, arg0));
-        int i = buffer.method168(255);
+        int i = buffer.readUByte();
         if ((i ^ 0xffffffff) == -6) {
             int i_32_ = -1;
             int i_33_ = 0;
-            int i_34_ = buffer.method168(255);
-            anInt1104 = buffer.method164();
+            int i_34_ = buffer.readUByte();
+            anInt1104 = buffer.readUShortBE();
             anIntArray1105 = new int[anInt1104];
             for (int i_35_ = 0; anInt1104 > i_35_; i_35_++) {
-                anIntArray1105[i_35_] = i_33_ += buffer.method164();
+                anIntArray1105[i_35_] = i_33_ += buffer.readUShortBE();
                 if (i_32_ < anIntArray1105[i_35_]) i_32_ = anIntArray1105[i_35_];
             }
             anIntArray1088 = new int[1 + i_32_];
@@ -294,15 +294,15 @@ public abstract class Class55 {
             if (i_34_ != 0) {
                 anIntArray1101 = new int[i_32_ + 1];
                 for (int i_36_ = 0; anInt1104 > i_36_; i_36_++)
-                    anIntArray1101[anIntArray1105[i_36_]] = buffer.method188((byte) 105);
+                    anIntArray1101[anIntArray1105[i_36_]] = buffer.readUIntBE();
                 aClass25_1100 = new Class25(anIntArray1101);
             }
             for (int i_37_ = arg1; i_37_ < anInt1104; i_37_++)
-                anIntArray1135[anIntArray1105[i_37_]] = buffer.method188((byte) 105);
+                anIntArray1135[anIntArray1105[i_37_]] = buffer.readUIntBE();
             for (int i_38_ = 0; (i_38_ ^ 0xffffffff) > (anInt1104 ^ 0xffffffff); i_38_++)
-                anIntArray1088[anIntArray1105[i_38_]] = buffer.method188((byte) 105);
+                anIntArray1088[anIntArray1105[i_38_]] = buffer.readUIntBE();
             for (int i_39_ = 0; anInt1104 > i_39_; i_39_++)
-                anIntArray1124[anIntArray1105[i_39_]] = buffer.method164();
+                anIntArray1124[anIntArray1105[i_39_]] = buffer.readUShortBE();
             for (int i_40_ = 0; i_40_ < anInt1104; i_40_++) {
                 i_33_ = 0;
                 int i_41_ = anIntArray1105[i_40_];
@@ -310,7 +310,7 @@ public abstract class Class55 {
                 int i_43_ = anIntArray1124[i_41_];
                 anIntArrayArray1099[i_41_] = new int[i_43_];
                 for (int i_44_ = 0; i_43_ > i_44_; i_44_++) {
-                    int i_45_ = (anIntArrayArray1099[i_41_][i_44_] = i_33_ += (buffer.method164()));
+                    int i_45_ = (anIntArrayArray1099[i_41_][i_44_] = i_33_ += (buffer.readUShortBE()));
                     if (i_45_ > i_42_) i_42_ = i_45_;
                 }
                 aByteArrayArrayArray1118[i_41_] = new byte[i_42_ + 1][];
@@ -323,7 +323,7 @@ public abstract class Class55 {
                     int i_48_ = anIntArray1124[i_47_];
                     anIntArrayArray1128[i_47_] = new int[aByteArrayArrayArray1118[i_47_].length];
                     for (int i_49_ = 0; i_48_ > i_49_; i_49_++)
-                        anIntArrayArray1128[i_47_][(anIntArrayArray1099[i_47_][i_49_])] = buffer.method188((byte) 105);
+                        anIntArrayArray1128[i_47_][(anIntArrayArray1099[i_47_][i_49_])] = buffer.readUIntBE();
                     aClass25Array1123[i_47_] = new Class25(anIntArrayArray1128[i_47_]);
                 }
             }
@@ -458,7 +458,7 @@ public abstract class Class55 {
                 for (int i_59_ = 0; i_59_ < i_57_; i_59_++) {
                     int i_60_ = 0;
                     for (int i_61_ = 0; (i ^ 0xffffffff) < (i_61_ ^ 0xffffffff); i_61_++) {
-                        i_60_ += buffer.method188((byte) 105);
+                        i_60_ += buffer.readUIntBE();
                         is_58_[i_61_] += i_60_;
                     }
                 }
@@ -471,7 +471,7 @@ public abstract class Class55 {
                 for (int i_64_ = 0; i_57_ > i_64_; i_64_++) {
                     int i_65_ = 0;
                     for (int i_66_ = 0; (i ^ 0xffffffff) < (i_66_ ^ 0xffffffff); i_66_++) {
-                        i_65_ += buffer.method188((byte) 105);
+                        i_65_ += buffer.readUIntBE();
                         Class21.method574(is_55_, i_63_, is_52_[is[i_66_]], is_58_[i_66_], i_65_);
                         is_58_[i_66_] += i_65_;
                         i_63_ += i_65_;

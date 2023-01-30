@@ -65,20 +65,20 @@ public class Class11_Sub10_Sub4_Sub3 extends Class11_Sub10_Sub4
 	    if (arg7 < 0 || arg7 >= 104 || (arg0 ^ 0xffffffff) > -1
 		|| arg0 >= 104) {
 		for (;;) {
-		    int i_0_ = arg4.method168(255);
+		    int i_0_ = arg4.readUByte();
 		    if ((i_0_ ^ 0xffffffff) == -1)
 			break;
 		    if ((i_0_ ^ 0xffffffff) == -2) {
-			arg4.method168(255);
+			arg4.readUByte();
 			break;
 		    }
 		    if (i_0_ <= 49)
-			arg4.method168(255);
+			arg4.readUByte();
 		}
 	    } else {
 		Class25.aByteArrayArrayArray481[arg1][arg7][arg0] = (byte) 0;
 		for (;;) {
-		    int i_1_ = arg4.method168(255);
+		    int i_1_ = arg4.readUByte();
 		    if ((i_1_ ^ 0xffffffff) == -1) {
 			if ((arg1 ^ 0xffffffff) != -1)
 			    Class51.anIntArrayArrayArray1005[arg1][arg7][arg0]
@@ -96,7 +96,7 @@ public class Class11_Sub10_Sub4_Sub3 extends Class11_Sub10_Sub4
 			break;
 		    }
 		    if ((i_1_ ^ 0xffffffff) == -2) {
-			int i_2_ = arg4.method168(255);
+			int i_2_ = arg4.readUByte();
 			if (i_2_ == 1)
 			    i_2_ = 0;
 			if (arg1 == 0)

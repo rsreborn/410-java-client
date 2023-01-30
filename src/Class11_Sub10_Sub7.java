@@ -205,7 +205,7 @@ public class Class11_Sub10_Sub7 extends Class11_Sub10
 	    if (arg1 == 18688) {
 		anInt2162++;
 		for (;;) {
-		    int i = arg0.method168(255);
+		    int i = arg0.readUByte();
 		    if ((i ^ 0xffffffff) == -1)
 			break;
 		    method360(arg0, i, -60);
@@ -222,24 +222,24 @@ public class Class11_Sub10_Sub7 extends Class11_Sub10
 	anInt2156++;
 	if ((arg1 ^ 0xffffffff) != -2) {
 	    if (arg1 == 2) {
-		int i = arg0.method168(255);
+		int i = arg0.readUByte();
 		anIntArray2167 = new int[i];
 		for (int i_2_ = 0; (i ^ 0xffffffff) < (i_2_ ^ 0xffffffff);
 		     i_2_++)
-		    anIntArray2167[i_2_] = arg0.method164();
+		    anIntArray2167[i_2_] = arg0.readUShortBE();
 	    } else if (arg1 == 3)
 		aBoolean2153 = true;
 	    else if (arg1 < 40 || arg1 >= 50) {
 		if ((arg1 ^ 0xffffffff) <= -51 && (arg1 ^ 0xffffffff) > -61)
-		    anIntArray2169[arg1 - 50] = arg0.method164();
+		    anIntArray2169[arg1 - 50] = arg0.readUShortBE();
 		else if ((arg1 ^ 0xffffffff) <= -61
 			 && (arg1 ^ 0xffffffff) > -71)
-		    anIntArray2163[-60 + arg1] = arg0.method164();
+		    anIntArray2163[-60 + arg1] = arg0.readUShortBE();
 	    } else
 		anIntArray2151[arg1 + -40]
-		    = arg0.method164();
+		    = arg0.readUShortBE();
 	} else
-	    anInt2149 = arg0.method168(255);
+	    anInt2149 = arg0.readUByte();
 	if (arg2 != -60)
 	    method353(110, true);
     }

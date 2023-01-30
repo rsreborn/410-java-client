@@ -48,7 +48,7 @@ public class Class11_Sub10_Sub3 extends Class11_Sub10
     
     public void method249(Buffer arg0, boolean arg1) {
 	for (;;) {
-	    int i = arg0.method168(255);
+	    int i = arg0.readUByte();
 	    if ((i ^ 0xffffffff) == -1)
 		break;
 	    method250(arg0, -6, i);
@@ -61,7 +61,7 @@ public class Class11_Sub10_Sub3 extends Class11_Sub10
     public void method250(Buffer arg0, int arg1, int arg2) {
 	anInt2017++;
 	if (arg1 == (arg2 ^ 0xffffffff))
-	    anInt2015 = arg0.method164();
+	    anInt2015 = arg0.readUShortBE();
     }
     
     public static void method251(int arg0) {

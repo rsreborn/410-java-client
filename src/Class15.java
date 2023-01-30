@@ -299,7 +299,7 @@ public abstract class Class15 {
                         Class48.anInt906 = Class11_Sub10_Sub4_Sub2.inBuffer.method193((byte) 105);
                         Class11_Sub12.aClass14_1699.method515(0, 2, (byte) 89, (Class11_Sub10_Sub4_Sub2.inBuffer.payload));
                         Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
-                        Class11_Sub10_Sub14.anInt2348 = Class11_Sub10_Sub4_Sub2.inBuffer.method164();
+                        Class11_Sub10_Sub14.anInt2348 = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortBE();
                         Class8.loginState = 10;
                     }
                     if ((Class8.loginState ^ 0xffffffff) == -11) {

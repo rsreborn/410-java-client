@@ -62,7 +62,7 @@ public class Class19
 	aClass16_369.method560(arg0);
 	aClass16_358 = new Class16();
 	aClass16_358.method560(arg0);
-	int i = arg0.method168(255);
+	int i = arg0.readUByte();
 	if (i != 0) {
 	    arg0.position--;
 	    aClass16_380 = new Class16();
@@ -70,7 +70,7 @@ public class Class19
 	    aClass16_366 = new Class16();
 	    aClass16_366.method560(arg0);
 	}
-	i = arg0.method168(255);
+	i = arg0.readUByte();
 	if (i != 0) {
 	    arg0.position--;
 	    aClass16_357 = new Class16();
@@ -78,7 +78,7 @@ public class Class19
 	    aClass16_367 = new Class16();
 	    aClass16_367.method560(arg0);
 	}
-	i = arg0.method168(255);
+	i = arg0.readUByte();
 	if (i != 0) {
 	    arg0.position--;
 	    aClass16_371 = new Class16();
@@ -96,8 +96,8 @@ public class Class19
 	}
 	anInt377 = arg0.method158(true);
 	anInt368 = arg0.method158(true);
-	anInt376 = arg0.method164();
-	anInt361 = arg0.method164();
+	anInt376 = arg0.readUShortBE();
+	anInt361 = arg0.readUShortBE();
 	aClass27_365 = new Class27();
 	aClass16_370 = new Class16();
 	aClass27_365.method604(arg0, aClass16_370);

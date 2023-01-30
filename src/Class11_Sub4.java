@@ -155,7 +155,7 @@ public class Class11_Sub4 extends Class11
 			i_4_ += i_5_ + -1;
 			int i_6_ = 0x3f & i_4_;
 			int i_7_ = i_4_ >> -990783956;
-			int i_8_ = buffer.method168(255);
+			int i_8_ = buffer.readUByte();
 			int i_9_ = i_8_ >> -190033150;
 			int i_10_ = i_8_ & 0x3;
 			int i_11_ = (0xfe1 & i_4_) >> 1068093638;

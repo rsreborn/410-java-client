@@ -140,21 +140,21 @@ public class Class11_Sub10_Sub4_Sub2_Sub1 extends Class11_Sub10_Sub4_Sub2
 	try {
 	    arg0.position = 0;
 	    anInt2811++;
-	    int i = arg0.method168(arg1 ^ ~0x2800);
+	    int i = arg0.readUByte();
 	    anInt2796 = arg0.method156(arg1 + 37165);
 	    int i_0_ = -1;
 	    anInt2784 = arg0.method156(arg1 ^ ~0x40d2);
 	    int[] is = new int[12];
 	    anInt2799 = 0;
 	    for (int i_1_ = 0; i_1_ < 12; i_1_++) {
-		int i_2_ = arg0.method168(255);
+		int i_2_ = arg0.readUByte();
 		if ((i_2_ ^ 0xffffffff) == -1)
 		    is[i_1_] = 0;
 		else {
-		    int i_3_ = arg0.method168(255);
+		    int i_3_ = arg0.readUByte();
 		    is[i_1_] = i_3_ + (i_2_ << 1745789352);
 		    if (i_1_ == 0 && is[0] == 65535) {
-			i_0_ = arg0.method164();
+			i_0_ = arg0.readUShortBE();
 			break;
 		    }
 		    if (is[i_1_] >= 512) {
@@ -168,39 +168,39 @@ public class Class11_Sub10_Sub4_Sub2_Sub1 extends Class11_Sub10_Sub4_Sub2
 	    }
 	    int[] is_5_ = new int[5];
 	    for (int i_6_ = 0; i_6_ < 5; i_6_++) {
-		int i_7_ = arg0.method168(arg1 + 10751);
+		int i_7_ = arg0.readUByte();
 		if (i_7_ < 0
 		    || i_7_ >= Class62.anIntArrayArray1299[i_6_].length)
 		    i_7_ = 0;
 		is_5_[i_6_] = i_7_;
 	    }
-	    anInt2525 = arg0.method164();
+	    anInt2525 = arg0.readUShortBE();
 	    if ((anInt2525 ^ 0xffffffff) == -65536)
 		anInt2525 = -1;
-	    anInt2507 = arg0.method164();
+	    anInt2507 = arg0.readUShortBE();
 	    if (anInt2507 == 65535)
 		anInt2507 = -1;
-	    anInt2499 = arg0.method164();
+	    anInt2499 = arg0.readUShortBE();
 	    if ((anInt2499 ^ 0xffffffff) == -65536)
 		anInt2499 = -1;
-	    anInt2545 = arg0.method164();
+	    anInt2545 = arg0.readUShortBE();
 	    if ((anInt2545 ^ 0xffffffff) == -65536)
 		anInt2545 = -1;
-	    anInt2546 = arg0.method164();
+	    anInt2546 = arg0.readUShortBE();
 	    if (anInt2546 == 65535)
 		anInt2546 = -1;
-	    anInt2566 = arg0.method164();
+	    anInt2566 = arg0.readUShortBE();
 	    if (anInt2566 == 65535)
 		anInt2566 = -1;
-	    anInt2504 = arg0.method164();
+	    anInt2504 = arg0.readUShortBE();
 	    if (anInt2504 == 65535)
 		anInt2504 = -1;
 	    if (arg1 == -10496) {
 		aClass31_2800
 		    = Class15_Sub2.method553
 			  (arg0.method177(121), (byte) -42).method621(true);
-		anInt2793 = arg0.method168(255);
-		anInt2787 = arg0.method164();
+		anInt2793 = arg0.readUByte();
+		anInt2787 = arg0.readUShortBE();
 		if (aClass24_2810 == null)
 		    aClass24_2810 = new Class24();
 		aClass24_2810.method587((i ^ 0xffffffff) == -2, is_5_, i_0_,

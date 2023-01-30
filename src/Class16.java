@@ -25,12 +25,12 @@ public class Class16
     }
     
     public void method559(Buffer arg0) {
-	anInt319 = arg0.method168(255);
+	anInt319 = arg0.readUByte();
 	anIntArray320 = new int[anInt319];
 	anIntArray323 = new int[anInt319];
 	for (int i = 0; i < anInt319; i++) {
-	    anIntArray320[i] = arg0.method164();
-	    anIntArray323[i] = arg0.method164();
+	    anIntArray320[i] = arg0.readUShortBE();
+	    anIntArray323[i] = arg0.readUShortBE();
 	}
     }
     
@@ -42,9 +42,9 @@ public class Class16
     }
     
     public void method560(Buffer arg0) {
-	anInt322 = arg0.method168(255);
-	anInt324 = arg0.method188((byte) 105);
-	anInt321 = arg0.method188((byte) 105);
+	anInt322 = arg0.readUByte();
+	anInt324 = arg0.readUIntBE();
+	anInt321 = arg0.readUIntBE();
 	method559(arg0);
     }
     

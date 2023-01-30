@@ -171,7 +171,7 @@ public class Class11_Sub10_Sub8 extends Class11_Sub10
     public void method363(Buffer arg0, int arg1, int arg2) {
 	anInt2174++;
 	for (;;) {
-	    int i = arg0.method168(255);
+	    int i = arg0.readUByte();
 	    if ((i ^ 0xffffffff) == -1)
 		break;
 	    method362(arg2, i, (byte) -60, arg0);

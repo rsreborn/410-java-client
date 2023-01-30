@@ -67,11 +67,11 @@ public class Class11_Sub12 extends Class11
 		Class11_Sub10_Sub4_Sub2_Sub2 class11_sub10_sub4_sub2_sub2
 		    = Class12.aClass11_Sub10_Sub4_Sub2_Sub2Array235[i_0_];
 		int i_1_ = Class11_Sub10_Sub4_Sub2.inBuffer
-			       .method168(255);
+			       .readUByte();
 		if ((i_1_ & 0x20) != 0) {
 		    class11_sub10_sub4_sub2_sub2.anInt2568
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method164();
+			      .readUShortBE();
 		    if (class11_sub10_sub4_sub2_sub2.anInt2568 == 65535)
 			class11_sub10_sub4_sub2_sub2.anInt2568 = -1;
 		}
@@ -95,7 +95,7 @@ public class Class11_Sub12 extends Class11
 		    int i_4_ = Class11_Sub10_Sub4_Sub2
 				   .inBuffer.method141(122);
 		    int i_5_ = Class11_Sub10_Sub4_Sub2
-				   .inBuffer.method168(255);
+				   .inBuffer.readUByte();
 		    if (i_4_ == 65535)
 			i_4_ = -1;
 		    if (i_4_ == class11_sub10_sub4_sub2_sub2.anInt2549
@@ -136,7 +136,7 @@ public class Class11_Sub12 extends Class11
 			= 300 + Class61.anInt1283;
 		    class11_sub10_sub4_sub2_sub2.anInt2538
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method168(255);
+			      .readUByte();
 		    class11_sub10_sub4_sub2_sub2.anInt2512
 			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method190();
@@ -169,7 +169,7 @@ public class Class11_Sub12 extends Class11
 		    class11_sub10_sub4_sub2_sub2.aClass11_Sub10_Sub14_2828
 			= Class13.method512(89, Class11_Sub10_Sub4_Sub2
 						    .inBuffer
-						    .method164());
+						    .readUShortBE());
 		    class11_sub10_sub4_sub2_sub2.anInt2525
 			= (class11_sub10_sub4_sub2_sub2
 			   .aClass11_Sub10_Sub14_2828.anInt2320);
@@ -195,10 +195,10 @@ public class Class11_Sub12 extends Class11
 		if ((0x10 & i_1_ ^ 0xffffffff) != -1) {
 		    class11_sub10_sub4_sub2_sub2.anInt2513
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method164();
+			      .readUShortBE();
 		    class11_sub10_sub4_sub2_sub2.anInt2532
 			= Class11_Sub10_Sub4_Sub2.inBuffer
-			      .method165();
+			      .readUShortLE();
 		}
 	    }
 	} catch (RuntimeException runtimeexception) {
@@ -225,8 +225,8 @@ public class Class11_Sub12 extends Class11
 	    anInt1706++;
 	    if (!Class11_Sub10_Sub4_Sub3.aBoolean2580) {
 		Class11_Sub4 class11_sub4 = new Class11_Sub4();
-		class11_sub4.anInt1474 = arg3.method168(255);
-		class11_sub4.anInt1484 = arg3.method188((byte) 105);
+		class11_sub4.anInt1474 = arg3.readUByte();
+		class11_sub4.anInt1484 = arg3.readUIntBE();
 		class11_sub4.aByteArrayArrayArray1489
 		    = new byte[class11_sub4.anInt1474][][];
 		class11_sub4.aClass41Array1499
@@ -241,7 +241,7 @@ public class Class11_Sub12 extends Class11
 		    for (int i = 0; (i ^ 0xffffffff) > (class11_sub4.anInt1474
 							^ 0xffffffff); i++) {
 			try {
-			    int i_10_ = arg3.method168(255);
+			    int i_10_ = arg3.readUByte();
 			    if (i_10_ == 0 || i_10_ == 1 || i_10_ == 2) {
 				String string
 				    = new String(arg3.method181((byte) 127)
@@ -251,7 +251,7 @@ public class Class11_Sub12 extends Class11
 				    = new String(arg3.method181((byte) 127)
 						     .method643(false));
 				if (i_10_ == 1)
-				    i_11_ = arg3.method188((byte) 105);
+				    i_11_ = arg3.readUIntBE();
 				class11_sub4.anIntArray1488[i] = i_10_;
 				class11_sub4.anIntArray1497[i] = i_11_;
 				class11_sub4.aClass41Array1499[i]
@@ -267,7 +267,7 @@ public class Class11_Sub12 extends Class11
 				String string_13_
 				    = new String(arg3.method181((byte) 127)
 						     .method643(false));
-				int i_14_ = arg3.method168(arg1 + -6109);
+				int i_14_ = arg3.readUByte();
 				String[] strings = new String[i_14_];
 				for (int i_15_ = 0; i_14_ > i_15_; i_15_++)
 				    strings[i_15_]
@@ -280,7 +280,7 @@ public class Class11_Sub12 extends Class11
 					 ((i_14_ ^ 0xffffffff)
 					  < (i_16_ ^ 0xffffffff));
 					 i_16_++) {
-					int i_17_ = arg3.method188((byte) 105);
+					int i_17_ = arg3.readUIntBE();
 					is[i_16_] = new byte[i_17_];
 					arg3.method169(0, i_17_, is[i_16_],
 						       -41);

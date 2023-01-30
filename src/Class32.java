@@ -139,7 +139,7 @@ public class Class32
 		    Class11_Sub10_Sub11.aByteArrayArray2257[i]
 			= (Class13.aClass55_Sub1_270.method901
 			   (0, Canvas_Sub1.anIntArray64[i],
-			    Class11_Sub10_Sub4_Sub5.anIntArrayArray2678[i],
+			    Class11_Sub10_Sub4_Sub5.xteaKeys[i],
 			    123));
 		    if (Class11_Sub10_Sub11.aByteArrayArray2257[i] == null) {
 			Class11_Sub10_Sub3.anInt2024++;

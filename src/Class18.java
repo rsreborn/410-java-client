@@ -28,12 +28,12 @@ public class Class18
 	Buffer buffer = new Buffer(arg0);
 	Buffer buffer_0_ = new Buffer(arg0);
 	buffer.position = 2;
-	int i = buffer.method168(255);
+	int i = buffer.readUByte();
 	int i_1_ = -1;
 	int i_2_ = 0;
 	buffer_0_.position = buffer.position + i;
 	for (int i_3_ = 0; i_3_ < i; i_3_++) {
-	    int i_4_ = buffer.method168(255);
+	    int i_4_ = buffer.readUByte();
 	    if (i_4_ > 0) {
 		if (aClass11_Sub6_352.anIntArray1580[i_3_] != 0) {
 		    for (int i_5_ = i_3_ - 1; i_5_ > i_1_; i_5_--) {

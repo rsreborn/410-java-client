@@ -45,8 +45,8 @@ public class Class46 implements Runnable
 	try {
 	    anInt852++;
 	    Buffer buffer = new Buffer(arg1);
-	    int i = buffer.method168(255);
-	    int i_0_ = buffer.method188((byte) 105);
+	    int i = buffer.readUByte();
+	    int i_0_ = buffer.readUIntBE();
 	    if (arg0 < 84)
 		anInt850 = 51;
 	    if ((i_0_ ^ 0xffffffff) > -1
@@ -57,7 +57,7 @@ public class Class46 implements Runnable
 		buffer.method169(0, i_0_, is, -48);
 		return is;
 	    }
-	    int i_1_ = buffer.method188((byte) 105);
+	    int i_1_ = buffer.readUIntBE();
 	    if ((i_1_ ^ 0xffffffff) > -1
 		|| Class11.anInt220 != 0 && i_1_ > Class11.anInt220)
 		throw new RuntimeException();

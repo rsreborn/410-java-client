@@ -145,7 +145,7 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 		anInt2001 = -1;
 	    anInt1985++;
 	    for (;;) {
-		int i = arg1.method168(arg0 ^ ~0xfd);
+		int i = arg1.readUByte();
 		if ((i ^ 0xffffffff) == -1)
 		    break;
 		method246(arg0 ^ 0x75db, i, arg1);
@@ -486,15 +486,15 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 		aBoolean1969 = false;
 	    anInt1954++;
 	    if ((arg1 ^ 0xffffffff) == -2) {
-		int i = arg2.method168(255);
+		int i = arg2.readUByte();
 		if ((i ^ 0xffffffff) < -1) {
 		    if (anIntArray2004 == null
 			|| Class11_Sub10_Sub15.aBoolean2366) {
 			anIntArray2004 = new int[i];
 			anIntArray1996 = new int[i];
 			for (int i_18_ = 0; i > i_18_; i_18_++) {
-			    anIntArray2004[i_18_] = arg2.method164();
-			    anIntArray1996[i_18_] = arg2.method168(255);
+			    anIntArray2004[i_18_] = arg2.readUShortBE();
+			    anIntArray1996[i_18_] = arg2.readUByte();
 			}
 		    } else
 			arg2.position += i * 3;
@@ -503,7 +503,7 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 		if ((arg1 ^ 0xffffffff) == -4)
 		    aClass31_1964 = arg2.method181((byte) 127);
 		else if ((arg1 ^ 0xffffffff) == -6) {
-		    int i = arg2.method168(255);
+		    int i = arg2.readUByte();
 		    if ((i ^ 0xffffffff) < -1) {
 			if (anIntArray2004 == null
 			    || Class11_Sub10_Sub15.aBoolean2366) {
@@ -511,7 +511,7 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 			    anIntArray1996 = null;
 			    for (int i_19_ = 0; i_19_ < i; i_19_++)
 				anIntArray2004[i_19_]
-				    = arg2.method164();
+				    = arg2.readUShortBE();
 			} else
 			    arg2.position += 2 * i;
 		    }
@@ -521,7 +521,7 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 			    if (arg1 == 18)
 				aBoolean1969 = false;
 			    else if ((arg1 ^ 0xffffffff) == -20)
-				anInt1998 = arg2.method168(255);
+				anInt1998 = arg2.readUByte();
 			    else if ((arg1 ^ 0xffffffff) != -22) {
 				if (arg1 != 22) {
 				    if (arg1 == 23)
@@ -548,9 +548,8 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 						    } else if ((arg1
 								^ 0xffffffff)
 							       == -41) {
-							int i = (arg2.method168
-								 (arg0
-								  ^ ~0x7526));
+							int i = (arg2.readUByte
+								 ());
 							anIntArray1956
 							    = new int[i];
 							anIntArray2002
@@ -562,18 +561,18 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 							     i_20_++) {
 							    anIntArray2002
 								[i_20_]
-								= (arg2.method164
+								= (arg2.readUShortBE
 								   ());
 							    anIntArray1956
 								[i_20_]
-								= (arg2.method164
+								= (arg2.readUShortBE
 								   ());
 							}
 						    } else if ((arg1
 								^ 0xffffffff)
 							       == -61)
 							anInt1965
-							    = (arg2.method164
+							    = (arg2.readUShortBE
 							       ());
 						    else if (arg1 == 62)
 							aBoolean1968 = true;
@@ -582,28 +581,28 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 							     != -65) {
 							if (arg1 == 65)
 							    anInt1977
-								= (arg2.method164
+								= (arg2.readUShortBE
 								   ());
 							else if (arg1 == 66)
 							    anInt2003
-								= (arg2.method164
+								= (arg2.readUShortBE
 								   ());
 							else if ((arg1
 								  ^ 0xffffffff)
 								 == -68)
 							    anInt1994
-								= (arg2.method164
+								= (arg2.readUShortBE
 								   ());
 							else if (arg1 == 68)
 							    anInt1973
-								= (arg2.method164
+								= (arg2.readUShortBE
 								   ());
 							else if ((arg1
 								  ^ 0xffffffff)
 								 == -70)
 							    anInt2001
-								= (arg2.method168
-								   (255));
+								= (arg2.readUByte
+								   ());
 							else if ((arg1
 								  ^ 0xffffffff)
 								 != -71) {
@@ -624,22 +623,22 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 									     ^ 0xffffffff)
 									    != -76) {
 									    if (arg1 == 77) {
-										anInt1962 = arg2.method164();
+										anInt1962 = arg2.readUShortBE();
 										if (anInt1962 == 65535)
 										    anInt1962 = -1;
-										anInt1983 = arg2.method164();
+										anInt1983 = arg2.readUShortBE();
 										if ((anInt1983 ^ 0xffffffff) == -65536)
 										    anInt1983 = -1;
-										int i = arg2.method168(arg0 + 30425);
+										int i = arg2.readUByte();
 										anIntArray1980 = new int[1 + i];
 										for (int i_21_ = 0; i >= i_21_; i_21_++) {
-										    anIntArray1980[i_21_] = arg2.method164();
+										    anIntArray1980[i_21_] = arg2.readUShortBE();
 										    if ((anIntArray1980[i_21_] ^ 0xffffffff) == -65536)
 											anIntArray1980[i_21_] = -1;
 										}
 									    }
 									} else
-									    anInt1955 = arg2.method168(255);
+									    anInt1955 = arg2.readUByte();
 								    } else
 									aBoolean2009
 									    = true;
@@ -666,9 +665,9 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 						    = arg2.method156(arg0
 								     + 56839);
 					} else
-					    anInt1993 = arg2.method168(255);
+					    anInt1993 = arg2.readUByte();
 				    } else {
-					anInt1987 = arg2.method164();
+					anInt1987 = arg2.readUShortBE();
 					if ((anInt1987 ^ 0xffffffff) == -65536)
 					    anInt1987 = -1;
 				    }
@@ -679,9 +678,9 @@ public class Class11_Sub10_Sub2 extends Class11_Sub10
 			} else
 			    aBoolean1960 = false;
 		    } else
-			anInt1974 = arg2.method168(255);
+			anInt1974 = arg2.readUByte();
 		} else
-		    anInt1967 = arg2.method168(255);
+		    anInt1967 = arg2.readUByte();
 	    } else
 		aClass31_1958 = arg2.method181((byte) 127);
 	} catch (RuntimeException runtimeexception) {

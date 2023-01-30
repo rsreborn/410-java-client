@@ -1508,18 +1508,18 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	Buffer buffer_243_ = new Buffer(arg0);
 	Buffer buffer_244_ = new Buffer(arg0);
 	buffer.position = arg0.length - 18;
-	int i = buffer.method164();
-	int i_245_ = buffer.method164();
-	int i_246_ = buffer.method168(255);
-	int i_247_ = buffer.method168(255);
-	int i_248_ = buffer.method168(255);
-	int i_249_ = buffer.method168(255);
-	int i_250_ = buffer.method168(255);
-	int i_251_ = buffer.method168(255);
-	int i_252_ = buffer.method164();
-	int i_253_ = buffer.method164();
-	int i_254_ = buffer.method164();
-	int i_255_ = buffer.method164();
+	int i = buffer.readUShortBE();
+	int i_245_ = buffer.readUShortBE();
+	int i_246_ = buffer.readUByte();
+	int i_247_ = buffer.readUByte();
+	int i_248_ = buffer.readUByte();
+	int i_249_ = buffer.readUByte();
+	int i_250_ = buffer.readUByte();
+	int i_251_ = buffer.readUByte();
+	int i_252_ = buffer.readUShortBE();
+	int i_253_ = buffer.readUShortBE();
+	int i_254_ = buffer.readUShortBE();
+	int i_255_ = buffer.readUShortBE();
 	int i_256_ = 0;
 	int i_257_ = i_256_;
 	i_256_ += i;
@@ -1596,7 +1596,7 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	int i_271_ = 0;
 	int i_272_ = 0;
 	for (int i_273_ = 0; i_273_ < i; i_273_++) {
-	    int i_274_ = buffer.method168(255);
+	    int i_274_ = buffer.readUByte();
 	    int i_275_ = 0;
 	    if ((i_274_ & 0x1) != 0)
 		i_275_ = buffer_241_.method159((byte) 121);
@@ -1613,7 +1613,7 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	    i_271_ = anIntArray2605[i_273_];
 	    i_272_ = anIntArray2620[i_273_];
 	    if (anIntArray2599 != null)
-		anIntArray2599[i_273_] = buffer_244_.method168(255);
+		anIntArray2599[i_273_] = buffer_244_.readUByte();
 	}
 	buffer.position = i_265_;
 	buffer_241_.position = i_261_;
@@ -1621,15 +1621,15 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	buffer_243_.position = i_263_;
 	buffer_244_.position = i_260_;
 	for (int i_278_ = 0; i_278_ < i_245_; i_278_++) {
-	    anIntArray2607[i_278_] = buffer.method164();
+	    anIntArray2607[i_278_] = buffer.readUShortBE();
 	    if (anIntArray2613 != null)
-		anIntArray2613[i_278_] = buffer_241_.method168(255);
+		anIntArray2613[i_278_] = buffer_241_.readUByte();
 	    if (anIntArray2611 != null)
-		anIntArray2611[i_278_] = buffer_242_.method168(255);
+		anIntArray2611[i_278_] = buffer_242_.readUByte();
 	    if (anIntArray2598 != null)
-		anIntArray2598[i_278_] = buffer_243_.method168(255);
+		anIntArray2598[i_278_] = buffer_243_.readUByte();
 	    if (anIntArray2621 != null)
-		anIntArray2621[i_278_] = buffer_244_.method168(255);
+		anIntArray2621[i_278_] = buffer_244_.readUByte();
 	}
 	buffer.position = i_264_;
 	buffer_241_.position = i_258_;
@@ -1638,7 +1638,7 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	int i_281_ = 0;
 	int i_282_ = 0;
 	for (int i_283_ = 0; i_283_ < i_245_; i_283_++) {
-	    int i_284_ = buffer_241_.method168(255);
+	    int i_284_ = buffer_241_.readUByte();
 	    if (i_284_ == 1) {
 		i_279_ = buffer.method159((byte) 83) + i_282_;
 		i_282_ = i_279_;
@@ -1679,9 +1679,9 @@ public class Class11_Sub10_Sub4_Sub4 extends Class11_Sub10_Sub4
 	}
 	buffer.position = i_266_;
 	for (int i_286_ = 0; i_286_ < i_246_; i_286_++) {
-	    anIntArray2617[i_286_] = buffer.method164();
-	    anIntArray2612[i_286_] = buffer.method164();
-	    anIntArray2592[i_286_] = buffer.method164();
+	    anIntArray2617[i_286_] = buffer.readUShortBE();
+	    anIntArray2612[i_286_] = buffer.readUShortBE();
+	    anIntArray2592[i_286_] = buffer.readUShortBE();
 	}
     }
     

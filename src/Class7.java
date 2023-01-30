@@ -139,7 +139,7 @@ public class Class7 implements Interface3 {
                     int i_5_ = i_3_ & 0x3f;
                     int i_6_ = 0x3f & i_3_ >> -1392310234;
                     int i_7_ = i_3_ >> 1077914060;
-                    int i_8_ = buffer.method168(255);
+                    int i_8_ = buffer.readUByte();
                     int i_9_ = i_8_ >> -1029545918;
                     int i_10_ = 0x3 & i_8_;
                     if (i_7_ == arg1 && i_6_ >= arg2 && i_6_ < arg2 - -8 && arg7 <= i_5_ && (8 + arg7 ^ 0xffffffff) < (i_5_ ^ 0xffffffff)) {

@@ -28,28 +28,28 @@ public class Class27
     }
     
     public void method604(Buffer arg0, Class16 arg1) {
-	int i = arg0.method168(255);
+	int i = arg0.readUByte();
 	anIntArray499[0] = i >> 4;
 	anIntArray499[1] = i & 0xf;
 	if (i != 0) {
-	    anIntArray498[0] = arg0.method164();
-	    anIntArray498[1] = arg0.method164();
-	    int i_0_ = arg0.method168(255);
+	    anIntArray498[0] = arg0.readUShortBE();
+	    anIntArray498[1] = arg0.readUShortBE();
+	    int i_0_ = arg0.readUByte();
 	    for (int i_1_ = 0; i_1_ < 2; i_1_++) {
 		for (int i_2_ = 0; i_2_ < anIntArray499[i_1_]; i_2_++) {
 		    anIntArrayArrayArray494[i_1_][0][i_2_]
-			= arg0.method164();
+			= arg0.readUShortBE();
 		    anIntArrayArrayArray495[i_1_][0][i_2_]
-			= arg0.method164();
+			= arg0.readUShortBE();
 		}
 	    }
 	    for (int i_3_ = 0; i_3_ < 2; i_3_++) {
 		for (int i_4_ = 0; i_4_ < anIntArray499[i_3_]; i_4_++) {
 		    if ((i_0_ & 1 << i_3_ * 4 << i_4_) != 0) {
 			anIntArrayArrayArray494[i_3_][1][i_4_]
-			    = arg0.method164();
+			    = arg0.readUShortBE();
 			anIntArrayArrayArray495[i_3_][1][i_4_]
-			    = arg0.method164();
+			    = arg0.readUShortBE();
 		    } else {
 			anIntArrayArrayArray494[i_3_][1][i_4_]
 			    = anIntArrayArrayArray494[i_3_][0][i_4_];

@@ -83,7 +83,7 @@ public class Class56
     
     public int method925(int arg0, int arg1) {
 	if (arg1 == 255) {
-	    int i = aBuffer_1145.method168(255);
+	    int i = aBuffer_1145.readUByte();
 	    int i_5_ = aBuffer_1145.method184(78);
 	    if (i == 47) {
 		aBuffer_1145.position += i_5_;
@@ -104,9 +104,9 @@ public class Class56
 	byte i = aByteArray1144[arg1 - 128];
 	int i_8_ = arg1;
 	if (i >= 1)
-	    i_8_ |= aBuffer_1145.method168(255) << 8;
+	    i_8_ |= aBuffer_1145.readUByte() << 8;
 	if (i >= 2)
-	    i_8_ |= aBuffer_1145.method168(255) << 16;
+	    i_8_ |= aBuffer_1145.readUByte() << 16;
 	return i_8_;
     }
     
@@ -155,14 +155,14 @@ public class Class56
     public void method929(byte[] arg0) {
 	aBuffer_1145.payload = arg0;
 	aBuffer_1145.position = 10;
-	int i = aBuffer_1145.method164();
-	anInt1147 = aBuffer_1145.method164();
+	int i = aBuffer_1145.readUShortBE();
+	anInt1147 = aBuffer_1145.readUShortBE();
 	anInt1148 = 500000;
 	anIntArray1149 = new int[i];
 	int i_11_ = 0;
 	while (i_11_ < i) {
-	    int i_12_ = aBuffer_1145.method188((byte) 105);
-	    int i_13_ = aBuffer_1145.method188((byte) 105);
+	    int i_12_ = aBuffer_1145.readUIntBE();
+	    int i_13_ = aBuffer_1145.readUIntBE();
 	    if (i_12_ == 1297379947) {
 		anIntArray1149[i_11_] = aBuffer_1145.position;
 		i_11_++;

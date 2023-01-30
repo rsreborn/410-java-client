@@ -129,9 +129,9 @@ public class Class11_Sub10_Sub1 extends Class11_Sub10
     
     public void method232(int arg0, Buffer arg1, int arg2) {
 	if (arg2 == 1) {
-	    anInt1934 = arg1.method164();
-	    anInt1930 = arg1.method168(255);
-	    anInt1927 = arg1.method168(255);
+	    anInt1934 = arg1.readUShortBE();
+	    anInt1930 = arg1.readUByte();
+	    anInt1927 = arg1.readUByte();
 	}
 	anInt1942++;
 	if (arg0 != 30578)
@@ -152,7 +152,7 @@ public class Class11_Sub10_Sub1 extends Class11_Sub10
     public void method234(Buffer arg0, byte arg1) {
 	anInt1937++;
 	for (;;) {
-	    int i = arg0.method168(255);
+	    int i = arg0.readUByte();
 	    if ((i ^ 0xffffffff) == -1)
 		break;
 	    method232(30578, arg0, i);

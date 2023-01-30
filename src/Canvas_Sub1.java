@@ -238,7 +238,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
 
     public static void parsePlayerSyncMasks(int arg0, Class11_Sub10_Sub4_Sub2_Sub1 arg1, int arg2, int arg3) {
         if ((0x80 & arg2) != 0) {
-            arg1.anInt2568 = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
+            arg1.anInt2568 = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
             if ((arg1.anInt2568 ^ 0xffffffff) == -65536) arg1.anInt2568 = -1;
         }
         if ((arg2 & 0x40) != 0) {
@@ -265,7 +265,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 arg1.anInt2502 = 0;
             }
             if ((0x8 & arg2) != 0) {
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
                 int i_16_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 if (i == 65535) i = -1;
                 if (i == arg1.anInt2549 && i != -1) {
@@ -291,14 +291,14 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 arg1.anInt2564 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
                 arg1.anInt2553 = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 arg1.anInt2519 = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
-                arg1.anInt2509 = Class11_Sub10_Sub4_Sub2.inBuffer.method165() + Class61.anInt1283;
+                arg1.anInt2509 = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE() + Class61.anInt1283;
                 arg1.anInt2537 = Class11_Sub10_Sub4_Sub2.inBuffer.method141(arg3 + 31632) - -Class61.anInt1283;
                 arg1.anInt2556 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
                 arg1.method269(-2);
             }
             if ((arg2 & 0x400 ^ 0xffffffff) != -1) {
                 arg1.anInt2543 = Class11_Sub10_Sub4_Sub2.inBuffer.method141(arg3 ^ ~0x7b33);
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method188((byte) 105);
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.readUIntBE();
                 arg1.anInt2527 = 0;
                 if (arg1.anInt2543 == 65535) arg1.anInt2543 = -1;
                 arg1.anInt2563 = Class61.anInt1283 - -(0xffff & i);
@@ -307,7 +307,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 arg1.anInt2498 = 0;
             }
             if ((0x1 & arg2) != 0) {
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
                 int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
                 int i_20_ = (Class11_Sub10_Sub4_Sub2.inBuffer.position);
@@ -342,8 +342,8 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                 Class11_Sub10_Sub4_Sub2.inBuffer.position = i_20_ + i_19_;
             }
             if ((arg2 & 0x200) != 0) {
-                int i = Class11_Sub10_Sub4_Sub2.inBuffer.method168(255);
-                int i_22_ = Class11_Sub10_Sub4_Sub2.inBuffer.method168(255);
+                int i = Class11_Sub10_Sub4_Sub2.inBuffer.readUByte();
+                int i_22_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByte();
                 arg1.method266(i, 87, Class61.anInt1283, i_22_);
                 arg1.anInt2557 = 300 + Class61.anInt1283;
                 arg1.anInt2538 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
@@ -351,14 +351,14 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
             }
             if ((0x20 & arg2) != 0) {
                 int i = Class11_Sub10_Sub4_Sub2.inBuffer.method190();
-                int i_23_ = Class11_Sub10_Sub4_Sub2.inBuffer.method168(255);
+                int i_23_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUByte();
                 arg1.method266(i, 92, Class61.anInt1283, i_23_);
                 arg1.anInt2557 = 300 + Class61.anInt1283;
                 arg1.anInt2538 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
                 arg1.anInt2512 = Class11_Sub10_Sub4_Sub2.inBuffer.method166(false);
             }
             if ((arg2 & 0x2) != 0) {
-                arg1.anInt2513 = Class11_Sub10_Sub4_Sub2.inBuffer.method165();
+                arg1.anInt2513 = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
                 arg1.anInt2532 = Class11_Sub10_Sub4_Sub2.inBuffer.method141(-33);
             }
         }

@@ -118,8 +118,8 @@ public class Buffer extends Class11 {
         position = arg3;
         int i_0_ = (arg0 - arg3) / arg1;
         for (int i_1_ = 0; i_0_ > i_1_; i_1_++) {
-            int i_2_ = method188((byte) 105);
-            int i_3_ = method188((byte) 105);
+            int i_2_ = readUIntBE();
+            int i_3_ = readUIntBE();
             int i_4_ = -957401312;
             int i_5_ = -1640531527;
             int i_6_ = 32;
@@ -242,8 +242,8 @@ public class Buffer extends Class11 {
         int i = payload[position] & 0xff;
         anInt1510++;
         if ((i ^ 0xffffffff) > -129)
-            return method168(255);
-        return method164() - 32768;
+            return readUByte();
+        return readUShortBE() - 32768;
     }
 
     public int method159(byte arg0) {
@@ -253,8 +253,8 @@ public class Buffer extends Class11 {
                 anInt1564 = -18;
             int i = 0xff & payload[position];
             if ((i ^ 0xffffffff) <= -129)
-                return method164() + -49152;
-            return method168(255) + -64;
+                return readUShortBE() + -49152;
+            return readUByte() + -64;
         } catch (RuntimeException runtimeexception) {
             throw Class58.method939(runtimeexception, "eb.QB(" + arg0 + ')');
         }
@@ -373,16 +373,16 @@ public class Buffer extends Class11 {
         payload[position++] = (byte) value;
     }
 
-    public int method164() {
+    public int readUShortBE() {
         anInt1523++;
         position += 2;
         return ((payload[position - 1] & 0xff) + (0xff00 & payload[position - 2] << 8));
     }
 
-    public int method165() {
+    public int readUShortLE() {
         position += 2;
         anInt1517++;
-        return ((0xff00 & payload[position - 1] << 8) - -(0xff & payload[position - 2]));
+        return ((0xff00 & payload[position - 1] << 8) + (0xff & payload[position - 2]));
     }
 
     public int method166(boolean arg0) {
@@ -402,15 +402,8 @@ public class Buffer extends Class11 {
             payload[position++] = (byte) (value >> 8);
     }
 
-    public int method168(int arg0) {
-        try {
-            if (arg0 != 255)
-                method161((byte) -73);
-            anInt1530++;
-            return payload[position++] & 0xff;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "eb.JB(" + arg0 + ')');
-        }
+    public int readUByte() {
+        return payload[position++] & 0xff;
     }
 
     public void method169(int arg0, int arg1, byte[] arg2, int arg3) {
@@ -598,8 +591,8 @@ public class Buffer extends Class11 {
 
     public long method177(int arg0) {
         anInt1534++;
-        long l = 0xffffffffL & (long) method188((byte) 105);
-        long l_19_ = (long) method188((byte) 105) & 0xffffffffL;
+        long l = 0xffffffffL & (long) readUIntBE();
+        long l_19_ = (long) readUIntBE() & 0xffffffffL;
         return l_19_ + (l << 32);
     }
 
@@ -729,22 +722,22 @@ public class Buffer extends Class11 {
         }
     }
 
-    public int method188(byte arg0) {
+    public int readUIntBE() {
         position += 4;
         anInt1551++;
-        return ((payload[-1 + position] & 0xff)
-                + ((payload[-2 + position] << 1064256648 & 0xff00)
-                + ((0xff & payload[-4 + position]) << 24)
-                - -((0xff & payload[position - 3]) << 16)));
+        return ((payload[position - 1] & 0xff)
+                + ((payload[position - 2] << 8 & 0xff00)
+                + ((0xff & payload[position - 4]) << 24)
+                + ((0xff & payload[position - 3]) << 16)));
     }
 
     public int method189(int arg0) {
         position += arg0;
         anInt1544++;
         return ((0xff & payload[position - 4])
-                + (0xff00 & payload[-3 + position] << 8)
-                + (~0xffffff & payload[-1 + position] << 24)
-                + ((payload[position + -2] & 0xff) << 16));
+                + (0xff00 & payload[position - 3] << 8)
+                + (~0xffffff & payload[position - 1] << 24)
+                + ((payload[position - 2] & 0xff) << 16));
     }
 
     public int method190() {

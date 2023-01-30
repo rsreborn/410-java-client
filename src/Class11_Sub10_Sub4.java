@@ -71,7 +71,7 @@ public abstract class Class11_Sub10_Sub4 extends Class11_Sub10
 			int i_4_ = i_1_ & 0x3f;
 			int i_5_ = 0x3f & i_1_ >> 1109130502;
 			int i_6_ = i_5_ + arg1;
-			int i_7_ = buffer.method168(255) >> -106509182;
+			int i_7_ = buffer.readUByte() >> -106509182;
 			int i_8_ = i_4_ - -arg3;
 			if ((i_6_ ^ 0xffffffff) < -1 && i_8_ > 0
 			    && (i_6_ ^ 0xffffffff) > -104 && i_8_ < 103) {
@@ -92,7 +92,7 @@ public abstract class Class11_Sub10_Sub4 extends Class11_Sub10
 			int i_9_ = buffer.method158(true);
 			if (i_9_ == 0)
 			    break;
-			buffer.method168(255);
+			buffer.readUByte();
 		    }
 		}
 	    }

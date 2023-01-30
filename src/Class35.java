@@ -77,15 +77,15 @@ public class Class35
     public Class35(Buffer arg0) {
 	aClass19Array650 = new Class19[10];
 	for (int i = 0; i < 10; i++) {
-	    int i_10_ = arg0.method168(255);
+	    int i_10_ = arg0.readUByte();
 	    if (i_10_ != 0) {
 		arg0.position--;
 		aClass19Array650[i] = new Class19();
 		aClass19Array650[i].method568(arg0);
 	    }
 	}
-	anInt652 = arg0.method164();
-	anInt651 = arg0.method164();
+	anInt652 = arg0.readUShortBE();
+	anInt651 = arg0.readUShortBE();
     }
     
     public Class35() {

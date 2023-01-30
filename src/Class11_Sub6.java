@@ -67,19 +67,19 @@ public class Class11_Sub6 extends Class11
 	try {
 	    anInt1582 = arg0;
 	    Buffer buffer = new Buffer(arg1);
-	    anInt1591 = buffer.method168(255);
+	    anInt1591 = buffer.readUByte();
 	    anIntArray1580 = new int[anInt1591];
 	    anIntArrayArray1592 = new int[anInt1591][];
 	    for (int i = 0; anInt1591 > i; i++)
-		anIntArray1580[i] = buffer.method168(255);
+		anIntArray1580[i] = buffer.readUByte();
 	    for (int i = 0; (anInt1591 ^ 0xffffffff) < (i ^ 0xffffffff); i++)
-		anIntArrayArray1592[i] = new int[buffer.method168(255)];
+		anIntArrayArray1592[i] = new int[buffer.readUByte()];
 	    for (int i = 0; (i ^ 0xffffffff) > (anInt1591 ^ 0xffffffff); i++) {
 		for (int i_0_ = 0;
 		     ((anIntArrayArray1592[i].length ^ 0xffffffff)
 		      < (i_0_ ^ 0xffffffff));
 		     i_0_++)
-		    anIntArrayArray1592[i][i_0_] = buffer.method168(255);
+		    anIntArrayArray1592[i][i_0_] = buffer.readUByte();
 	    }
 	} catch (RuntimeException runtimeexception) {
 	    throw Class58.method939(runtimeexception,

@@ -67,7 +67,7 @@ public class Class11_Sub10_Sub10 extends Class11_Sub10
 		else if (arg1 == 7)
 		    anInt2241 = arg2.method178();
 	    } else
-		anInt2221 = arg2.method168(255);
+		anInt2221 = arg2.readUByte();
 	    if (arg0 <= 105)
 		anInt2215 = 36;
 	    anInt2217++;
@@ -184,7 +184,7 @@ public class Class11_Sub10_Sub10 extends Class11_Sub10
 	    if (arg1 != 55)
 		method372((byte) -11, -61, null, 93);
 	    for (;;) {
-		int i = arg0.method168(255);
+		int i = arg0.readUByte();
 		if ((i ^ 0xffffffff) == -1)
 		    break;
 		method372((byte) 111, i, arg0, arg2);

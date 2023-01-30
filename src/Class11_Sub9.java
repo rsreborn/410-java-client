@@ -88,29 +88,29 @@ public class Class11_Sub9 extends Class11
     }
     
     public Class11_Sub9(Buffer arg0) {
-	anInt1646 = arg0.method164();
-	aBoolean1643 = arg0.method168(255) == 1;
-	int i = arg0.method168(255);
+	anInt1646 = arg0.readUShortBE();
+	aBoolean1643 = arg0.readUByte() == 1;
+	int i = arg0.readUByte();
 	if (i < 1 || i > 4)
 	    throw new RuntimeException();
 	anIntArray1649 = new int[i];
 	for (int i_12_ = 0; i_12_ < i; i_12_++)
-	    anIntArray1649[i_12_] = arg0.method164();
+	    anIntArray1649[i_12_] = arg0.readUShortBE();
 	if (i > 1) {
 	    anIntArray1650 = new int[i - 1];
 	    for (int i_13_ = 0; i_13_ < i - 1; i_13_++)
-		anIntArray1650[i_13_] = arg0.method168(255);
+		anIntArray1650[i_13_] = arg0.readUByte();
 	}
 	if (i > 1) {
 	    anIntArray1647 = new int[i - 1];
 	    for (int i_14_ = 0; i_14_ < i - 1; i_14_++)
-		anIntArray1647[i_14_] = arg0.method168(255);
+		anIntArray1647[i_14_] = arg0.readUByte();
 	}
 	anIntArray1645 = new int[i];
 	for (int i_15_ = 0; i_15_ < i; i_15_++)
-	    anIntArray1645[i_15_] = arg0.method188((byte) 105);
-	anInt1644 = arg0.method168(255);
-	anInt1651 = arg0.method168(255);
+	    anIntArray1645[i_15_] = arg0.readUIntBE();
+	anInt1644 = arg0.readUByte();
+	anInt1651 = arg0.readUByte();
 	anIntArray1641 = null;
     }
     

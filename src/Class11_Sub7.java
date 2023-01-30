@@ -201,13 +201,13 @@ public class Class11_Sub7 extends Class11
 			if (Class50.aClass11_Sub10_Sub16_1001 == null) {
 			    Class11_Sub4.aBuffer_1476.position = 0;
 			    int i_5_ = Class11_Sub4.aBuffer_1476
-					   .method168(255);
+					   .readUByte();
 			    int i_6_ = Class11_Sub4.aBuffer_1476
-					   .method164();
+					   .readUShortBE();
 			    int i_7_ = Class11_Sub4.aBuffer_1476
-					   .method168(255);
+					   .readUByte();
 			    int i_8_ = Class11_Sub4.aBuffer_1476
-					   .method188((byte) 105);
+					   .readUIntBE();
 			    long l_9_ = (long) ((i_5_ << 109357392) + i_6_);
 			    Class11_Sub10_Sub16 class11_sub10_sub16
 				= ((Class11_Sub10_Sub16)
@@ -298,7 +298,7 @@ public class Class11_Sub7 extends Class11
 					    = 5 + 4 * i_14_;
 					int i_15_ = Class11_Sub10_Sub2
 							.aBuffer_2005
-							.method188((byte) 105);
+							.readUIntBE();
 					class55_sub1.method911(true, i_15_);
 				    }
 				}
