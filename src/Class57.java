@@ -260,31 +260,31 @@ public class Class57 {
     public static void parsePlayerMovement(int arg0) {
         Class11_Sub10_Sub4_Sub2.inBuffer.method197(false);
         anInt1186++;
-        int i = Class11_Sub10_Sub4_Sub2.inBuffer.method203(-93, 1);
+        int i = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(1);
         if (i != 0) {
-            int i_15_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(65, 2);
+            int i_15_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(2);
             if ((i_15_ ^ 0xffffffff) == -1) Class54.anIntArray1066[Class11_Sub11.anInt1687++] = 2047;
             else if (i_15_ == 1) {
-                int i_16_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(96, 3);
+                int i_16_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(3);
                 Class48.aClass11_Sub10_Sub4_Sub2_Sub1_899.method273(i_16_, (byte) 68, false);
-                int i_17_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(-71, 1);
+                int i_17_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(1);
                 if ((i_17_ ^ 0xffffffff) == -2) Class54.anIntArray1066[Class11_Sub11.anInt1687++] = 2047;
             } else if (i_15_ == 2) {
-                int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(-106, 3);
+                int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(3);
                 Class48.aClass11_Sub10_Sub4_Sub2_Sub1_899.method273(i_18_, (byte) 68, true);
-                int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(45, 3);
+                int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(3);
                 Class48.aClass11_Sub10_Sub4_Sub2_Sub1_899.method273(i_19_, (byte) 68, true);
-                int i_20_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(-65, 1);
+                int i_20_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(1);
                 if (i_20_ == 1) Class54.anIntArray1066[Class11_Sub11.anInt1687++] = 2047;
             } else {
                 if (arg0 <= 8) parsePlayerMovement(-16);
                 if (i_15_ == 3) {
-                    int i_21_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(87, 7);
-                    Class1.anInt82 = Class11_Sub10_Sub4_Sub2.inBuffer.method203(-80, 2);
-                    int i_22_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(100, 1);
+                    int i_21_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(7);
+                    Class1.anInt82 = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(2);
+                    int i_22_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(1);
                     if (i_22_ == 1) Class54.anIntArray1066[Class11_Sub11.anInt1687++] = 2047;
-                    int i_23_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(109, 1);
-                    int i_24_ = Class11_Sub10_Sub4_Sub2.inBuffer.method203(-68, 7);
+                    int i_23_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(1);
+                    int i_24_ = Class11_Sub10_Sub4_Sub2.inBuffer.readBits(7);
                     Class48.aClass11_Sub10_Sub4_Sub2_Sub1_899.method271(i_23_ == 1, i_21_, (byte) 51, i_24_);
                 }
             }

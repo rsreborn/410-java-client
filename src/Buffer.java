@@ -143,7 +143,7 @@ public class Buffer extends Class11 {
         int i = position;
         byte[] is = new byte[i];
         position = 0;
-        method169(0, i, is, -86);
+        readBytes(is, 0, i);
         BigInteger biginteger = new BigInteger(is);
         BigInteger biginteger_7_ = biginteger.modPow(key, modulus);
         byte[] is_8_ = biginteger_7_.toByteArray();
@@ -193,9 +193,9 @@ public class Buffer extends Class11 {
         return (byte) -payload[position++];
     }
 
-    public void method152(byte[] arg0, int arg1, int arg2, int arg3) {
+    public void method152(byte[] dest, int arg2, int arg3) {
         for (int i = arg2 + (arg3 - 1); i >= arg2; i--)
-            arg0[i] = payload[position++];
+            dest[i] = payload[position++];
         anInt1526++;
     }
 
@@ -406,19 +406,10 @@ public class Buffer extends Class11 {
         return payload[position++] & 0xff;
     }
 
-    public void method169(int arg0, int arg1, byte[] arg2, int arg3) {
-        try {
-            if (arg3 < -3) {
-                for (int i = arg0; i < arg0 + arg1; i++)
-                    arg2[i] = payload[position++];
-                anInt1528++;
-            }
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception,
-                    ("eb.M(" + arg0 + ',' + arg1 + ','
-                            + (arg2 != null ? "{...}" : "null") + ','
-                            + arg3 + ')'));
-        }
+    public void readBytes(byte[] dest, int offset, int length) {
+        for (int i = offset; i < offset + length; i++)
+            dest[i] = payload[position++];
+        anInt1528++;
     }
 
     public int method170(int arg0) {

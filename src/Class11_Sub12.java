@@ -282,8 +282,8 @@ public class Class11_Sub12 extends Class11
 					 i_16_++) {
 					int i_17_ = arg3.readUIntBE();
 					is[i_16_] = new byte[i_17_];
-					arg3.method169(0, i_17_, is[i_16_],
-						       -41);
+					arg3.readBytes(is[i_16_], 0, i_17_
+                    );
 				    }
 				}
 				class11_sub4.anIntArray1488[i] = i_10_;

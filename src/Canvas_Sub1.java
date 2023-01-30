@@ -245,7 +245,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
             int i = Class11_Sub10_Sub4_Sub2.inBuffer.readUByteA();
             byte[] is = new byte[i];
             Buffer buffer = new Buffer(is);
-            Class11_Sub10_Sub4_Sub2.inBuffer.method152(is, 118, 0, i);
+            Class11_Sub10_Sub4_Sub2.inBuffer.readBytes(is, 0, i); // was method512
             Class22.aBufferArray401[arg0] = buffer;
             arg1.syncAppearance(buffer, -10496);
         }
@@ -324,7 +324,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener {
                     }
                     if (!bool && (Class6.anInt161 ^ 0xffffffff) == -1) {
                         Class11_Sub10_Sub4_Sub6.aBuffer_2701.position = 0;
-                        Class11_Sub10_Sub4_Sub2.inBuffer.method152((Class11_Sub10_Sub4_Sub6.aBuffer_2701.payload), 114, 0, i_19_);
+                        Class11_Sub10_Sub4_Sub2.inBuffer.method152((Class11_Sub10_Sub4_Sub6.aBuffer_2701.payload), 0, i_19_);
                         Class11_Sub10_Sub4_Sub6.aBuffer_2701.position = 0;
                         Class31 class31 = Class34.method679(-46, Class11_Sub10_Sub4_Sub6.aBuffer_2701).method620((byte) 29);
                         arg1.aClass31_2542 = class31.method632((byte) 12);

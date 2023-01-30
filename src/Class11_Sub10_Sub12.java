@@ -225,7 +225,7 @@ public class Class11_Sub10_Sub12 extends Class11_Sub10
 		       .method202(true, Class11_Sub10_Sub14.anInt2348)
 		   >= 26) {
 		int i = Class11_Sub10_Sub4_Sub2.inBuffer
-			    .method203(-126, 14);
+			    .readBits(14);
 		if (i == 16383)
 		    break;
 		if (Class12.aClass11_Sub10_Sub4_Sub2_Sub2Array235[i] == null)
@@ -236,20 +236,20 @@ public class Class11_Sub10_Sub12 extends Class11_Sub10
 		Class11_Sub10_Sub5.anIntArray2063[Class32.anInt581++] = i;
 		class11_sub10_sub4_sub2_sub2.anInt2505 = Class61.anInt1283;
 		int i_9_ = Class11_Sub10_Sub4_Sub2.inBuffer
-			       .method203(120, 5);
+			       .readBits(5);
 		if ((i_9_ ^ 0xffffffff) < -16)
 		    i_9_ -= 32;
 		int i_10_ = Class11_Sub10_Sub4_Sub2.inBuffer
-				.method203(-74, 1);
+				.readBits(1);
 		class11_sub10_sub4_sub2_sub2.aClass11_Sub10_Sub14_2828
 		    = Class13.method512(arg0 ^ ~0x19,
 					Class11_Sub10_Sub4_Sub2
 					    .inBuffer
-					    .method203(78, 13));
+					    .readBits(13));
 		int i_11_ = Class11_Sub10_Sub4_Sub2.inBuffer
-				.method203(arg0 ^ 0x25, 5);
+				.readBits(5);
 		int i_12_ = Class11_Sub10_Sub4_Sub2.inBuffer
-				.method203(arg0 + -187, 1);
+				.readBits(1);
 		if ((i_12_ ^ 0xffffffff) == -2)
 		    Class54.anIntArray1066[Class11_Sub11.anInt1687++] = i;
 		class11_sub10_sub4_sub2_sub2.anInt2525

@@ -54,7 +54,7 @@ public class Class46 implements Runnable
 		throw new RuntimeException();
 	    if (i == 0) {
 		byte[] is = new byte[i_0_];
-		buffer.method169(0, i_0_, is, -48);
+		buffer.readBytes(is, 0, i_0_);
 		return is;
 	    }
 	    int i_1_ = buffer.readUIntBE();

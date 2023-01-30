@@ -101,7 +101,7 @@ public class Class11_Sub10_Sub10 extends Class11_Sub10
 	    Class11_Sub10_Sub4_Sub2.inBuffer.method197(false);
 	    anInt2218++;
 	    int i = Class11_Sub10_Sub4_Sub2.inBuffer
-			.method203(-106, 8);
+			.readBits(8);
 	    if (Class32.anInt581 > i) {
 		for (int i_0_ = i;
 		     (i_0_ ^ 0xffffffff) > (Class32.anInt581 ^ 0xffffffff);
@@ -118,14 +118,14 @@ public class Class11_Sub10_Sub10 extends Class11_Sub10
 		Class11_Sub10_Sub4_Sub2_Sub2 class11_sub10_sub4_sub2_sub2
 		    = Class12.aClass11_Sub10_Sub4_Sub2_Sub2Array235[i_3_];
 		int i_4_ = Class11_Sub10_Sub4_Sub2.inBuffer
-			       .method203(55, 1);
+			       .readBits(1);
 		if (i_4_ == 0) {
 		    Class11_Sub10_Sub5.anIntArray2063[Class32.anInt581++]
 			= i_3_;
 		    class11_sub10_sub4_sub2_sub2.anInt2505 = Class61.anInt1283;
 		} else {
 		    int i_5_ = Class11_Sub10_Sub4_Sub2
-				   .inBuffer.method203(-65, 2);
+				   .inBuffer.readBits(2);
 		    if (i_5_ == 0) {
 			Class11_Sub10_Sub5.anIntArray2063[Class32.anInt581++]
 			    = i_3_;
@@ -140,12 +140,12 @@ public class Class11_Sub10_Sub10 extends Class11_Sub10
 			    = Class61.anInt1283;
 			int i_6_
 			    = Class11_Sub10_Sub4_Sub2
-				  .inBuffer.method203(78, 3);
+				  .inBuffer.readBits(3);
 			class11_sub10_sub4_sub2_sub2.method273(i_6_, (byte) 68,
 							       false);
 			int i_7_
 			    = Class11_Sub10_Sub4_Sub2
-				  .inBuffer.method203(108, 1);
+				  .inBuffer.readBits(1);
 			if ((i_7_ ^ 0xffffffff) == -2)
 			    Class54.anIntArray1066[Class11_Sub11.anInt1687++]
 				= i_3_;
@@ -156,17 +156,17 @@ public class Class11_Sub10_Sub10 extends Class11_Sub10
 			    = Class61.anInt1283;
 			int i_8_
 			    = Class11_Sub10_Sub4_Sub2
-				  .inBuffer.method203(106, 3);
+				  .inBuffer.readBits(3);
 			class11_sub10_sub4_sub2_sub2.method273(i_8_, (byte) 68,
 							       true);
 			int i_9_
 			    = Class11_Sub10_Sub4_Sub2
-				  .inBuffer.method203(-91, 3);
+				  .inBuffer.readBits(3);
 			class11_sub10_sub4_sub2_sub2.method273(i_9_, (byte) 68,
 							       true);
 			int i_10_
 			    = Class11_Sub10_Sub4_Sub2
-				  .inBuffer.method203(-122, 1);
+				  .inBuffer.readBits(1);
 			if (i_10_ == 1)
 			    Class54.anIntArray1066[Class11_Sub11.anInt1687++]
 				= i_3_;

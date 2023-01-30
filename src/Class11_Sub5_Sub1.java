@@ -352,24 +352,19 @@ public class Class11_Sub5_Sub1 extends Buffer {
         }
     }
 
-    public int method203(int arg0, int arg1) {
-        try {
-            anInt1921++;
-            int i = anInt1913 >> 3;
-            int i_4_ = -27 % ((-10 - arg0) / 50);
-            int i_5_ = 8 + -(0x7 & anInt1913);
-            anInt1913 += arg1;
-            int i_6_ = 0;
-            for (/**/; (~i_5_) > (~arg1); i_5_ = 8) {
-                i_6_ += (payload[i++] & Class15_Sub2.anIntArray1771[i_5_]) << arg1 + -i_5_;
-                arg1 -= i_5_;
-            }
-            if (arg1 == i_5_) i_6_ += Class15_Sub2.anIntArray1771[i_5_] & payload[i];
-            else i_6_ += (payload[i] >> -arg1 + i_5_ & Class15_Sub2.anIntArray1771[arg1]);
-            return i_6_;
-        } catch (RuntimeException runtimeexception) {
-            throw Class58.method939(runtimeexception, "wc.J(" + arg0 + ',' + arg1 + ')');
+    public int readBits(int arg1) {
+        anInt1921++;
+        int i = anInt1913 >> 3;
+        int i_5_ = 8 + -(0x7 & anInt1913);
+        anInt1913 += arg1;
+        int i_6_ = 0;
+        for (/**/; (~i_5_) > (~arg1); i_5_ = 8) {
+            i_6_ += (payload[i++] & Class15_Sub2.anIntArray1771[i_5_]) << arg1 + -i_5_;
+            arg1 -= i_5_;
         }
+        if (arg1 == i_5_) i_6_ += Class15_Sub2.anIntArray1771[i_5_] & payload[i];
+        else i_6_ += (payload[i] >> -arg1 + i_5_ & Class15_Sub2.anIntArray1771[arg1]);
+        return i_6_;
     }
 
     public static Class11_Sub10_Sub6 method204(boolean arg0, Class55 arg1, int arg2, Class55 arg3, int arg4) {
