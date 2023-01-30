@@ -202,7 +202,7 @@ public class Class45 implements Runnable
 		= { "c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/",
 		    "d:/windows/", "d:/winnt/", "e:/windows/", "e:/winnt/",
 		    "f:/windows/", "f:/winnt/", "c:/", "~/", "/tmp/", "" };
-	    String string = ".file_store_" + arg0;
+	    String string = ".file_store_" + Constants.BUILD_NUMBER;
 	    for (int i = 0; (strings.length ^ 0xffffffff) < (i ^ 0xffffffff);
 		 i++) {
 		try {

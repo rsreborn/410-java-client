@@ -171,8 +171,8 @@ public abstract class Class15 {
                 if (Class8.loginState == 1) {
                     if (Class11_Sub11.aClass41_1681 == null)
                         Class11_Sub11.aClass41_1681 = Class55.aClass45_1141.method773((byte) -116, Class22.anInt403);
-                    if ((Class11_Sub11.aClass41_1681.anInt749 ^ 0xffffffff) == -3) throw new IOException();
-                    if ((Class11_Sub11.aClass41_1681.anInt749 ^ 0xffffffff) == -2) {
+                    if (Class11_Sub11.aClass41_1681.anInt749 == 2) throw new IOException();
+                    if (Class11_Sub11.aClass41_1681.anInt749 == 1) {
                         Class11_Sub12.aClass14_1699 = new Class14((Socket) (Class11_Sub11.aClass41_1681.anObject751), Class55.aClass45_1141);
                         Class11_Sub11.aClass41_1681 = null;
                         Class8.loginState = 2;
@@ -185,7 +185,7 @@ public abstract class Class15 {
                     Class40.outBuffer.writeByte(14);
                     Class40.outBuffer.writeByte(i);
                     Class40.outBuffer.writeIntBE(Constants.BUILD_NUMBER); // Added to support multiple builds
-                    Class11_Sub12.aClass14_1699.method521(Class40.outBuffer.payload, 2, 0, true);
+                    Class11_Sub12.aClass14_1699.method521(Class40.outBuffer.payload, 6, 0, true); // Increase size from 2 to 6
                     Class8.loginState = 3;
                     Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
                 }
