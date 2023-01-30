@@ -129,21 +129,21 @@ public class Class11_Sub5_Sub1 extends Buffer {
                         Class11_Sub12.method501(-50, l);
                     }
                     if ((Class52.anInt1027 ^ 0xffffffff) == -4 && ((Class25.aClass31_463.method623(-88) ^ 0xffffffff) < -1)) {
-                        Class40.aClass11_Sub5_Sub1_728.method196(1, 22);
+                        Class40.outBuffer.method196(1, 22);
                         Class36.anInt656++;
-                        Class40.aClass11_Sub5_Sub1_728.writeByte(0);
-                        int i = Class40.aClass11_Sub5_Sub1_728.position;
-                        Class40.aClass11_Sub5_Sub1_728.method140(-24628, Class11_Sub10_Sub4_Sub2.aLong2529);
-                        Class11_Sub7.method213(Class25.aClass31_463, 111, Class40.aClass11_Sub5_Sub1_728);
-                        Class40.aClass11_Sub5_Sub1_728.method191(-128, -i + Class40.aClass11_Sub5_Sub1_728.position);
+                        Class40.outBuffer.writeByte(0);
+                        int i = Class40.outBuffer.position;
+                        Class40.outBuffer.method140(-24628, Class11_Sub10_Sub4_Sub2.aLong2529);
+                        Class11_Sub7.method213(Class25.aClass31_463, 111, Class40.outBuffer);
+                        Class40.outBuffer.method191(-128, -i + Class40.outBuffer.position);
                         if ((Class59.anInt1236 ^ 0xffffffff) == -3) {
                             Class31.anInt1386++;
                             Class59.anInt1236 = 1;
                             Class20.aBoolean392 = true;
-                            Class40.aClass11_Sub5_Sub1_728.method196(1, 132);
-                            Class40.aClass11_Sub5_Sub1_728.writeByte(Class11_Sub10_Sub10.anInt2222);
-                            Class40.aClass11_Sub5_Sub1_728.writeByte(Class59.anInt1236);
-                            Class40.aClass11_Sub5_Sub1_728.writeByte(Class58.anInt1222);
+                            Class40.outBuffer.method196(1, 132);
+                            Class40.outBuffer.writeByte(Class11_Sub10_Sub10.anInt2222);
+                            Class40.outBuffer.writeByte(Class59.anInt1236);
+                            Class40.outBuffer.writeByte(Class58.anInt1222);
                         }
                     }
                     if (Class52.anInt1027 == 4 && Class55.anInt1143 < 100) {
@@ -169,8 +169,8 @@ public class Class11_Sub5_Sub1 extends Buffer {
                         Class11_Sub6.anInt1576++;
                         int i = 0;
                         if (Class25.aClass31_460.method630(-126)) i = Class25.aClass31_460.method652((byte) 55);
-                        Class40.aClass11_Sub5_Sub1_728.method196(1, 122);
-                        Class40.aClass11_Sub5_Sub1_728.writeIntBE(i);
+                        Class40.outBuffer.method196(1, 122);
+                        Class40.outBuffer.writeIntBE(i);
                     }
                     Class32.aBoolean575 = true;
                     Class57.anInt1154 = 0;
@@ -209,9 +209,9 @@ public class Class11_Sub5_Sub1 extends Buffer {
                             }
                             if (Class25.aClass31_476.method622(Class11_Sub10_Sub10.aClass31_2239, 68)) {
                                 Class11_Sub10_Sub4.anInt2045++;
-                                Class40.aClass11_Sub5_Sub1_728.method196(arg0, 92);
-                                Class40.aClass11_Sub5_Sub1_728.writeByte(Class25.aClass31_476.method623(121) - 1);
-                                Class40.aClass11_Sub5_Sub1_728.method143(Class25.aClass31_476.method639(28418, 2), (byte) -63);
+                                Class40.outBuffer.method196(arg0, 92);
+                                Class40.outBuffer.writeByte(Class25.aClass31_476.method623(121) - 1);
+                                Class40.outBuffer.method143(Class25.aClass31_476.method639(28418, 2), (byte) -63);
                             } else {
                                 Class11_Sub10_Sub4_Sub2_Sub1.anInt2781++;
                                 Class31 class31 = Class25.aClass31_476.method650(-104);
@@ -275,21 +275,21 @@ public class Class11_Sub5_Sub1 extends Buffer {
                                     Class25.aClass31_476 = Class25.aClass31_476.method639(28418, 6);
                                     i_2_ = 5;
                                 }
-                                Class40.aClass11_Sub5_Sub1_728.method196(1, 40);
-                                Class40.aClass11_Sub5_Sub1_728.writeByte(0);
-                                int i_3_ = Class40.aClass11_Sub5_Sub1_728.position;
-                                Class40.aClass11_Sub5_Sub1_728.writeByte(i);
-                                Class40.aClass11_Sub5_Sub1_728.writeByte(i_2_);
-                                Class11_Sub7.method213(Class25.aClass31_476, 113, Class40.aClass11_Sub5_Sub1_728);
-                                Class40.aClass11_Sub5_Sub1_728.method191(arg0 ^ ~0x7e, -i_3_ + (Class40.aClass11_Sub5_Sub1_728.position));
+                                Class40.outBuffer.method196(1, 40);
+                                Class40.outBuffer.writeByte(0);
+                                int i_3_ = Class40.outBuffer.position;
+                                Class40.outBuffer.writeByte(i);
+                                Class40.outBuffer.writeByte(i_2_);
+                                Class11_Sub7.method213(Class25.aClass31_476, 113, Class40.outBuffer);
+                                Class40.outBuffer.method191(arg0 ^ ~0x7e, -i_3_ + (Class40.outBuffer.position));
                                 if (Class11_Sub10_Sub10.anInt2222 == 2) {
                                     Class11_Sub10_Sub10.anInt2222 = 3;
                                     Class20.aBoolean392 = true;
                                     Class31.anInt1386++;
-                                    Class40.aClass11_Sub5_Sub1_728.method196(1, 132);
-                                    Class40.aClass11_Sub5_Sub1_728.writeByte(Class11_Sub10_Sub10.anInt2222);
-                                    Class40.aClass11_Sub5_Sub1_728.writeByte(Class59.anInt1236);
-                                    Class40.aClass11_Sub5_Sub1_728.writeByte(Class58.anInt1222);
+                                    Class40.outBuffer.method196(1, 132);
+                                    Class40.outBuffer.writeByte(Class11_Sub10_Sub10.anInt2222);
+                                    Class40.outBuffer.writeByte(Class59.anInt1236);
+                                    Class40.outBuffer.writeByte(Class58.anInt1222);
                                 }
                             }
                             Class25.aClass31_476 = Class25.aClass31_461;
@@ -317,9 +317,9 @@ public class Class11_Sub5_Sub1 extends Buffer {
                 }
                 if (Class11_Sub10_Sub15.anInt2384 == 84) {
                     if ((~Class25.aClass31_460.method623(-24)) < -1) {
-                        Class40.aClass11_Sub5_Sub1_728.method196(1, 51);
+                        Class40.outBuffer.method196(1, 51);
                         Class11_Sub10_Sub5.anInt2060++;
-                        Class40.aClass11_Sub5_Sub1_728.method140(-24628, Class25.aClass31_460.method633((byte) -126));
+                        Class40.outBuffer.method140(-24628, Class25.aClass31_460.method633((byte) -126));
                     }
                     Class32.aBoolean575 = true;
                     Class57.anInt1154 = 0;

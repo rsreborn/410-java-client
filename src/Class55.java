@@ -14,7 +14,7 @@ public abstract class Class55
     public static int anInt1094;
     public static Class31 aClass31_1095;
     public static int anInt1096;
-    public int anInt1097;
+    public int checksum;
     public static int anInt1098;
     public int[][] anIntArrayArray1099;
     public Class25 aClass25_1100;
@@ -91,10 +91,10 @@ public abstract class Class55
 	    if (arg1 != -50)
 		method894(108, null);
 	    if (!Class17.aBoolean338) {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method165(117);
 		int i_1_ = ((Class11_Sub10_Sub14.anInt2348
-			     - (Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			     - (Class11_Sub10_Sub4_Sub2.inBuffer
 				.position))
 			    / 16);
 		Class11_Sub10_Sub4_Sub5.anIntArrayArray2678 = new int[i_1_][4];
@@ -102,16 +102,16 @@ public abstract class Class55
 		    for (int i_3_ = 0; i_3_ < 4; i_3_++)
 			Class11_Sub10_Sub4_Sub5.anIntArrayArray2678[i_2_][i_3_]
 			    = Class11_Sub10_Sub4_Sub2
-				  .aClass11_Sub5_Sub1_2531
+				  .inBuffer
 				  .method188((byte) 105);
 		}
-		int i_4_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_4_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method165(87);
-		int i_5_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_5_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method165(123);
-		int i_6_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_6_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method175(-107);
-		int i_7_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_7_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method164(arg1 + 177);
 		Class60.aByteArrayArray1259 = new byte[i_1_][];
 		Class11_Sub10_Sub4_Sub3.anIntArray2589 = new int[i_1_];
@@ -168,21 +168,21 @@ public abstract class Class55
 		}
 		Class43.method753(i_7_, i_6_, (byte) 109, i, i_5_, i_4_);
 	    } else {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method141(-112);
-		Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		Class11_Sub10_Sub4_Sub2.inBuffer
 		    .method197(false);
 		for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > -5; i_11_++) {
 		    for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > -14; i_12_++) {
 			for (int i_13_ = 0; (i_13_ ^ 0xffffffff) > -14;
 			     i_13_++) {
 			    int i_14_ = Class11_Sub10_Sub4_Sub2
-					    .aClass11_Sub5_Sub1_2531
+					    .inBuffer
 					    .method203(67, 1);
 			    if (i_14_ == 1)
 				anIntArrayArrayArray1092[i_11_][i_12_][i_13_]
 				    = Class11_Sub10_Sub4_Sub2
-					  .aClass11_Sub5_Sub1_2531
+					  .inBuffer
 					  .method203(106, 26);
 			    else
 				anIntArrayArrayArray1092[i_11_][i_12_][i_13_]
@@ -190,9 +190,9 @@ public abstract class Class55
 			}
 		    }
 		}
-		Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		Class11_Sub10_Sub4_Sub2.inBuffer
 		    .method199((byte) 43);
-		int i_15_ = ((-(Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_15_ = ((-(Class11_Sub10_Sub4_Sub2.inBuffer
 				.position)
 			      + Class11_Sub10_Sub14.anInt2348)
 			     / 16);
@@ -204,15 +204,15 @@ public abstract class Class55
 			Class11_Sub10_Sub4_Sub5.anIntArrayArray2678[i_16_]
 			    [i_17_]
 			    = Class11_Sub10_Sub4_Sub2
-				  .aClass11_Sub5_Sub1_2531.method192(93);
+				  .inBuffer.method192(93);
 		}
-		int i_18_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method175(-109);
-		int i_19_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method174(33);
-		int i_20_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_20_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method141(-84);
-		int i_21_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_21_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method174(28);
 		Class11_Sub10_Sub4_Sub1.anIntArray2490 = new int[i_15_];
 		Canvas_Sub1.anIntArray64 = new int[i_15_];
@@ -409,7 +409,7 @@ public abstract class Class55
     }
     
     public void method885(byte[] arg0, int arg1) {
-	anInt1097 = Buffer.method186(arg0.length, arg0, true);
+	checksum = Buffer.method186(arg0.length, arg0, true);
 	anInt1115++;
 	Buffer buffer
 	    = new Buffer(Class46.method782((byte) 103, arg0));
@@ -639,7 +639,7 @@ public abstract class Class55
 			    + ","
 			    + Buffer.method186(is_54_.length + -2,
 						     is_54_, true)
-			    + "," + anIntArray1135[arg0] + "," + anInt1097));
+			    + "," + anIntArray1135[arg0] + "," + checksum));
 	    }
 	    if (aBoolean1130)
 		aByteArrayArray1102[arg0] = null;

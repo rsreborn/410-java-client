@@ -440,38 +440,38 @@ public class Class44
 		int i_33_ = Class11_Sub10_Sub10.anIntArray2226[i_19_];
 		if ((arg6 ^ 0xffffffff) == -1) {
 		    Class36.anInt672++;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 130);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer.method196(1, 130);
+		    Class40.outBuffer
 			.writeByte(i_20_ + i_20_ - -3);
 		}
 		if (arg6 == 1) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 136);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer.method196(1, 136);
+		    Class40.outBuffer
 			.writeByte(i_20_ + (i_20_ + 3) - -14);
 		    Class14.anInt276++;
 		}
 		if (arg6 == 2) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 89);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer.method196(1, 89);
+		    Class40.outBuffer
 			.writeByte(i_20_ - -i_20_ - -3);
 		    Class11_Sub10_Sub2.anInt1999++;
 		}
-		Class40.aClass11_Sub5_Sub1_728.method172(false,
+		Class40.outBuffer.method172(false,
 							 !(Class11_Sub10_Sub7
 							   .aBooleanArray2148
 							   [82]) ? 0 : 1);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer
 		    .method171(i_32_ - -Class11_Sub10_Sub6.anInt2133, -3420);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer
 		    .writeShortLE(i_33_ - -Class10.anInt214);
 		Class14.anInt302 = Class13.anIntArray263[0];
 		Class40.anInt735 = Class11_Sub10_Sub10.anIntArray2226[0];
 		for (int i_34_ = 1;
 		     (i_20_ ^ 0xffffffff) < (i_34_ ^ 0xffffffff); i_34_++) {
 		    i_19_--;
-		    Class40.aClass11_Sub5_Sub1_728.method172
+		    Class40.outBuffer.method172
 			(false, -i_32_ + Class13.anIntArray263[i_19_]);
-		    Class40.aClass11_Sub5_Sub1_728.method162
+		    Class40.outBuffer.method162
 			(-5016,
 			 Class11_Sub10_Sub10.anIntArray2226[i_19_] - i_33_);
 		}

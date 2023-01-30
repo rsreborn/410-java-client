@@ -45,7 +45,7 @@ public abstract class Class11_Sub10_Sub4_Sub2 extends Class11_Sub10_Sub4
 	= Class64.method992(" with @cya@", 255);
     public static long aLong2529 = 0L;
     public int[] anIntArray2530;
-    public static Class11_Sub5_Sub1 aClass11_Sub5_Sub1_2531;
+    public static Class11_Sub5_Sub1 inBuffer;
     public int anInt2532;
     public static int anInt2533;
     public int anInt2534;
@@ -278,7 +278,7 @@ public abstract class Class11_Sub10_Sub4_Sub2 extends Class11_Sub10_Sub4
 	    aClass55_2521 = null;
 	    aClass31_2523 = null;
 	    if (arg0 == true) {
-		aClass11_Sub5_Sub1_2531 = null;
+		inBuffer = null;
 		aClass11_Sub10_Sub13_Sub3Array2572 = null;
 		aClass31_2528 = null;
 	    }
@@ -534,7 +534,7 @@ public abstract class Class11_Sub10_Sub4_Sub2 extends Class11_Sub10_Sub4
     }
     
     static {
-	aClass11_Sub5_Sub1_2531 = new Class11_Sub5_Sub1(5000);
+	inBuffer = new Class11_Sub5_Sub1(5000);
 	anInt2570 = 0;
     }
 }

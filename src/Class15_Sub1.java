@@ -108,8 +108,8 @@ public abstract class Class15_Sub1 extends Class15
 			if (arg0 == 45) {
 			    Canvas_Sub1.anInt49++;
 			    Class11_Sub10_Sub14.aBoolean2352 = true;
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 186);
-			    Class40.aClass11_Sub5_Sub1_728.method140(-24628,
+			    Class40.outBuffer.method196(1, 186);
+			    Class40.outBuffer.method140(-24628,
 								     arg1);
 			}
 		    }
@@ -131,10 +131,10 @@ public abstract class Class15_Sub1 extends Class15
 		Class11_Sub10_Sub4_Sub2_Sub1 class11_sub10_sub4_sub2_sub1
 		    = (Class11_Sub10_Sub7
 		       .aClass11_Sub10_Sub4_Sub2_Sub1Array2160[i_2_]);
-		int i_3_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_3_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method168(arg0 + 251);
 		if ((0x4 & i_3_) != 0)
-		    i_3_ += Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    i_3_ += Class11_Sub10_Sub4_Sub2.inBuffer
 				.method168(255) << -1107577848;
 		Canvas_Sub1.method39(i_2_, class11_sub10_sub4_sub2_sub1, i_3_,
 				     -31566);

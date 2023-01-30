@@ -900,9 +900,9 @@ public class Class60
 	    Class11_Sub10_Sub7.method356(-13559);
 	    Class34.anInt622 = 0;
 	    Class47.anInt869 = -1;
-	    Class40.aClass11_Sub5_Sub1_728.position = 0;
+	    Class40.outBuffer.position = 0;
 	    Class48.anInt906 = -1;
-	    Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position = 0;
+	    Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
 	    Class11_Sub4.aBoolean1491 = false;
 	    Class11_Sub4.anInt1479 = -1;
 	    Class46.anInt848 = 0;

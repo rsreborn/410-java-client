@@ -69,7 +69,7 @@ public class Class48
 	    Class14.anInt302 = 0;
 	    Class11_Sub10_Sub14.anInt2357 = -1;
 	    Class11_Sub4.anInt1479 = -1;
-	    Class40.aClass11_Sub5_Sub1_728.position = 0;
+	    Class40.outBuffer.position = 0;
 	    Class34.anInt622 = 0;
 	    anInt906 = -1;
 	    Class46.anInt848 = 0;
@@ -80,7 +80,7 @@ public class Class48
 	    Class11_Sub10_Sub14.anInt2348 = 0;
 	    Class47.anInt869 = -1;
 	    Class11_Sub4.aBoolean1491 = false;
-	    Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position = 0;
+	    Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
 	    Class34.method674(30, false);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class58.method939(runtimeexception, "sc.B(" + arg0 + ')');

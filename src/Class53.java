@@ -123,9 +123,9 @@ public class Class53
 			    == (Class58.anInt1225 ^ 0xffffffff))) {
 			Class1.anInt87++;
 			Class58.anInt1225 = -1;
-			Class40.aClass11_Sub5_Sub1_728.method196(arg0 + -76,
+			Class40.outBuffer.method196(arg0 + -76,
 								 145);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .writeByte(NotActuallyBuffer.anInt483);
 		    }
 		    Class37_Sub1.aBoolean1801 = true;
@@ -274,12 +274,12 @@ public class Class53
 		    Class12.aClass11_Sub10_Sub4_Sub2_Sub2Array235[i_1_] = null;
 		}
 	    }
-	    if ((Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position
+	    if ((Class11_Sub10_Sub4_Sub2.inBuffer.position
 		 ^ 0xffffffff)
 		!= (Class11_Sub10_Sub14.anInt2348 ^ 0xffffffff))
 		throw new RuntimeException("gnp1 pos:"
 					   + (Class11_Sub10_Sub4_Sub2
-					      .aClass11_Sub5_Sub1_2531
+					      .inBuffer
 					      .position)
 					   + " psize:"
 					   + Class11_Sub10_Sub14.anInt2348);

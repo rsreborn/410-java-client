@@ -77,7 +77,7 @@ public class Class37_Sub1 extends Class37
 			 i++)
 			Class11_Sub10_Sub7.aBooleanArray2148[i] = false;
 		}
-		Applet_Sub1.method30(Class40.aClass11_Sub5_Sub1_728, (byte) 31,
+		Applet_Sub1.method30(Class40.outBuffer, (byte) 31,
 				     149);
 		synchronized (Class11_Sub10_Sub3.aClass46_2020.anObject858) {
 		    if (Class15.aBoolean309) {
@@ -85,17 +85,17 @@ public class Class37_Sub1 extends Class37
 			    || (Class11_Sub10_Sub3.aClass46_2020.anInt860
 				>= 40)) {
 			    Buffer.anInt1535++;
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 94);
-			    Class40.aClass11_Sub5_Sub1_728.writeByte(0);
+			    Class40.outBuffer.method196(1, 94);
+			    Class40.outBuffer.writeByte(0);
 			    int i = 0;
 			    int i_0_
-				= Class40.aClass11_Sub5_Sub1_728.position;
+				= Class40.outBuffer.position;
 			    for (int i_1_ = 0;
 				 ((i_1_ ^ 0xffffffff)
 				  > (Class11_Sub10_Sub3.aClass46_2020.anInt860
 				     ^ 0xffffffff));
 				 i_1_++) {
-				if (-i_0_ + (Class40.aClass11_Sub5_Sub1_728
+				if (-i_0_ + (Class40.outBuffer
 					     .position)
 				    >= 240)
 				    break;
@@ -140,7 +140,7 @@ public class Class37_Sub1 extends Class37
 					&& (i_6_ ^ 0xffffffff) >= -32) {
 					i_5_ += 32;
 					i_6_ += 32;
-					Class40.aClass11_Sub5_Sub1_728
+					Class40.outBuffer
 					    .writeShortBE
 					    (((Class11_Sub10_Sub5.anInt2118
 					       << -1949269684)
@@ -150,7 +150,7 @@ public class Class37_Sub1 extends Class37
 				    } else if ((Class11_Sub10_Sub5.anInt2118
 						^ 0xffffffff)
 					       > -9) {
-					Class40.aClass11_Sub5_Sub1_728
+					Class40.outBuffer
 					    .method148
 					    ((byte) -48,
 					     (i_4_
@@ -159,7 +159,7 @@ public class Class37_Sub1 extends Class37
 						 + 8388608)));
 					Class11_Sub10_Sub5.anInt2118 = 0;
 				    } else {
-					Class40.aClass11_Sub5_Sub1_728
+					Class40.outBuffer
 					    .writeIntBE
 					    (((Class11_Sub10_Sub5.anInt2118
 					       << 360350835)
@@ -169,9 +169,9 @@ public class Class37_Sub1 extends Class37
 				    }
 				}
 			    }
-			    Class40.aClass11_Sub5_Sub1_728.method191
+			    Class40.outBuffer.method191
 				(-128,
-				 (Class40.aClass11_Sub5_Sub1_728.position
+				 (Class40.outBuffer.position
 				  + -i_0_));
 			    if (i
 				< Class11_Sub10_Sub3.aClass46_2020.anInt860) {
@@ -212,14 +212,14 @@ public class Class37_Sub1 extends Class37
 			i = 1;
 		    int i_9_ = Class61.anInt1266;
 		    int i_10_ = (int) l;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 55);
+		    Class40.outBuffer.method196(1, 55);
 		    if ((i_9_ ^ 0xffffffff) <= -1) {
 			if (i_9_ > 764)
 			    i_9_ = 764;
 		    } else
 			i_9_ = 0;
 		    int i_11_ = 765 * i_8_ + i_9_;
-		    Class40.aClass11_Sub5_Sub1_728.method157
+		    Class40.outBuffer.method157
 			(12470,
 			 i_11_ + ((i_10_ << -198014636) + (i << 157526099)));
 		}
@@ -233,26 +233,26 @@ public class Class37_Sub1 extends Class37
 		if (Class25.aBoolean480 && Class1.anInt85 <= 0) {
 		    Class1.anInt85 = 20;
 		    Class25.aBoolean480 = false;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 2);
-		    Class40.aClass11_Sub5_Sub1_728.method167(
+		    Class40.outBuffer.method196(1, 2);
+		    Class40.outBuffer.method167(
 					Class29.anInt535);
 		    Class11.anInt224++;
-		    Class40.aClass11_Sub5_Sub1_728.writeShortLE(Class52.anInt1022
+		    Class40.outBuffer.writeShortLE(Class52.anInt1022
 			);
 		}
 		if (Class11_Sub4.aBoolean1475 != false
 		    && !Class11_Sub10_Sub9.aBoolean2200 != false) {
 		    Class11_Sub10_Sub9.aBoolean2200 = true;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 99);
+		    Class40.outBuffer.method196(1, 99);
 		    Class11_Sub11.anInt1683++;
-		    Class40.aClass11_Sub5_Sub1_728.writeByte(1);
+		    Class40.outBuffer.writeByte(1);
 		}
 		if (!Class11_Sub4.aBoolean1475 == true
 		    && !Class11_Sub10_Sub9.aBoolean2200 != true) {
 		    Class11_Sub11.anInt1683++;
 		    Class11_Sub10_Sub9.aBoolean2200 = false;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 99);
-		    Class40.aClass11_Sub5_Sub1_728.writeByte(0);
+		    Class40.outBuffer.method196(1, 99);
+		    Class40.outBuffer.writeByte(0);
 		}
 		Class39.method727(true);
 		if (Class11_Sub10_Sub3.anInt2013 == 30
@@ -397,20 +397,20 @@ public class Class37_Sub1 extends Class37
 						    }
 						}
 					    }
-					    Class40.aClass11_Sub5_Sub1_728
+					    Class40.outBuffer
 						.method196(1, 125);
-					    Class40.aClass11_Sub5_Sub1_728
+					    Class40.outBuffer
 						.writeShortLE
 						((Class11_Sub10_Sub4_Sub6
 						  .anInt2720)
 						);
-					    Class40.aClass11_Sub5_Sub1_728
+					    Class40.outBuffer
 						.method171
 						(Class4.anInt147, -3420);
-					    Class40.aClass11_Sub5_Sub1_728
+					    Class40.outBuffer
 						.method157
 						(12470, Class40.anInt722);
-					    Class40.aClass11_Sub5_Sub1_728
+					    Class40.outBuffer
 						.method176(false, i);
 					}
 				    }
@@ -489,7 +489,7 @@ public class Class37_Sub1 extends Class37
 				Class29.anInt541 = 250;
 				Class11_Sub10_Sub6.anInt2139++;
 				Class11_Sub10_Sub15.method485(4000, (byte) 80);
-				Class40.aClass11_Sub5_Sub1_728.method196(1,
+				Class40.outBuffer.method196(1,
 									 247);
 			    }
 			    Class51.anInt1016++;
@@ -537,23 +537,23 @@ public class Class37_Sub1 extends Class37
 			    if (Class54.anInt1082 > 55)
 				Class11_Sub10_Sub12.anInt2286 = -2;
 			    if ((Class51.anInt1016 ^ 0xffffffff) < -51) {
-				Class40.aClass11_Sub5_Sub1_728.method196(1,
+				Class40.outBuffer.method196(1,
 									 217);
 				Class28.anInt509++;
 			    }
 			    do {
 				try {
 				    if (Class11_Sub12.aClass14_1699 == null
-					|| (Class40.aClass11_Sub5_Sub1_728
+					|| (Class40.outBuffer
 					    .position) <= 0)
 					break;
 				    Class11_Sub12.aClass14_1699.method521
-					((Class40.aClass11_Sub5_Sub1_728
+					((Class40.outBuffer
 					  .payload),
-					 (Class40.aClass11_Sub5_Sub1_728
+					 (Class40.outBuffer
 					  .position),
 					 0, true);
-				    Class40.aClass11_Sub5_Sub1_728.position
+				    Class40.outBuffer.position
 					= 0;
 				    Class51.anInt1016 = 0;
 				} catch (java.io.IOException ioexception) {

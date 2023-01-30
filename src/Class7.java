@@ -125,10 +125,10 @@ public class Class7 implements Interface3
 			= null;
 	    }
 	    if (Class11_Sub10_Sub14.anInt2348
-		!= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position)
+		!= Class11_Sub10_Sub4_Sub2.inBuffer.position)
 		throw new RuntimeException("gpp1 pos:"
 					   + (Class11_Sub10_Sub4_Sub2
-					      .aClass11_Sub5_Sub1_2531
+					      .inBuffer
 					      .position)
 					   + " psize:"
 					   + Class11_Sub10_Sub14.anInt2348);

@@ -66,36 +66,36 @@ public class Class11_Sub12 extends Class11
 		int i_0_ = Class54.anIntArray1066[i];
 		Class11_Sub10_Sub4_Sub2_Sub2 class11_sub10_sub4_sub2_sub2
 		    = Class12.aClass11_Sub10_Sub4_Sub2_Sub2Array235[i_0_];
-		int i_1_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_1_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method168(255);
 		if ((i_1_ & 0x20) != 0) {
 		    class11_sub10_sub4_sub2_sub2.anInt2568
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method164(127);
 		    if (class11_sub10_sub4_sub2_sub2.anInt2568 == 65535)
 			class11_sub10_sub4_sub2_sub2.anInt2568 = -1;
 		}
 		if ((i_1_ & 0x40 ^ 0xffffffff) != -1) {
 		    int i_2_ = Class11_Sub10_Sub4_Sub2
-				   .aClass11_Sub5_Sub1_2531.method190(-17254);
+				   .inBuffer.method190(-17254);
 		    int i_3_ = Class11_Sub10_Sub4_Sub2
-				   .aClass11_Sub5_Sub1_2531.method166(false);
+				   .inBuffer.method166(false);
 		    class11_sub10_sub4_sub2_sub2
 			.method266(i_2_, 112, Class61.anInt1283, i_3_);
 		    class11_sub10_sub4_sub2_sub2.anInt2557
 			= Class61.anInt1283 + 300;
 		    class11_sub10_sub4_sub2_sub2.anInt2538
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method175(74);
 		    class11_sub10_sub4_sub2_sub2.anInt2512
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method190(-17254);
 		}
 		if ((i_1_ & 0x8 ^ 0xffffffff) != -1) {
 		    int i_4_ = Class11_Sub10_Sub4_Sub2
-				   .aClass11_Sub5_Sub1_2531.method141(122);
+				   .inBuffer.method141(122);
 		    int i_5_ = Class11_Sub10_Sub4_Sub2
-				   .aClass11_Sub5_Sub1_2531.method168(255);
+				   .inBuffer.method168(255);
 		    if (i_4_ == 65535)
 			i_4_ = -1;
 		    if (i_4_ == class11_sub10_sub4_sub2_sub2.anInt2549
@@ -127,26 +127,26 @@ public class Class11_Sub12 extends Class11
 		}
 		if ((i_1_ & 0x1) != 0) {
 		    int i_7_ = Class11_Sub10_Sub4_Sub2
-				   .aClass11_Sub5_Sub1_2531.method190(-17254);
+				   .inBuffer.method190(-17254);
 		    int i_8_ = Class11_Sub10_Sub4_Sub2
-				   .aClass11_Sub5_Sub1_2531.method166(false);
+				   .inBuffer.method166(false);
 		    class11_sub10_sub4_sub2_sub2
 			.method266(i_7_, 59, Class61.anInt1283, i_8_);
 		    class11_sub10_sub4_sub2_sub2.anInt2557
 			= 300 + Class61.anInt1283;
 		    class11_sub10_sub4_sub2_sub2.anInt2538
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method168(255);
 		    class11_sub10_sub4_sub2_sub2.anInt2512
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method190(-17254);
 		}
 		if ((i_1_ & 0x80) != 0) {
 		    class11_sub10_sub4_sub2_sub2.anInt2543
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method174(63);
 		    int i_9_ = Class11_Sub10_Sub4_Sub2
-				   .aClass11_Sub5_Sub1_2531.method170(-72);
+				   .inBuffer.method170(-72);
 		    class11_sub10_sub4_sub2_sub2.anInt2563
 			= Class61.anInt1283 - -(i_9_ & 0xffff);
 		    class11_sub10_sub4_sub2_sub2.anInt2524
@@ -161,14 +161,14 @@ public class Class11_Sub12 extends Class11
 		}
 		if ((i_1_ & 0x2 ^ 0xffffffff) != -1) {
 		    class11_sub10_sub4_sub2_sub2.aClass31_2542
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method181((byte) 127);
 		    class11_sub10_sub4_sub2_sub2.anInt2534 = 100;
 		}
 		if ((0x4 & i_1_) != 0) {
 		    class11_sub10_sub4_sub2_sub2.aClass11_Sub10_Sub14_2828
 			= Class13.method512(89, Class11_Sub10_Sub4_Sub2
-						    .aClass11_Sub5_Sub1_2531
+						    .inBuffer
 						    .method164(127));
 		    class11_sub10_sub4_sub2_sub2.anInt2525
 			= (class11_sub10_sub4_sub2_sub2
@@ -194,10 +194,10 @@ public class Class11_Sub12 extends Class11
 		}
 		if ((0x10 & i_1_ ^ 0xffffffff) != -1) {
 		    class11_sub10_sub4_sub2_sub2.anInt2513
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method164(127);
 		    class11_sub10_sub4_sub2_sub2.anInt2532
-			= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			= Class11_Sub10_Sub4_Sub2.inBuffer
 			      .method165(127);
 		}
 	    }
@@ -399,8 +399,8 @@ public class Class11_Sub12 extends Class11
 				Class7.aLongArray1423[i_19_]
 				    = Class7.aLongArray1423[1 + i_19_];
 			    }
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 30);
-			    Class40.aClass11_Sub5_Sub1_728.method140(-24628,
+			    Class40.outBuffer.method196(1, 30);
+			    Class40.outBuffer.method140(-24628,
 								     arg1);
 			    break;
 			}

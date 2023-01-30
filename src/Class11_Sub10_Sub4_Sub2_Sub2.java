@@ -132,8 +132,8 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    anInt2826++;
 		    NotActuallyBuffer.anInt490 = Class61.anInt1266;
 		    Class57.anInt1174 = 0;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 110);
-		    Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
+		    Class40.outBuffer.method196(1, 110);
+		    Class40.outBuffer.method171(i_2_, -3420);
 		}
 	    }
 	    if (i == 1005) {
@@ -181,18 +181,18 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		Class17.anInt342 = 2;
 		Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 		NotActuallyBuffer.anInt490 = Class61.anInt1266;
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 211);
-		Class40.aClass11_Sub5_Sub1_728.method171(Class10.anInt212,
+		Class40.outBuffer.method196(1, 211);
+		Class40.outBuffer.method171(Class10.anInt212,
 							 -3420);
-		Class40.aClass11_Sub5_Sub1_728.writeShortLE(Class55.anInt1098
+		Class40.outBuffer.writeShortLE(Class55.anInt1098
 		);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer
 		    .writeShortLE(i_3_ + Class11_Sub10_Sub6.anInt2133);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer
 		    .writeShortBE(Class10.anInt214 + i_4_);
-		Class40.aClass11_Sub5_Sub1_728.method157(12470,
+		Class40.outBuffer.method157(12470,
 							 Class60.anInt1256);
-		Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_2_);
+		Class40.outBuffer.writeShortBE(i_2_);
 	    }
 	    if (i == 56) {
 		Class11_Sub10_Sub4_Sub2_Sub2 class11_sub10_sub4_sub2_sub2
@@ -212,15 +212,15 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 		    Class17.anInt342 = 2;
 		    Canvas_Sub1.anInt44++;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 212);
-		    Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
+		    Class40.outBuffer.method196(1, 212);
+		    Class40.outBuffer.method171(i_2_, -3420);
 		}
 	    }
 	    if (i == 55) {
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 79);
-		Class40.aClass11_Sub5_Sub1_728.method182(-77, i_4_);
-		Class40.aClass11_Sub5_Sub1_728.method167(i_2_);
-		Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_3_);
+		Class40.outBuffer.method196(1, 79);
+		Class40.outBuffer.method182(-77, i_4_);
+		Class40.outBuffer.method167(i_2_);
+		Class40.outBuffer.writeShortBE(i_3_);
 		Class47.anInt866++;
 		Class7.anInt1425 = 2;
 		Class20.anInt386 = i_4_;
@@ -268,14 +268,14 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    Class57.anInt1174 = 0;
 		    Class17.anInt342 = 2;
 		    NotActuallyBuffer.anInt490 = Class61.anInt1266;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 7);
-		    Class40.aClass11_Sub5_Sub1_728.method167(i_2_);
+		    Class40.outBuffer.method196(1, 7);
+		    Class40.outBuffer.method167(i_2_);
 		}
 	    }
 	    if (i == 49) {
 		Class51.anInt1010++;
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 184);
-		Class40.aClass11_Sub5_Sub1_728.writeIntBE(i_4_);
+		Class40.outBuffer.method196(1, 184);
+		Class40.outBuffer.writeIntBE(i_4_);
 		Class11_Sub10_Sub5 class11_sub10_sub5
 		    = Class42.method750(i_4_, 694);
 		if (class11_sub10_sub5.anIntArrayArray2070 != null
@@ -326,10 +326,10 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 	    }
 	    if (i == 46) {
 		Class11_Sub10_Sub6.anInt2143++;
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 64);
-		Class40.aClass11_Sub5_Sub1_728.writeIntBE(i_4_);
-		Class40.aClass11_Sub5_Sub1_728.method167(i_3_);
-		Class40.aClass11_Sub5_Sub1_728.method167(i_2_);
+		Class40.outBuffer.method196(1, 64);
+		Class40.outBuffer.writeIntBE(i_4_);
+		Class40.outBuffer.method167(i_3_);
+		Class40.outBuffer.method167(i_2_);
 		Class20.anInt386 = i_4_;
 		Class7.anInt1425 = 2;
 		Class9.anInt200 = 0;
@@ -383,14 +383,14 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    NotActuallyBuffer.anInt490 = Class61.anInt1266;
 		    Class17.anInt342 = 2;
 		    Class57.anInt1174 = 0;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 133);
-		    Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
+		    Class40.outBuffer.method196(1, 133);
+		    Class40.outBuffer.method171(i_2_, -3420);
 		}
 	    }
 	    if ((i ^ 0xffffffff) == -41) {
 		Class51.anInt1010++;
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 184);
-		Class40.aClass11_Sub5_Sub1_728.writeIntBE(i_4_);
+		Class40.outBuffer.method196(1, 184);
+		Class40.outBuffer.writeIntBE(i_4_);
 		Class11_Sub10_Sub5 class11_sub10_sub5
 		    = Class42.method750(i_4_, 694);
 		if (class11_sub10_sub5.anIntArrayArray2070 != null
@@ -404,10 +404,10 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		}
 	    }
 	    if ((i ^ 0xffffffff) == -5) {
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 220);
-		Class40.aClass11_Sub5_Sub1_728.writeShortLE(i_2_);
-		Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_3_);
-		Class40.aClass11_Sub5_Sub1_728.method182(-121, i_4_);
+		Class40.outBuffer.method196(1, 220);
+		Class40.outBuffer.writeShortLE(i_2_);
+		Class40.outBuffer.writeShortBE(i_3_);
+		Class40.outBuffer.method182(-121, i_4_);
 		Class11_Sub7.anInt1604++;
 		Class7.anInt1425 = 2;
 		Class9.anInt200 = 0;
@@ -438,8 +438,8 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    Class47.anInt871++;
 		    Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 		    NotActuallyBuffer.anInt490 = Class61.anInt1266;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 58);
-		    Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
+		    Class40.outBuffer.method196(1, 58);
+		    Class40.outBuffer.method171(i_2_, -3420);
 		}
 	    }
 	    if ((i ^ 0xffffffff) == -45) {
@@ -460,10 +460,10 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    NotActuallyBuffer.anInt490 = Class61.anInt1266;
 		    Class17.anInt342 = 2;
 		    Class57.anInt1174 = 0;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 101);
-		    Class40.aClass11_Sub5_Sub1_728.writeIntBE(Class47.anInt877
+		    Class40.outBuffer.method196(1, 101);
+		    Class40.outBuffer.writeIntBE(Class47.anInt877
 			);
-		    Class40.aClass11_Sub5_Sub1_728.method167(i_2_);
+		    Class40.outBuffer.method167(i_2_);
 		}
 	    }
 	    if ((i ^ 0xffffffff) == -4) {
@@ -493,11 +493,11 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		Class17.anInt342 = 2;
 		NotActuallyBuffer.anInt490 = Class61.anInt1266;
 		Class57.anInt1174 = 0;
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 131);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer.method196(1, 131);
+		Class40.outBuffer
 		    .writeShortBE(i_4_ - -Class10.anInt214);
-		Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
-		Class40.aClass11_Sub5_Sub1_728.writeShortBE
+		Class40.outBuffer.method171(i_2_, -3420);
+		Class40.outBuffer.writeShortBE
 		    (i_3_ - -Class11_Sub10_Sub6.anInt2133);
 	    }
 	    if ((i ^ 0xffffffff) == -17) {
@@ -527,12 +527,12 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		NotActuallyBuffer.anInt490 = Class61.anInt1266;
 		Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 		Class57.anInt1174 = 0;
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 200);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer.method196(1, 200);
+		Class40.outBuffer
 		    .writeShortBE(Class10.anInt214 + i_4_);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer
 		    .writeShortBE(Class11_Sub10_Sub6.anInt2133 + i_3_);
-		Class40.aClass11_Sub5_Sub1_728.writeShortLE(i_2_);
+		Class40.outBuffer.writeShortLE(i_2_);
 	    }
 	    if ((i ^ 0xffffffff) == -55) {
 		Class11_Sub10_Sub5 class11_sub10_sub5
@@ -541,8 +541,8 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		if ((class11_sub10_sub5.anInt2116 ^ 0xffffffff) < -1)
 		    bool = Class13.method511(class11_sub10_sub5, 110);
 		if (bool) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 184);
-		    Class40.aClass11_Sub5_Sub1_728.writeIntBE(i_4_
+		    Class40.outBuffer.method196(1, 184);
+		    Class40.outBuffer.writeIntBE(i_4_
 			);
 		    Class51.anInt1010++;
 		}
@@ -553,12 +553,12 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 	    if ((i ^ 0xffffffff) == -42) {
 		Class11_Sub10_Sub4_Sub6.anInt2698++;
 		Class11_Sub10_Sub2.method240(-22936, i_4_, i_2_, i_3_);
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 165);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer.method196(1, 165);
+		Class40.outBuffer
 		    .method167(i_4_ + Class10.anInt214);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer
 		    .method171(Class11_Sub10_Sub6.anInt2133 + i_3_, -3420);
-		Class40.aClass11_Sub5_Sub1_728
+		Class40.outBuffer
 		    .writeShortLE(0x7fff & i_2_ >> -1507606994);
 	    }
 	    if ((i ^ 0xffffffff) == -18) {
@@ -579,8 +579,8 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    Class17.anInt342 = 2;
 		    Class11_Sub10_Sub4_Sub6.anInt2702++;
 		    Class57.anInt1174 = 0;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 185);
-		    Class40.aClass11_Sub5_Sub1_728.method167(i_2_);
+		    Class40.outBuffer.method196(1, 185);
+		    Class40.outBuffer.method167(i_2_);
 		}
 	    }
 	    if ((i ^ 0xffffffff) == -2) {
@@ -596,11 +596,11 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		Class11_Sub10_Sub14.aBoolean2352 = true;
 	    } else {
 		if (i == 39) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 135);
+		    Class40.outBuffer.method196(1, 135);
 		    Class59.anInt1238++;
-		    Class40.aClass11_Sub5_Sub1_728.method167(i_2_);
-		    Class40.aClass11_Sub5_Sub1_728.method182(-118, i_4_);
-		    Class40.aClass11_Sub5_Sub1_728.method171(i_3_, -3420);
+		    Class40.outBuffer.method167(i_2_);
+		    Class40.outBuffer.method182(-118, i_4_);
+		    Class40.outBuffer.method171(i_3_, -3420);
 		    Class7.anInt1425 = 2;
 		    Class9.anInt200 = 0;
 		    if (i_4_ >> 1922775056 == Buffer.anInt1564)
@@ -629,8 +629,8 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			Class17.anInt342 = 2;
 			Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 			Class36.anInt666++;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 164);
-			Class40.aClass11_Sub5_Sub1_728.writeShortLE(i_2_);
+			Class40.outBuffer.method196(1, 164);
+			Class40.outBuffer.writeShortLE(i_2_);
 		    }
 		}
 		if (i == 14) {
@@ -658,11 +658,11 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 		    NotActuallyBuffer.anInt490 = Class61.anInt1266;
 		    Class57.anInt1174 = 0;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 219);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer.method196(1, 219);
+		    Class40.outBuffer
 			.writeShortLE(Class11_Sub10_Sub6.anInt2133 + i_3_);
-		    Class40.aClass11_Sub5_Sub1_728.writeShortLE(i_2_);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer.writeShortLE(i_2_);
+		    Class40.outBuffer
 			.writeShortLE(i_4_ + Class10.anInt214);
 		}
 		if ((i ^ 0xffffffff) == -1002) {
@@ -683,12 +683,12 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 						      class31, true);
 		}
 		if ((i ^ 0xffffffff) == -29) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 66);
-		    Class40.aClass11_Sub5_Sub1_728.method171(i_3_, -3420);
-		    Class40.aClass11_Sub5_Sub1_728.method182(-62, i_4_);
-		    Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_2_);
+		    Class40.outBuffer.method196(1, 66);
+		    Class40.outBuffer.method171(i_3_, -3420);
+		    Class40.outBuffer.method182(-62, i_4_);
+		    Class40.outBuffer.writeShortBE(i_2_);
 		    Class64.anInt1336++;
-		    Class40.aClass11_Sub5_Sub1_728.writeIntBE(Class47.anInt877
+		    Class40.outBuffer.writeIntBE(Class47.anInt877
 			);
 		    Class7.anInt1425 = 2;
 		    Class43.anInt785 = i_3_;
@@ -707,12 +707,12 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    Class32.aBoolean575 = true;
 		}
 		if ((i ^ 0xffffffff) == -53) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 199);
-		    Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_3_);
-		    Class40.aClass11_Sub5_Sub1_728.writeIntBE(i_4_
+		    Class40.outBuffer.method196(1, 199);
+		    Class40.outBuffer.writeShortBE(i_3_);
+		    Class40.outBuffer.writeIntBE(i_4_
 			);
 		    Class7.anInt1438++;
-		    Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_2_);
+		    Class40.outBuffer.writeShortBE(i_2_);
 		    Class9.anInt200 = 0;
 		    Class20.anInt386 = i_4_;
 		    Class7.anInt1425 = 2;
@@ -725,11 +725,11 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		    Class43.anInt785 = i_3_;
 		}
 		if (i == 53) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 193);
-		    Class40.aClass11_Sub5_Sub1_728.method146(-1472, i_4_);
+		    Class40.outBuffer.method196(1, 193);
+		    Class40.outBuffer.method146(-1472, i_4_);
 		    Class59.anInt1234++;
-		    Class40.aClass11_Sub5_Sub1_728.writeShortLE(i_3_);
-		    Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
+		    Class40.outBuffer.writeShortLE(i_3_);
+		    Class40.outBuffer.method171(i_2_, -3420);
 		    Class43.anInt785 = i_3_;
 		    Class7.anInt1425 = 2;
 		    if (Buffer.anInt1564 == i_4_ >> 542216336)
@@ -741,21 +741,21 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		}
 		if (i == 34) {
 		    Class11_Sub10_Sub2.method240(-22936, i_4_, i_2_, i_3_);
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 222);
+		    Class40.outBuffer.method196(1, 222);
 		    Class57.anInt1190++;
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer
 			.writeShortLE(Class10.anInt214 + i_4_);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer
 			.method167((i_2_ & 0x1fffdb8d) >> 1524886030);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer
 			.method171(Class11_Sub10_Sub6.anInt2133 + i_3_, -3420);
 		}
 		if ((i ^ 0xffffffff) == -48) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 192);
+		    Class40.outBuffer.method196(1, 192);
 		    Class23.anInt428++;
-		    Class40.aClass11_Sub5_Sub1_728.method157(12470, i_4_);
-		    Class40.aClass11_Sub5_Sub1_728.method171(i_3_, -3420);
-		    Class40.aClass11_Sub5_Sub1_728.method167(i_2_);
+		    Class40.outBuffer.method157(12470, i_4_);
+		    Class40.outBuffer.method171(i_3_, -3420);
+		    Class40.outBuffer.method167(i_2_);
 		    Class20.anInt386 = i_4_;
 		    Class9.anInt200 = 0;
 		    Class7.anInt1425 = 2;
@@ -767,11 +767,11 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			Class7.anInt1425 = 3;
 		}
 		if (i == 26) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 194);
+		    Class40.outBuffer.method196(1, 194);
 		    Class52.anInt1025++;
-		    Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_2_);
-		    Class40.aClass11_Sub5_Sub1_728.method182(-95, i_4_);
-		    Class40.aClass11_Sub5_Sub1_728.method167(i_3_);
+		    Class40.outBuffer.writeShortBE(i_2_);
+		    Class40.outBuffer.method182(-95, i_4_);
+		    Class40.outBuffer.method167(i_3_);
 		    Class9.anInt200 = 0;
 		    Class43.anInt785 = i_3_;
 		    Class20.anInt386 = i_4_;
@@ -817,31 +817,31 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 		if ((i ^ 0xffffffff) == -1005) {
 		    Class11_Sub10_Sub2.method240(-22936, i_4_, i_2_, i_3_);
 		    Class11_Sub10_Sub9.anInt2198++;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 33);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer.method196(1, 33);
+		    Class40.outBuffer
 			.method167(i_4_ + Class10.anInt214);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer
 			.method171(Class11_Sub10_Sub6.anInt2133 + i_3_, -3420);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer
 			.method171(0x7fff & i_2_ >> -2139369010, -3420);
 		}
 		if ((i ^ 0xffffffff) == -11) {
 		    Class13.anInt254++;
 		    Class11_Sub10_Sub2.method240(-22936, i_4_, i_2_, i_3_);
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 3);
-		    Class40.aClass11_Sub5_Sub1_728.writeShortBE
+		    Class40.outBuffer.method196(1, 3);
+		    Class40.outBuffer.writeShortBE
 			(Class11_Sub10_Sub6.anInt2133 + i_3_);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer
 			.method167(Class10.anInt214 + i_4_);
-		    Class40.aClass11_Sub5_Sub1_728
+		    Class40.outBuffer
 			.writeShortLE((0x1fffc0a1 & i_2_) >> 1325909134);
 		}
 		if (i == 23) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 29);
-		    Class40.aClass11_Sub5_Sub1_728.writeShortLE(i_3_);
+		    Class40.outBuffer.method196(1, 29);
+		    Class40.outBuffer.writeShortLE(i_3_);
 		    Class4.anInt140++;
-		    Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_2_);
-		    Class40.aClass11_Sub5_Sub1_728.method157(12470, i_4_);
+		    Class40.outBuffer.writeShortBE(i_2_);
+		    Class40.outBuffer.method157(12470, i_4_);
 		    Class7.anInt1425 = 2;
 		    Class20.anInt386 = i_4_;
 		    Class43.anInt785 = i_3_;
@@ -853,7 +853,7 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			Class7.anInt1425 = 3;
 		}
 		if ((i ^ 0xffffffff) == -19 && !Class39_Sub1.aBoolean1839) {
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 11);
+		    Class40.outBuffer.method196(1, 11);
 		    Class39_Sub1.aBoolean1839 = true;
 		    Class11_Sub6.anInt1595++;
 		}
@@ -930,25 +930,25 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 			Class57.anInt1174 = 0;
 			NotActuallyBuffer.anInt490 = Class61.anInt1266;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 156);
-			Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
-			Class40.aClass11_Sub5_Sub1_728.writeShortBE
+			Class40.outBuffer.method196(1, 156);
+			Class40.outBuffer.method171(i_2_, -3420);
+			Class40.outBuffer.writeShortBE
 			    (Class11_Sub10_Sub6.anInt2133 + i_3_);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .method171(Class10.anInt214 + i_4_, -3420);
 		    }
 		    if ((i ^ 0xffffffff) == -7
 			&& Class11_Sub10_Sub2.method240(-22936, i_4_, i_2_,
 							i_3_)) {
 			client.anInt1468++;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 116);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.method196(1, 116);
+			Class40.outBuffer
 			    .writeShortBE(Class10.anInt214 + i_4_);
-			Class40.aClass11_Sub5_Sub1_728.writeShortLE
+			Class40.outBuffer.writeShortLE
 			    (i_3_ + Class11_Sub10_Sub6.anInt2133);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .writeShortLE(i_2_ >> -1412921554 & 0x7fff);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .method182(-127, Class47.anInt877);
 		    }
 		    if (i == 29 || (i ^ 0xffffffff) == -38) {
@@ -990,19 +990,19 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 					 (class11_sub10_sub4_sub2_sub1
 					  .anIntArray2500[0]));
 				    if (i == 29) {
-					Class40.aClass11_Sub5_Sub1_728
+					Class40.outBuffer
 					    .method196(1, 235);
-					Class40.aClass11_Sub5_Sub1_728
+					Class40.outBuffer
 					    .method171
 					    (Class32.anIntArray597[i_17_],
 					     -3420);
 					Class47.anInt867++;
 				    }
 				    if (i == 37) {
-					Class40.aClass11_Sub5_Sub1_728
+					Class40.outBuffer
 					    .method196(1, 7);
 					Class23.anInt424++;
-					Class40.aClass11_Sub5_Sub1_728
+					Class40.outBuffer
 					    .method167
 					    (
 								Class32.anIntArray597[i_17_]);
@@ -1042,33 +1042,33 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			    Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 			    NotActuallyBuffer.anInt490 = Class61.anInt1266;
 			    Class57.anInt1174 = 0;
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 36);
-			    Class40.aClass11_Sub5_Sub1_728.method167(i_2_);
+			    Class40.outBuffer.method196(1, 36);
+			    Class40.outBuffer.method167(i_2_);
 			}
 		    }
 		    if (i == 9 && Class11_Sub10_Sub2.method240(-22936, i_4_,
 							       i_2_, i_3_)) {
 			Class11_Sub10_Sub10.anInt2232++;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 44);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.method196(1, 44);
+			Class40.outBuffer
 			    .method167(Class55.anInt1098);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .writeShortLE(i_2_ >> -1638536466 & 0x7fff);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .writeShortBE(Class10.anInt212);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .writeShortBE(i_4_ - -Class10.anInt214);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .method146(-1472, Class60.anInt1256);
-			Class40.aClass11_Sub5_Sub1_728.method167
+			Class40.outBuffer.method167
 			    (i_3_ - -Class11_Sub10_Sub6.anInt2133);
 		    }
 		    if ((i ^ 0xffffffff) == -28) {
 			Class37.anInt689++;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 228);
-			Class40.aClass11_Sub5_Sub1_728.method146(-1472, i_4_);
-			Class40.aClass11_Sub5_Sub1_728.method167(i_3_);
-			Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_2_
+			Class40.outBuffer.method196(1, 228);
+			Class40.outBuffer.method146(-1472, i_4_);
+			Class40.outBuffer.method167(i_3_);
+			Class40.outBuffer.writeShortBE(i_2_
 			);
 			Class20.anInt386 = i_4_;
 			Class7.anInt1425 = 2;
@@ -1102,22 +1102,22 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			    Class57.anInt1174 = 0;
 			    NotActuallyBuffer.anInt490 = Class61.anInt1266;
 			    Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 235);
-			    Class40.aClass11_Sub5_Sub1_728.method171(i_2_,
+			    Class40.outBuffer.method196(1, 235);
+			    Class40.outBuffer.method171(i_2_,
 								     -3420);
 			}
 		    }
 		    if (i == 19) {
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 142);
+			Class40.outBuffer.method196(1, 142);
 			Class31.anInt1415++;
-			Class40.aClass11_Sub5_Sub1_728.method171(i_3_, -3420);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.method171(i_3_, -3420);
+			Class40.outBuffer
 			    .method171(Class55.anInt1098, -3420);
-			Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.method171(i_2_, -3420);
+			Class40.outBuffer
 			    .method167(Class10.anInt212);
-			Class40.aClass11_Sub5_Sub1_728.method146(-1472, i_4_);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.method146(-1472, i_4_);
+			Class40.outBuffer
 			    .method146(-1472, Class60.anInt1256);
 			Class20.anInt386 = i_4_;
 			Class7.anInt1425 = 2;
@@ -1150,10 +1150,10 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			    Class17.anInt342 = 2;
 			    Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 			    NotActuallyBuffer.anInt490 = Class61.anInt1266;
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 147);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer.method196(1, 147);
+			    Class40.outBuffer
 				.method182(-114, Class47.anInt877);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer
 				.writeShortBE(i_2_);
 			}
 		    }
@@ -1181,14 +1181,14 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			Class17.anInt342 = 2;
 			NotActuallyBuffer.anInt490 = Class61.anInt1266;
 			Class57.anInt1174 = 0;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 108);
-			Class40.aClass11_Sub5_Sub1_728.method167
+			Class40.outBuffer.method196(1, 108);
+			Class40.outBuffer.method167
 			    (Class11_Sub10_Sub6.anInt2133 + i_3_);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .method182(-123, Class47.anInt877);
-			Class40.aClass11_Sub5_Sub1_728.writeShortBE(i_2_
+			Class40.outBuffer.writeShortBE(i_2_
 			);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .writeShortLE(i_4_ + Class10.anInt214);
 		    }
 		    if (i == 50) {
@@ -1215,11 +1215,11 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 			Class17.anInt342 = 2;
 			Class57.anInt1174 = 0;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 202);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.method196(1, 202);
+			Class40.outBuffer
 			    .writeShortBE(i_4_ - -Class10.anInt214);
-			Class40.aClass11_Sub5_Sub1_728.method171(i_2_, -3420);
-			Class40.aClass11_Sub5_Sub1_728.method167
+			Class40.outBuffer.method171(i_2_, -3420);
+			Class40.outBuffer.method167
 			    (Class11_Sub10_Sub6.anInt2133 + i_3_);
 		    }
 		    if ((i ^ 0xffffffff) == -8) {
@@ -1244,14 +1244,14 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			    Class17.anInt342 = 2;
 			    Class57.anInt1174 = 0;
 			    Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 4);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer.method196(1, 4);
+			    Class40.outBuffer
 				.writeShortBE(i_2_);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer
 				.writeShortBE(Class10.anInt212);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer
 				.writeIntBE(Class60.anInt1256);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer
 				.writeShortLE(Class55.anInt1098);
 			}
 		    }
@@ -1277,20 +1277,20 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			    NotActuallyBuffer.anInt490 = Class61.anInt1266;
 			    Class6.anInt164++;
 			    Class57.anInt1174 = 0;
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 190);
-			    Class40.aClass11_Sub5_Sub1_728.method167(
+			    Class40.outBuffer.method196(1, 190);
+			    Class40.outBuffer.method167(
 						i_2_);
 			}
 		    }
 		    if ((i ^ 0xffffffff) == -6) {
 			Class11_Sub10_Sub2.method240(-22936, i_4_, i_2_, i_3_);
 			Class39_Sub1.anInt1815++;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 139);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.method196(1, 139);
+			Class40.outBuffer
 			    .writeShortLE(i_4_ - -Class10.anInt214);
-			Class40.aClass11_Sub5_Sub1_728.method167
+			Class40.outBuffer.method167
 			    (i_3_ - -Class11_Sub10_Sub6.anInt2133);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .method171(i_2_ >> -1091129138 & 0x7fff, -3420);
 		    }
 		    if (i == 25) {
@@ -1315,14 +1315,14 @@ public class Class11_Sub10_Sub4_Sub2_Sub2 extends Class11_Sub10_Sub4_Sub2
 			    Class57.anInt1174 = 0;
 			    Class11_Sub10_Sub8.anInt2177 = Class50.anInt995;
 			    NotActuallyBuffer.anInt490 = Class61.anInt1266;
-			    Class40.aClass11_Sub5_Sub1_728.method196(1, 214);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer.method196(1, 214);
+			    Class40.outBuffer
 				.method167(Class55.anInt1098);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer
 				.method146(-1472, Class60.anInt1256);
-			    Class40.aClass11_Sub5_Sub1_728
+			    Class40.outBuffer
 				.writeShortBE(Class10.anInt212);
-			    Class40.aClass11_Sub5_Sub1_728.writeShortLE(i_2_);
+			    Class40.outBuffer.writeShortLE(i_2_);
 			}
 		    }
 		    if ((Class39.anInt721 ^ 0xffffffff) != -1) {

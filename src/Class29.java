@@ -68,13 +68,13 @@ public class Class29
 		if (!Class37.aBoolean686
 		    && Class11_Sub12.aClass14_1699 != null) {
 		    Class28.anInt509++;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 217);
+		    Class40.outBuffer.method196(1, 217);
 		    try {
 			Class11_Sub12.aClass14_1699.method521
-			    (Class40.aClass11_Sub5_Sub1_728.payload,
-			     Class40.aClass11_Sub5_Sub1_728.position, 0,
+			    (Class40.outBuffer.payload,
+			     Class40.outBuffer.position, 0,
 			     true);
-			Class40.aClass11_Sub5_Sub1_728.position = 0;
+			Class40.outBuffer.position = 0;
 		    } catch (java.io.IOException ioexception) {
 			Class37.aBoolean686 = true;
 			break;

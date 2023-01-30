@@ -187,9 +187,9 @@ public class Class43
 					     < (i_18_ ^ 0xffffffff)); i_18_++)
 			    Class46.aLongArray845[i_18_]
 				= Class46.aLongArray845[i_18_ + 1];
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 168);
+			Class40.outBuffer.method196(1, 168);
 			Class31.anInt1407++;
-			Class40.aClass11_Sub5_Sub1_728.method140(-24628, arg1);
+			Class40.outBuffer.method140(-24628, arg1);
 			break;
 		    }
 		}

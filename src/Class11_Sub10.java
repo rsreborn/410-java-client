@@ -92,7 +92,7 @@ public class Class11_Sub10 extends Class11
 	try {
 	    anInt1654++;
 	    int i
-		= Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.method203(59,
+		= Class11_Sub10_Sub4_Sub2.inBuffer.method203(59,
 									    8);
 	    if (arg0 != -918)
 		aClass31_1669 = null;
@@ -111,14 +111,14 @@ public class Class11_Sub10 extends Class11
 		Class11_Sub10_Sub4_Sub2_Sub1 class11_sub10_sub4_sub2_sub1
 		    = (Class11_Sub10_Sub7
 		       .aClass11_Sub10_Sub4_Sub2_Sub1Array2160[i_2_]);
-		int i_3_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_3_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method203(-78, 1);
 		if (i_3_ == 0) {
 		    Class32.anIntArray597[Class48.anInt885++] = i_2_;
 		    class11_sub10_sub4_sub2_sub1.anInt2505 = Class61.anInt1283;
 		} else {
 		    int i_4_ = Class11_Sub10_Sub4_Sub2
-				   .aClass11_Sub5_Sub1_2531.method203(-74, 2);
+				   .inBuffer.method203(-74, 2);
 		    if ((i_4_ ^ 0xffffffff) == -1) {
 			Class32.anIntArray597[Class48.anInt885++] = i_2_;
 			class11_sub10_sub4_sub2_sub1.anInt2505
@@ -131,12 +131,12 @@ public class Class11_Sub10 extends Class11
 			    = Class61.anInt1283;
 			int i_5_
 			    = Class11_Sub10_Sub4_Sub2
-				  .aClass11_Sub5_Sub1_2531.method203(-115, 3);
+				  .inBuffer.method203(-115, 3);
 			class11_sub10_sub4_sub2_sub1.method273(i_5_, (byte) 68,
 							       false);
 			int i_6_
 			    = Class11_Sub10_Sub4_Sub2
-				  .aClass11_Sub5_Sub1_2531.method203(-117, 1);
+				  .inBuffer.method203(-117, 1);
 			if ((i_6_ ^ 0xffffffff) == -2)
 			    Class54.anIntArray1066[Class11_Sub11.anInt1687++]
 				= i_2_;
@@ -146,18 +146,18 @@ public class Class11_Sub10 extends Class11
 			    = Class61.anInt1283;
 			int i_7_
 			    = Class11_Sub10_Sub4_Sub2
-				  .aClass11_Sub5_Sub1_2531
+				  .inBuffer
 				  .method203(arg0 + 970, 3);
 			class11_sub10_sub4_sub2_sub1.method273(i_7_, (byte) 68,
 							       true);
 			int i_8_
 			    = Class11_Sub10_Sub4_Sub2
-				  .aClass11_Sub5_Sub1_2531.method203(-87, 3);
+				  .inBuffer.method203(-87, 3);
 			class11_sub10_sub4_sub2_sub1.method273(i_8_, (byte) 68,
 							       true);
 			int i_9_
 			    = Class11_Sub10_Sub4_Sub2
-				  .aClass11_Sub5_Sub1_2531
+				  .inBuffer
 				  .method203(arg0 ^ ~0x3ce, 1);
 			if (i_9_ == 1)
 			    Class54.anIntArray1066[Class11_Sub11.anInt1687++]

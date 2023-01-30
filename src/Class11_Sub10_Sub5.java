@@ -709,8 +709,8 @@ public class Class11_Sub10_Sub5 extends Class11_Sub10
 			if (arg1 > -77)
 			    method340(-46L, 6);
 			Buffer.anInt1573++;
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 98);
-			Class40.aClass11_Sub5_Sub1_728.method140(-24628, arg0);
+			Class40.outBuffer.method196(1, 98);
+			Class40.outBuffer.method140(-24628, arg0);
 		    }
 		}
 	    }

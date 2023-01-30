@@ -70,12 +70,12 @@ public class Class23
     public static void method581(boolean arg0) {
 	anInt414++;
 	if (Class48.anInt906 == 35) {
-	    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			.method168(255);
 	    int i_2_ = Class51.anInt1004 - -(i & 0x7);
 	    int i_3_ = (Class11_Sub10_Sub4_Sub6.anInt2715
 			+ ((i & 0x7a) >> -669758332));
-	    int i_4_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i_4_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			   .method168(255);
 	    int i_5_ = i_4_ >> 484046402;
 	    int i_6_ = i_4_ & 0x3;
@@ -85,13 +85,13 @@ public class Class23
 		Buffer.method187(0, Class1.anInt82, i_7_, 386132008,
 				       i_6_, i_5_, -1, i_2_, -1, i_3_);
 	} else if (Class48.anInt906 == 46) {
-	    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			.method141(66);
-	    int i_8_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i_8_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			   .method165(88);
-	    int i_9_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i_9_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			   .method174(59);
-	    int i_10_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i_10_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method190(-17254);
 	    int i_11_ = Class51.anInt1004 + (0x7 & i_10_);
 	    int i_12_ = (((0x73 & i_10_) >> -622186428)
@@ -114,16 +114,16 @@ public class Class23
 		Class44.method766(i_11_, i_12_, 127);
 	    }
 	} else if ((Class48.anInt906 ^ 0xffffffff) == -64) {
-	    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			.method168(255);
 	    int i_13_ = (((i & 0x73) >> -1037810556)
 			 + Class11_Sub10_Sub4_Sub6.anInt2715);
 	    int i_14_ = Class51.anInt1004 + (0x7 & i);
-	    int i_15_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i_15_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method164(127);
-	    int i_16_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i_16_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method164(127);
-	    int i_17_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i_17_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method164(127);
 	    if ((i_13_ ^ 0xffffffff) <= -1 && i_14_ >= 0
 		&& (i_13_ ^ 0xffffffff) > -105
@@ -150,14 +150,14 @@ public class Class23
 	    }
 	} else {
 	    if ((Class48.anInt906 ^ 0xffffffff) == -119) {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method168(255);
 		int i_18_ = ((i >> -1426250524 & 0x7)
 			     + Class11_Sub10_Sub4_Sub6.anInt2715);
 		int i_19_ = Class51.anInt1004 + (i & 0x7);
-		int i_20_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_20_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method164(127);
-		int i_21_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_21_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method168(255);
 		int i_22_ = i_21_ >> 526843780 & 0xf;
 		int i_23_ = i_21_ & 0x7;
@@ -184,14 +184,14 @@ public class Class23
 		}
 	    }
 	    if ((Class48.anInt906 ^ 0xffffffff) == -245) {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method174(46);
-		int i_24_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_24_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method175(-105);
 		int i_25_ = Class51.anInt1004 + (i_24_ & 0x7);
 		int i_26_ = ((0x7 & i_24_ >> -1709303548)
 			     + Class11_Sub10_Sub4_Sub6.anInt2715);
-		int i_27_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_27_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method190(-17254);
 		int i_28_ = 0x3 & i_27_;
 		int i_29_ = i_27_ >> -1573466142;
@@ -202,32 +202,32 @@ public class Class23
 					   i_28_, i_29_, i, i_25_, -1, i_26_);
 	    } else {
 		if ((Class48.anInt906 ^ 0xffffffff) == -22) {
-		    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method165(98);
 		    int i_31_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method166(false);
+				    .inBuffer.method166(false);
 		    int i_32_ = (((0x71 & i_31_) >> 440015652)
 				 + Class11_Sub10_Sub4_Sub6.anInt2715);
 		    int i_33_ = Class51.anInt1004 - -(0x7 & i_31_);
 		    int i_34_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method141(106);
+				    .inBuffer.method141(106);
 		    int i_35_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method166(false);
+				    .inBuffer.method166(false);
 		    int i_36_ = i_35_ >> 28543266;
 		    int i_37_ = i_35_ & 0x3;
 		    int i_38_ = Class39.anIntArray720[i_36_];
 		    int i_39_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method150(false);
+				    .inBuffer.method150(false);
 		    int i_40_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method151(-9216);
+				    .inBuffer.method151(-9216);
 		    int i_41_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method156(26669);
+				    .inBuffer.method156(26669);
 		    int i_42_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method151(-9216);
+				    .inBuffer.method151(-9216);
 		    int i_43_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method165(94);
+				    .inBuffer.method165(94);
 		    int i_44_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method174(26);
+				    .inBuffer.method174(26);
 		    Class11_Sub10_Sub4_Sub2_Sub1 class11_sub10_sub4_sub2_sub1;
 		    if ((Class44.anInt800 ^ 0xffffffff) == (i ^ 0xffffffff))
 			class11_sub10_sub4_sub2_sub1
@@ -300,15 +300,15 @@ public class Class23
 		    }
 		}
 		if (Class48.anInt906 == 56) {
-		    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method165(127);
 		    int i_53_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method190(-17254);
+				    .inBuffer.method190(-17254);
 		    int i_54_ = (Class11_Sub10_Sub4_Sub6.anInt2715
 				 + (0x7 & i_53_ >> -1604177596));
 		    int i_55_ = Class51.anInt1004 - -(0x7 & i_53_);
 		    int i_56_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method174(82);
+				    .inBuffer.method174(82);
 		    if (i_54_ >= 0 && i_55_ >= 0 && i_54_ < 104
 			&& (i_55_ ^ 0xffffffff) > -105) {
 			Class11_Sub10_Sub4_Sub3 class11_sub10_sub4_sub3
@@ -327,17 +327,17 @@ public class Class23
 			Class44.method766(i_55_, i_54_, 111);
 		    }
 		} else if ((Class48.anInt906 ^ 0xffffffff) == -136) {
-		    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method168(255);
 		    int i_57_ = (Class11_Sub10_Sub4_Sub6.anInt2715
 				 - -(i >> -1829990108 & 0x7));
 		    int i_58_ = (i & 0x7) + Class51.anInt1004;
 		    int i_59_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method164(127);
+				    .inBuffer.method164(127);
 		    int i_60_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method168(255);
+				    .inBuffer.method168(255);
 		    int i_61_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method164(127);
+				    .inBuffer.method164(127);
 		    if (i_57_ >= 0 && (i_58_ ^ 0xffffffff) <= -1
 			&& (i_57_ ^ 0xffffffff) > -105
 			&& (i_58_ ^ 0xffffffff) > -105) {
@@ -356,13 +356,13 @@ public class Class23
 			    .method691((byte) -98, class11_sub10_sub4_sub6);
 		    }
 		} else if (Class48.anInt906 == 221) {
-		    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method166(!arg0);
 		    int i_62_ = (((i & 0x7a) >> 2051676196)
 				 + Class11_Sub10_Sub4_Sub6.anInt2715);
 		    int i_63_ = (i & 0x7) + Class51.anInt1004;
 		    int i_64_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method164(127);
+				    .inBuffer.method164(127);
 		    if ((i_62_ ^ 0xffffffff) <= -1 && i_63_ >= 0
 			&& (i_62_ ^ 0xffffffff) > -105 && i_63_ < 104) {
 			Class36 class36 = (Class51.aClass36ArrayArrayArray1007
@@ -390,36 +390,36 @@ public class Class23
 			}
 		    }
 		} else if ((Class48.anInt906 ^ 0xffffffff) == -70) {
-		    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method168(255);
 		    int i_65_ = (Class11_Sub10_Sub4_Sub6.anInt2715
 				 - -(0x7 & i >> 581949924));
 		    int i_66_ = (0x7 & i) + Class51.anInt1004;
 		    int i_67_ = i_65_ - -Class11_Sub10_Sub4_Sub2
-					     .aClass11_Sub5_Sub1_2531
+					     .inBuffer
 					     .method156(26669);
 		    int i_68_ = i_66_ - -Class11_Sub10_Sub4_Sub2
-					     .aClass11_Sub5_Sub1_2531
+					     .inBuffer
 					     .method156(26669);
 		    int i_69_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531
+				    .inBuffer
 				    .method161((byte) -120);
 		    int i_70_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method164(127);
+				    .inBuffer.method164(127);
 		    int i_71_
 			= 4 * Class11_Sub10_Sub4_Sub2
-				  .aClass11_Sub5_Sub1_2531.method168(255);
+				  .inBuffer.method168(255);
 		    int i_72_ = (Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method168(255)
+				     .inBuffer.method168(255)
 				 * 4);
 		    int i_73_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method164(127);
+				    .inBuffer.method164(127);
 		    int i_74_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method164(127);
+				    .inBuffer.method164(127);
 		    int i_75_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method168(255);
+				    .inBuffer.method168(255);
 		    int i_76_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method168(255);
+				    .inBuffer.method168(255);
 		    if ((i_65_ ^ 0xffffffff) <= -1 && i_66_ >= 0
 			&& (i_65_ ^ 0xffffffff) > -105
 			&& (i_66_ ^ 0xffffffff) > -105
@@ -453,15 +453,15 @@ public class Class23
 			    .method691((byte) -98, class11_sub10_sub4_sub1);
 		    }
 		} else if ((Class48.anInt906 ^ 0xffffffff) == -130) {
-		    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method174(101);
 		    int i_77_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method175(-120);
+				    .inBuffer.method175(-120);
 		    int i_78_ = i_77_ >> 718675586;
 		    int i_79_ = 0x3 & i_77_;
 		    int i_80_ = Class39.anIntArray720[i_78_];
 		    int i_81_ = Class11_Sub10_Sub4_Sub2
-				    .aClass11_Sub5_Sub1_2531.method166(false);
+				    .inBuffer.method166(false);
 		    int i_82_ = Class51.anInt1004 + (0x7 & i_81_);
 		    int i_83_ = (Class11_Sub10_Sub4_Sub6.anInt2715
 				 + ((0x7e & i_81_) >> 1957051236));

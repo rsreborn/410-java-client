@@ -11,7 +11,7 @@ public class Class40
     public static int anInt725;
     public static Class37 aClass37_726;
     public static int anInt727;
-    public static Class11_Sub5_Sub1 aClass11_Sub5_Sub1_728;
+    public static Class11_Sub5_Sub1 outBuffer;
     public static Class61 aClass61_729;
     public static int anInt730;
     public static int anInt731 = 0;
@@ -86,7 +86,7 @@ public class Class40
     
     public static void method738(int arg0) {
 	try {
-	    aClass11_Sub5_Sub1_728 = null;
+	    outBuffer = null;
 	    aClass41_745 = null;
 	    aClass31_746 = null;
 	    if (arg0 == -30466) {
@@ -147,12 +147,12 @@ public class Class40
 			= (1 + Class11_Sub10_Sub10.anInt2222) % 4;
 		    Class31.anInt1386++;
 		    Class32.aBoolean575 = true;
-		    aClass11_Sub5_Sub1_728.method196(arg0 ^ 0x52, 132);
-		    aClass11_Sub5_Sub1_728.writeByte(
+		    outBuffer.method196(arg0 ^ 0x52, 132);
+		    outBuffer.writeByte(
 					(Class11_Sub10_Sub10
 						      .anInt2222));
-		    aClass11_Sub5_Sub1_728.writeByte(Class59.anInt1236);
-		    aClass11_Sub5_Sub1_728.writeByte(Class58.anInt1222);
+		    outBuffer.writeByte(Class59.anInt1236);
+		    outBuffer.writeByte(Class58.anInt1222);
 		}
 		if ((Class61.anInt1266 ^ 0xffffffff) <= -136
 		    && (Class61.anInt1266 ^ 0xffffffff) >= -236
@@ -162,12 +162,12 @@ public class Class40
 		    Class20.aBoolean392 = true;
 		    Class31.anInt1386++;
 		    Class59.anInt1236 = (Class59.anInt1236 - -1) % 3;
-		    aClass11_Sub5_Sub1_728.method196(1, 132);
-		    aClass11_Sub5_Sub1_728
+		    outBuffer.method196(1, 132);
+		    outBuffer
 			.writeByte(Class11_Sub10_Sub10.anInt2222);
-		    aClass11_Sub5_Sub1_728.writeByte(
+		    outBuffer.writeByte(
 					Class59.anInt1236);
-		    aClass11_Sub5_Sub1_728.writeByte(Class58.anInt1222);
+		    outBuffer.writeByte(Class58.anInt1222);
 		}
 		if ((Class61.anInt1266 ^ 0xffffffff) <= -274
 		    && Class61.anInt1266 <= 373
@@ -177,11 +177,11 @@ public class Class40
 		    Class20.aBoolean392 = true;
 		    Class31.anInt1386++;
 		    Class32.aBoolean575 = true;
-		    aClass11_Sub5_Sub1_728.method196(1, 132);
-		    aClass11_Sub5_Sub1_728
+		    outBuffer.method196(1, 132);
+		    outBuffer
 			.writeByte(Class11_Sub10_Sub10.anInt2222);
-		    aClass11_Sub5_Sub1_728.writeByte(Class59.anInt1236);
-		    aClass11_Sub5_Sub1_728.writeByte(Class58.anInt1222);
+		    outBuffer.writeByte(Class59.anInt1236);
+		    outBuffer.writeByte(Class58.anInt1222);
 		}
 		if ((Class61.anInt1266 ^ 0xffffffff) <= -413
 		    && (Class61.anInt1266 ^ 0xffffffff) >= -513
@@ -280,7 +280,7 @@ public class Class40
     
     static {
 	aClass31_732 = Class64.method992(" (Xskill)2", 255);
-	aClass11_Sub5_Sub1_728 = new Class11_Sub5_Sub1(5000);
+	outBuffer = new Class11_Sub5_Sub1(5000);
 	aClass31_746 = Class64.method992(")3", 255);
     }
 }

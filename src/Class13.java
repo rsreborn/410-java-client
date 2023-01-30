@@ -228,8 +228,8 @@ public class Class13
 	    if (i == 325)
 		Class14.aClass24_279.method588(true, false);
 	    if ((i ^ 0xffffffff) == -327) {
-		Class40.aClass11_Sub5_Sub1_728.method196(1, 12);
-		Class14.aClass24_279.method593(Class40.aClass11_Sub5_Sub1_728,
+		Class40.outBuffer.method196(1, 12);
+		Class14.aClass24_279.method593(Class40.outBuffer,
 					       -1);
 		Class20.anInt399++;
 		return true;
@@ -243,11 +243,11 @@ public class Class13
 		Class24.method584(-125);
 		if (Class25.aClass31_465.method623(124) > 0) {
 		    Class32.anInt594++;
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 72);
-		    Class40.aClass11_Sub5_Sub1_728.method140
+		    Class40.outBuffer.method196(1, 72);
+		    Class40.outBuffer.method140
 			(-24628, Class25.aClass31_465.method633((byte) -125));
-		    Class40.aClass11_Sub5_Sub1_728.writeByte(-601 + i);
-		    Class40.aClass11_Sub5_Sub1_728.writeByte
+		    Class40.outBuffer.writeByte(-601 + i);
+		    Class40.outBuffer.writeByte
 			(
                     !Class11_Sub10_Sub4_Sub2_Sub1.aBoolean2809 ? 0 : 1);
 		}

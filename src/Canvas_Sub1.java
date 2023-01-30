@@ -21,7 +21,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
     public static int anInt47;
     public static int anInt48;
     public static int anInt49;
-    public static BigInteger aBigInteger50;
+    public static BigInteger rsaKey;
     public static int anInt51;
     public static int anInt52;
     public static int anInt53;
@@ -425,16 +425,16 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
 				int arg2, int arg3) {
 	if ((0x80 & arg2) != 0) {
 	    arg1.anInt2568 = Class11_Sub10_Sub4_Sub2
-				 .aClass11_Sub5_Sub1_2531.method165(117);
+				 .inBuffer.method165(117);
 	    if ((arg1.anInt2568 ^ 0xffffffff) == -65536)
 		arg1.anInt2568 = -1;
 	}
 	if ((arg2 & 0x40) != 0) {
-	    int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			.method175(-121);
 	    byte[] is = new byte[i];
 	    Buffer buffer = new Buffer(is);
-	    Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.method152(is, 118,
+	    Class11_Sub10_Sub4_Sub2.inBuffer.method152(is, 118,
 								      0, i);
 	    Class22.aBufferArray401[arg0] = buffer;
 	    arg1.method277(buffer, -10496);
@@ -443,7 +443,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
 	if (arg3 == -31566) {
 	    if ((0x10 & arg2) != 0) {
 		arg1.aClass31_2542
-		    = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    = Class11_Sub10_Sub4_Sub2.inBuffer
 			  .method181((byte) 127);
 		if ((arg1.aClass31_2542.method628(false, 0) ^ 0xffffffff)
 		    != -127) {
@@ -464,9 +464,9 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
 		arg1.anInt2502 = 0;
 	    }
 	    if ((0x8 & arg2) != 0) {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method165(116);
-		int i_16_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_16_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method175(arg3 + 31538);
 		if (i == 65535)
 		    i = -1;
@@ -494,29 +494,29 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
 	    }
 	    if ((0x100 & arg2 ^ 0xffffffff) != -1) {
 		arg1.anInt2559 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method175(6);
+				     .inBuffer.method175(6);
 		arg1.anInt2564 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method166(false);
+				     .inBuffer.method166(false);
 		arg1.anInt2553
-		    = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    = Class11_Sub10_Sub4_Sub2.inBuffer
 			  .method175(arg3 ^ 0x7b32);
 		arg1.anInt2519 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method175(-115);
+				     .inBuffer.method175(-115);
 		arg1.anInt2509
-		    = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    = Class11_Sub10_Sub4_Sub2.inBuffer
 			  .method165(87) + Class61.anInt1283;
 		arg1.anInt2537
-		    = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    = Class11_Sub10_Sub4_Sub2.inBuffer
 			  .method141(arg3 + 31632) - -Class61.anInt1283;
 		arg1.anInt2556 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method166(false);
+				     .inBuffer.method166(false);
 		arg1.method269(-2);
 	    }
 	    if ((arg2 & 0x400 ^ 0xffffffff) != -1) {
 		arg1.anInt2543
-		    = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    = Class11_Sub10_Sub4_Sub2.inBuffer
 			  .method141(arg3 ^ ~0x7b33);
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method188((byte) 105);
 		arg1.anInt2527 = 0;
 		if (arg1.anInt2543 == 65535)
@@ -529,13 +529,13 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
 		arg1.anInt2498 = 0;
 	    }
 	    if ((0x1 & arg2) != 0) {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method165(arg3 ^ ~0x7b14);
-		int i_18_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_18_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method175(-122);
-		int i_19_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_19_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method175(20);
-		int i_20_ = (Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_20_ = (Class11_Sub10_Sub4_Sub2.inBuffer
 			     .position);
 		if (arg1.aClass31_2800 != null && arg1.aClass24_2810 != null) {
 		    boolean bool = false;
@@ -552,7 +552,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
 		    if (!bool && (Class6.anInt161 ^ 0xffffffff) == -1) {
 			Class11_Sub10_Sub4_Sub6.aBuffer_2701.position
 			    = 0;
-			Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+			Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method152
 			    ((Class11_Sub10_Sub4_Sub6.aBuffer_2701
 			      .payload),
@@ -593,39 +593,39 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
 				 class31, true);
 		    }
 		}
-		Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position
+		Class11_Sub10_Sub4_Sub2.inBuffer.position
 		    = i_20_ + i_19_;
 	    }
 	    if ((arg2 & 0x200) != 0) {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method168(255);
-		int i_22_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_22_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method168(255);
 		arg1.method266(i, 87, Class61.anInt1283, i_22_);
 		arg1.anInt2557 = 300 + Class61.anInt1283;
 		arg1.anInt2538 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method166(false);
+				     .inBuffer.method166(false);
 		arg1.anInt2512
-		    = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		    = Class11_Sub10_Sub4_Sub2.inBuffer
 			  .method175(arg3 ^ ~0x7b17);
 	    }
 	    if ((0x20 & arg2) != 0) {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method190(-17254);
-		int i_23_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_23_ = Class11_Sub10_Sub4_Sub2.inBuffer
 				.method168(255);
 		arg1.method266(i, 92, Class61.anInt1283, i_23_);
 		arg1.anInt2557 = 300 + Class61.anInt1283;
 		arg1.anInt2538 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method166(false);
+				     .inBuffer.method166(false);
 		arg1.anInt2512 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method166(false);
+				     .inBuffer.method166(false);
 	    }
 	    if ((arg2 & 0x2) != 0) {
 		arg1.anInt2513 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method165(127);
+				     .inBuffer.method165(127);
 		arg1.anInt2532 = Class11_Sub10_Sub4_Sub2
-				     .aClass11_Sub5_Sub1_2531.method141(-33);
+				     .inBuffer.method141(-33);
 	    }
 	}
     }
@@ -679,7 +679,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
 	    aClass11_Sub10_Sub13_Sub3_57 = null;
 	    aClass31Array63 = null;
 	    anIntArray64 = null;
-	    aBigInteger50 = null;
+	    rsaKey = null;
 	    aClass11_Sub10_Sub5ArrayArray61 = null;
 	    aClass31_56 = null;
 	    if (arg0 != 1)
@@ -757,7 +757,7 @@ public class Canvas_Sub1 extends Canvas implements WindowListener
     }
     
     static {
-	aBigInteger50
+	rsaKey
 	    = (new BigInteger
 	       ("58778699976184461502525193738213253649000149147835990136706041084440742975821"));
 	aClass31Array63 = new Class31[200];

@@ -159,8 +159,8 @@ public class client extends Applet_Sub1 {
                 is = new FileInputStream("./data/public.key");
             }
             final ObjectInputStream oin = new ObjectInputStream(is);
-            Class62.aBigInteger1290 = (BigInteger) oin.readObject();
-            Canvas_Sub1.aBigInteger50 = (BigInteger) oin.readObject();
+            Class62.rsaModulus = (BigInteger) oin.readObject();
+            Canvas_Sub1.rsaKey = (BigInteger) oin.readObject();
         } catch (final Exception ex) {
             System.err.println("Cannot find public RSA key file! Shutting down...");
             System.exit(1);

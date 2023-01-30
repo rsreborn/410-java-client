@@ -10,7 +10,7 @@ public class Class62
     public int anInt1287;
     public static int anInt1288;
     public int anInt1289;
-    public static BigInteger aBigInteger1290;
+    public static BigInteger rsaModulus;
     public static int anInt1291;
     public static Class31 aClass31_1292
 	= Class64.method992("::errortest", 255);
@@ -393,7 +393,7 @@ public class Class62
 	    aClass31_1292 = null;
 	    aClass31_1293 = null;
 	    aClass3_1301 = null;
-	    aBigInteger1290 = null;
+	    rsaModulus = null;
 	    aClass31_1303 = null;
 	    aClass31_1306 = null;
 	} catch (RuntimeException runtimeexception) {
@@ -402,7 +402,7 @@ public class Class62
     }
     
     static {
-	aBigInteger1290
+	rsaModulus
 	    = (new BigInteger
 	       ("7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789"));
 	anIntArrayArray1299

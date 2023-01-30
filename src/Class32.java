@@ -390,9 +390,9 @@ public class Class32
 		    Class64.method990(-126);
 		    Class37_Sub1.aClass40_1781.method740(4);
 		    if (Class60.aCanvas_Sub1_1260 != null) {
-			Class40.aClass11_Sub5_Sub1_728.method196(1, 153);
+			Class40.outBuffer.method196(1, 153);
 			Class12.anInt246++;
-			Class40.aClass11_Sub5_Sub1_728.writeIntBE(1057001181
+			Class40.outBuffer.writeIntBE(1057001181
             );
 		    }
 		    if (!Class17.aBoolean338) {
@@ -442,7 +442,7 @@ public class Class32
 		    else
 			Class34.method674(35, false);
 		    Class11.method108(-25457);
-		    Class40.aClass11_Sub5_Sub1_728.method196(1, 91);
+		    Class40.outBuffer.method196(1, 91);
 		    Class61.method962((byte) 113);
 		}
 	    }

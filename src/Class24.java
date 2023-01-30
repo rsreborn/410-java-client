@@ -39,7 +39,7 @@ public class Class24
 	try {
 	    anInt451++;
 	    Class11_Sub10_Sub4_Sub1.anInt2468++;
-	    Class40.aClass11_Sub5_Sub1_728.method196(1, 255);
+	    Class40.outBuffer.method196(1, 255);
 	    if (Class28.anInt512 != -1) {
 		Class44.method760(256, Class28.anInt512);
 		Class11_Sub10_Sub14.aBoolean2352 = true;

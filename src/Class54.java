@@ -117,11 +117,11 @@ public class Class54
     
     public static void method872(byte arg0) {
 	try {
-	    while ((Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    while ((Class11_Sub10_Sub4_Sub2.inBuffer
 			.method202(true, Class11_Sub10_Sub14.anInt2348)
 		    ^ 0xffffffff)
 		   <= -12) {
-		int i = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i = Class11_Sub10_Sub4_Sub2.inBuffer
 			    .method203(-73, 11);
 		if (i == 2047)
 		    break;
@@ -142,19 +142,19 @@ public class Class54
 		    = (Class11_Sub10_Sub7
 		       .aClass11_Sub10_Sub4_Sub2_Sub1Array2160[i]);
 		class11_sub10_sub4_sub2_sub1.anInt2505 = Class61.anInt1283;
-		int i_6_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_6_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method203(-111, 5);
 		if (i_6_ > 15)
 		    i_6_ -= 32;
-		int i_7_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_7_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method203(-60, 5);
 		if ((i_7_ ^ 0xffffffff) < -16)
 		    i_7_ -= 32;
-		int i_8_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_8_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method203(-77, 1);
 		if ((i_8_ ^ 0xffffffff) == -2)
 		    anIntArray1066[Class11_Sub11.anInt1687++] = i;
-		int i_9_ = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+		int i_9_ = Class11_Sub10_Sub4_Sub2.inBuffer
 			       .method203(83, 1);
 		class11_sub10_sub4_sub2_sub1.method271
 		    ((i_9_ ^ 0xffffffff) == -2,
@@ -164,7 +164,7 @@ public class Class54
 		     i_7_ + (Class48.aClass11_Sub10_Sub4_Sub2_Sub1_899
 			     .anIntArray2500[0]));
 	    }
-	    Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531
+	    Class11_Sub10_Sub4_Sub2.inBuffer
 		.method199((byte) 43);
 	    anInt1074++;
 	    int i = 120 / ((arg0 - 54) / 44);

@@ -180,83 +180,83 @@ public abstract class Class15 {
                 }
                 if (Class8.loginState == 2) {
                     long l = (Class11_Sub10_Sub8.aLong2195 = Class11_Sub10_Sub4_Sub5.aClass31_2680.method633((byte) -125));
-                    Class40.aClass11_Sub5_Sub1_728.position = 0;
+                    Class40.outBuffer.position = 0;
                     int i = (int) (0x1fL & l >> 16);
-                    Class40.aClass11_Sub5_Sub1_728.writeByte(14);
-                    Class40.aClass11_Sub5_Sub1_728.writeByte(i);
-                    Class40.aClass11_Sub5_Sub1_728.writeIntBE(Constants.BUILD_NUMBER); // Added to support multiple builds
-                    Class11_Sub12.aClass14_1699.method521(Class40.aClass11_Sub5_Sub1_728.payload, 2, 0, true);
+                    Class40.outBuffer.writeByte(14);
+                    Class40.outBuffer.writeByte(i);
+                    Class40.outBuffer.writeIntBE(Constants.BUILD_NUMBER); // Added to support multiple builds
+                    Class11_Sub12.aClass14_1699.method521(Class40.outBuffer.payload, 2, 0, true);
                     Class8.loginState = 3;
-                    Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position = 0;
+                    Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
                 }
                 if (Class8.loginState == 3) {
                     int i = Class11_Sub12.aClass14_1699.method516(0);
-                    if ((i ^ 0xffffffff) != -1) {
+                    if (i != 0) {
                         Class11_Sub10_Sub4_Sub2_Sub2.method284(i, (byte) 101);
                         return;
                     }
                     Class8.loginState = 4;
-                    Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position = 0;
+                    Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
                 }
                 if (Class8.loginState == 4) {
-                    if ((Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position) < 8) {
+                    if ((Class11_Sub10_Sub4_Sub2.inBuffer.position) < 8) {
                         int i = Class11_Sub12.aClass14_1699.method518(0);
-                        if (i > -(Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position) + 8)
-                            i = -(Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position) + 8;
+                        if (i > -(Class11_Sub10_Sub4_Sub2.inBuffer.position) + 8)
+                            i = -(Class11_Sub10_Sub4_Sub2.inBuffer.position) + 8;
                         if (i > 0) {
-                            Class11_Sub12.aClass14_1699.method515((Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position), i, (byte) 97, (Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.payload));
-                            Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position += i;
+                            Class11_Sub12.aClass14_1699.method515((Class11_Sub10_Sub4_Sub2.inBuffer.position), i, (byte) 97, (Class11_Sub10_Sub4_Sub2.inBuffer.payload));
+                            Class11_Sub10_Sub4_Sub2.inBuffer.position += i;
                         }
                     }
-                    if (((Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position) ^ 0xffffffff) == -9) {
-                        Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position = 0;
-                        Class54.aLong1084 = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.method177(-122);
+                    if (Class11_Sub10_Sub4_Sub2.inBuffer.position == 8) {
+                        Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
+                        Class54.aLong1084 = Class11_Sub10_Sub4_Sub2.inBuffer.method177(-122);
                         Class8.loginState = 5;
                     }
                 }
-                if ((Class8.loginState ^ 0xffffffff) == -6) {
+                if (Class8.loginState == 5) {
                     int[] is = new int[4];
                     is[0] = (int) (Math.random() * 9.9999999E7);
                     is[1] = (int) (Math.random() * 9.9999999E7);
-                    is[2] = (int) (Class54.aLong1084 >> -302879072);
+                    is[2] = (int) (Class54.aLong1084 >> 32);
                     is[3] = (int) Class54.aLong1084;
-                    Class40.aClass11_Sub5_Sub1_728.position = 0;
-                    Class40.aClass11_Sub5_Sub1_728.writeByte(10);
-                    Class40.aClass11_Sub5_Sub1_728.writeIntBE(is[0]);
-                    Class40.aClass11_Sub5_Sub1_728.writeIntBE(is[1]);
-                    Class40.aClass11_Sub5_Sub1_728.writeIntBE(is[2]);
-                    Class40.aClass11_Sub5_Sub1_728.writeIntBE(is[3]);
-                    Class40.aClass11_Sub5_Sub1_728.writeIntBE((Class55.aClass45_1141.anInt835));
-                    Class40.aClass11_Sub5_Sub1_728.method140(-24628, Class11_Sub10_Sub4_Sub5.aClass31_2680.method633((byte) -128));
-                    Class40.aClass11_Sub5_Sub1_728.method143(Class11_Sub10_Sub4_Sub5.aClass31_2666, (byte) -63);
-                    Class40.aClass11_Sub5_Sub1_728.encrypt(Canvas_Sub1.aBigInteger50, (byte) -45, Class62.aBigInteger1290);
+                    Class40.outBuffer.position = 0;
+                    Class40.outBuffer.writeByte(10);
+                    Class40.outBuffer.writeIntBE(is[0]);
+                    Class40.outBuffer.writeIntBE(is[1]);
+                    Class40.outBuffer.writeIntBE(is[2]);
+                    Class40.outBuffer.writeIntBE(is[3]);
+                    Class40.outBuffer.writeIntBE((Class55.aClass45_1141.anInt835));
+                    Class40.outBuffer.method140(-24628, Class11_Sub10_Sub4_Sub5.aClass31_2680.method633((byte) -128));
+                    Class40.outBuffer.method143(Class11_Sub10_Sub4_Sub5.aClass31_2666, (byte) -63);
+                    Class40.outBuffer.encrypt(Canvas_Sub1.rsaKey, (byte) -45, Class62.rsaModulus);
                     NotActuallyBuffer.loginBuffer.position = 0;
                     if (Class11_Sub10_Sub3.anInt2013 == 40) {
 						NotActuallyBuffer.loginBuffer.writeByte(18);
 					}  else {
 						NotActuallyBuffer.loginBuffer.writeByte(16);
 					}
-                    NotActuallyBuffer.loginBuffer.writeByte(Class40.aClass11_Sub5_Sub1_728.position + 53);
+                    NotActuallyBuffer.loginBuffer.writeByte(Class40.outBuffer.position + 53);
                     NotActuallyBuffer.loginBuffer.writeIntBE(Constants.BUILD_NUMBER);
                     NotActuallyBuffer.loginBuffer.writeByte(Class1.aBoolean94 ? 1 : 0);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(aClass55_Sub1_307.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub10_Sub6.aClass55_Sub1_2135.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub10_Sub1.aClass55_Sub1_1939.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class8.aClass55_Sub1_166.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub8.aClass55_Sub1_1623.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class13.aClass55_Sub1_270.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class47.aClass55_Sub1_876.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub10_Sub12.aClass55_Sub1_2270.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class43.aClass55_Sub1_780.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub8.aClass55_Sub1_1620.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class42.aClass55_Sub1_766.anInt1097);
-                    NotActuallyBuffer.loginBuffer.writeIntBE(Class33.aClass55_Sub1_618.anInt1097);
-                    NotActuallyBuffer.loginBuffer.method142(Class40.aClass11_Sub5_Sub1_728.payload, 0, (byte) 65, Class40.aClass11_Sub5_Sub1_728.position);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(aClass55_Sub1_307.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub10_Sub6.aClass55_Sub1_2135.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub10_Sub1.aClass55_Sub1_1939.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class8.aClass55_Sub1_166.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub8.aClass55_Sub1_1623.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class13.aClass55_Sub1_270.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class47.aClass55_Sub1_876.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub10_Sub12.aClass55_Sub1_2270.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class43.aClass55_Sub1_780.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class11_Sub8.aClass55_Sub1_1620.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class42.aClass55_Sub1_766.checksum);
+                    NotActuallyBuffer.loginBuffer.writeIntBE(Class33.aClass55_Sub1_618.checksum);
+                    NotActuallyBuffer.loginBuffer.method142(Class40.outBuffer.payload, 0, (byte) 65, Class40.outBuffer.position);
                     Class11_Sub12.aClass14_1699.method521(NotActuallyBuffer.loginBuffer.payload, NotActuallyBuffer.loginBuffer.position, 0, true);
-                    Class40.aClass11_Sub5_Sub1_728.method194(is, -100);
+                    Class40.outBuffer.method194(is, -100);
                     for (int i = 0; (i ^ 0xffffffff) > -5; i++)
                         is[i] += 50;
-                    Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.method194(is, -56);
+                    Class11_Sub10_Sub4_Sub2.inBuffer.method194(is, -56);
                     Class8.loginState = 6;
                 }
                 if ((Class8.loginState ^ 0xffffffff) == -7 && ((Class11_Sub12.aClass14_1699.method518(0) ^ 0xffffffff) < -1)) {
@@ -294,18 +294,18 @@ public abstract class Class15 {
                         Class44.anInt800 <<= 8;
                         Class44.anInt800 += Class11_Sub12.aClass14_1699.method516(0);
                         Class11_Sub10_Sub15.anInt2371 = Class11_Sub12.aClass14_1699.method516(0);
-                        Class11_Sub12.aClass14_1699.method515(0, 1, (byte) 110, (Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.payload));
-                        Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position = 0;
-                        Class48.anInt906 = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.method193((byte) 105);
-                        Class11_Sub12.aClass14_1699.method515(0, 2, (byte) 89, (Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.payload));
-                        Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position = 0;
-                        Class11_Sub10_Sub14.anInt2348 = Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.method164(127);
+                        Class11_Sub12.aClass14_1699.method515(0, 1, (byte) 110, (Class11_Sub10_Sub4_Sub2.inBuffer.payload));
+                        Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
+                        Class48.anInt906 = Class11_Sub10_Sub4_Sub2.inBuffer.method193((byte) 105);
+                        Class11_Sub12.aClass14_1699.method515(0, 2, (byte) 89, (Class11_Sub10_Sub4_Sub2.inBuffer.payload));
+                        Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
+                        Class11_Sub10_Sub14.anInt2348 = Class11_Sub10_Sub4_Sub2.inBuffer.method164(127);
                         Class8.loginState = 10;
                     }
                     if ((Class8.loginState ^ 0xffffffff) == -11) {
                         if ((Class11_Sub12.aClass14_1699.method518(0) ^ 0xffffffff) <= (Class11_Sub10_Sub14.anInt2348 ^ 0xffffffff)) {
-                            Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.position = 0;
-                            Class11_Sub12.aClass14_1699.method515(0, Class11_Sub10_Sub14.anInt2348, (byte) 91, (Class11_Sub10_Sub4_Sub2.aClass11_Sub5_Sub1_2531.payload));
+                            Class11_Sub10_Sub4_Sub2.inBuffer.position = 0;
+                            Class11_Sub12.aClass14_1699.method515(0, Class11_Sub10_Sub14.anInt2348, (byte) 91, (Class11_Sub10_Sub4_Sub2.inBuffer.payload));
                             Class60.method952((byte) -114);
                             Class11_Sub10_Sub4_Sub2.anInt2571 = -1;
                             Class55.method877(false, -50);

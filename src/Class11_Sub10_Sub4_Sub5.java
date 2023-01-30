@@ -338,27 +338,27 @@ public class Class11_Sub10_Sub4_Sub5 extends Class11_Sub10_Sub4
 					     .anIntArray2562[0]),
 					    0, i_30_);
 		    if (bool) {
-			Class40.aClass11_Sub5_Sub1_728.writeByte(i_23_);
-			Class40.aClass11_Sub5_Sub1_728.writeByte(i);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.writeByte(i_23_);
+			Class40.outBuffer.writeByte(i);
+			Class40.outBuffer
 			    .writeShortBE(Class29.anInt535);
-			Class40.aClass11_Sub5_Sub1_728.writeByte(57);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer.writeByte(57);
+			Class40.outBuffer
 			    .writeByte(Class46.anInt855);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .writeByte(Class15_Sub1.anInt1737);
-			Class40.aClass11_Sub5_Sub1_728.writeByte(89);
-			Class40.aClass11_Sub5_Sub1_728.writeShortBE
+			Class40.outBuffer.writeByte(89);
+			Class40.outBuffer.writeShortBE
 			    ((Class48.aClass11_Sub10_Sub4_Sub2_Sub1_899
 			      .anInt2506)
 				);
-			Class40.aClass11_Sub5_Sub1_728.writeShortBE
+			Class40.outBuffer.writeShortBE
 			    ((Class48.aClass11_Sub10_Sub4_Sub2_Sub1_899
 			      .anInt2517)
 				);
-			Class40.aClass11_Sub5_Sub1_728
+			Class40.outBuffer
 			    .writeByte(Class57.anInt1155);
-			Class40.aClass11_Sub5_Sub1_728.writeByte(63);
+			Class40.outBuffer.writeByte(63);
 		    }
 		}
 	    }
