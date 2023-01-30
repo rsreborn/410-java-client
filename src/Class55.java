@@ -87,21 +87,25 @@ public abstract class Class55 {
             if (arg1 != -50) method894(108, null);
             if (!Class17.aBoolean338) {
                 int i = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
+
                 int keyCount = ((Class11_Sub10_Sub14.anInt2348 - (Class11_Sub10_Sub4_Sub2.inBuffer.position)) / 16);
                 Class11_Sub10_Sub4_Sub5.xteaKeys = new int[keyCount][4];
                 for (int keyIndex = 0; keyIndex < keyCount; keyIndex++) {
                     for (int plane = 0; plane < 4; plane++)
                         Class11_Sub10_Sub4_Sub5.xteaKeys[keyIndex][plane] = Class11_Sub10_Sub4_Sub2.inBuffer.readUIntBE();
                 }
+
                 int chunkY = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
                 int i_5_ = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortLE();
                 int plane = Class11_Sub10_Sub4_Sub2.inBuffer.readUByte(); // was UByteA
                 int chunkX = Class11_Sub10_Sub4_Sub2.inBuffer.readUShortBE();
+
                 Class60.aByteArrayArray1259 = new byte[keyCount][];
                 Class11_Sub10_Sub4_Sub3.anIntArray2589 = new int[keyCount];
-                boolean bool = false;
-                if (chunkX / 8 == 48 || chunkX / 8 == 49 && chunkY / 8 == 48) bool = true;
+
+                boolean bool = chunkX / 8 == 48 || chunkX / 8 == 49 && chunkY / 8 == 48;
                 if (chunkX / 8 == 48 && chunkY / 8 == 148) bool = true;
+
                 Class11_Sub10_Sub11.aByteArrayArray2257 = new byte[keyCount][];
                 Canvas_Sub1.anIntArray64 = new int[keyCount];
                 Class11_Sub10_Sub4_Sub1.anIntArray2490 = new int[keyCount];
