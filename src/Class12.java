@@ -624,7 +624,7 @@ public class Class12
 		    return true;
 		}
 		if (Class48.anInt906 == 126) {
-		    Class55.method877(true, -50);
+		    Class55.constructMapRegion(true, -50);
 		    Class48.anInt906 = -1;
 		    return true;
 		}
@@ -811,7 +811,7 @@ public class Class12
 		    return true;
 		}
 		if ((Class48.anInt906 ^ 0xffffffff) == -123) {
-		    Class55.method877(false, -50);
+		    Class55.constructMapRegion(false, -50);
 		    Class48.anInt906 = -1;
 		    return true;
 		}

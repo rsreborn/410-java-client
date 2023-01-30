@@ -70,7 +70,7 @@ public class Class11_Sub10 extends Class11
 	try {
 	    anIntArray1672 = null;
 	    if (arg0 != -5563)
-		method226(-51);
+		parseTrackedPlayerMovement(-51);
 	    aClass31_1669 = null;
 	    aClass31Array1656 = null;
 	    anIntArray1661 = null;
@@ -88,7 +88,7 @@ public class Class11_Sub10 extends Class11
 	}
     }
     
-    public static void method226(int arg0) {
+    public static void parseTrackedPlayerMovement(int arg0) {
 	try {
 	    anInt1654++;
 	    int i

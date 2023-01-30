@@ -308,7 +308,7 @@ public abstract class Class15 {
                             Class11_Sub12.aClass14_1699.method515(0, Class11_Sub10_Sub14.anInt2348, (byte) 91, (Class11_Sub10_Sub4_Sub2.inBuffer.payload));
                             Class60.method952((byte) -114);
                             Class11_Sub10_Sub4_Sub2.anInt2571 = -1;
-                            Class55.method877(false, -50);
+                            Class55.constructMapRegion(false, -50);
                             Class48.anInt906 = -1;
                         }
                     } else {
